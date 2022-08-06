@@ -986,8 +986,14 @@
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">60</field>
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                         <next>
@@ -1254,8 +1260,14 @@
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">60</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <next>
@@ -1974,8 +1986,14 @@
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">60</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <next>
@@ -2190,7 +2208,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="6869">
+  <block type="subroutineBlock" deletable="false" x="0" y="7460">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -2263,7 +2281,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="7234">
+  <block type="subroutineBlock" deletable="false" x="0" y="7825">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
