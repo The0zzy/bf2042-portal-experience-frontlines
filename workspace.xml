@@ -1152,7 +1152,7 @@
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="ShowHighlightedGameModeMessage">
+                                                      <block type="ShowEventGameModeMessage">
                                                         <value name="VALUE-0">
                                                           <block type="Message">
                                                             <value name="VALUE-0">
@@ -1172,7 +1172,7 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="ShowHighlightedGameModeMessage">
+                                                          <block type="ShowEventGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
@@ -1229,7 +1229,7 @@
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="ShowHighlightedGameModeMessage">
+                                                      <block type="ShowEventGameModeMessage">
                                                         <value name="VALUE-0">
                                                           <block type="Message">
                                                             <value name="VALUE-0">
@@ -1249,7 +1249,7 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="ShowHighlightedGameModeMessage">
+                                                          <block type="ShowEventGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
@@ -1610,7 +1610,7 @@
                                                                               <block type="subroutineInstanceBlock">
                                                                                 <field name="SUBROUTINE_NAME">TeamOnePushing</field>
                                                                                 <next>
-                                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                                  <block type="ShowEventGameModeMessage">
                                                                                     <value name="VALUE-0">
                                                                                       <block type="Message">
                                                                                         <value name="VALUE-0">
@@ -1630,7 +1630,7 @@
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="ShowHighlightedGameModeMessage">
+                                                                                      <block type="ShowEventGameModeMessage">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="Message">
                                                                                             <value name="VALUE-0">
@@ -1909,7 +1909,7 @@
                                                                                   <block type="subroutineInstanceBlock">
                                                                                     <field name="SUBROUTINE_NAME">Team2Pushing</field>
                                                                                     <next>
-                                                                                      <block type="ShowHighlightedGameModeMessage">
+                                                                                      <block type="ShowEventGameModeMessage">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="Message">
                                                                                             <value name="VALUE-0">
@@ -1929,7 +1929,7 @@
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="ShowHighlightedGameModeMessage">
+                                                                                          <block type="ShowEventGameModeMessage">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Message">
                                                                                                 <value name="VALUE-0">
@@ -2160,7 +2160,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO">
-                                                          <block type="ShowHighlightedGameModeMessage">
+                                                          <block type="ShowEventGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
@@ -2191,7 +2191,7 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="ShowHighlightedGameModeMessage">
+                                                              <block type="ShowEventGameModeMessage">
                                                                 <value name="VALUE-0">
                                                                   <block type="Message">
                                                                     <value name="VALUE-0">
@@ -2226,7 +2226,7 @@
                                                           </block>
                                                         </statement>
                                                         <statement name="ELSE">
-                                                          <block type="ShowHighlightedGameModeMessage">
+                                                          <block type="ShowEventGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
@@ -2257,7 +2257,7 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="ShowHighlightedGameModeMessage">
+                                                              <block type="ShowEventGameModeMessage">
                                                                 <value name="VALUE-0">
                                                                   <block type="Message">
                                                                     <value name="VALUE-0">
@@ -2318,8 +2318,7 @@
       </block>
     </statement>
   </block>
-  <block type="ShowEventGameModeMessage" x="1730" y="3642"></block>
-  <block type="subroutineBlock" deletable="false" x="0" y="7460">
+  <block type="subroutineBlock" deletable="false" x="0" y="7661">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -2392,7 +2391,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="7825">
+  <block type="subroutineBlock" deletable="false" x="0" y="8026">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
