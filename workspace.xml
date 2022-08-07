@@ -507,7 +507,7 @@
                                                                 <value name="VALUE-0">
                                                                   <block type="CapturePointsItem">
                                                                     <field name="VALUE-0">CapturePoints</field>
-                                                                    <field name="VALUE-1">B1</field>
+                                                                    <field name="VALUE-1">C1</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -541,7 +541,7 @@
                                                                     <value name="VALUE-0">
                                                                       <block type="CapturePointsItem">
                                                                         <field name="VALUE-0">CapturePoints</field>
-                                                                        <field name="VALUE-1">C1</field>
+                                                                        <field name="VALUE-1">B1</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
@@ -2711,7 +2711,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="8535">
+  <block type="subroutineBlock" deletable="false" x="0" y="9090">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -2762,6 +2762,17 @@
                     <field name="TEXT">Hold the objective for {} seconds to push forward!</field>
                   </block>
                 </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="VALUE-1">
@@ -2789,6 +2800,17 @@
                     <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance!</field>
                   </block>
                 </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="VALUE-1">
@@ -2810,7 +2832,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9012">
+  <block type="subroutineBlock" deletable="false" x="0" y="9583">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -2883,7 +2905,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9377">
+  <block type="subroutineBlock" deletable="false" x="0" y="9948">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
