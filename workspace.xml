@@ -5,6 +5,8 @@
     <variable type="Global" id=";C4H7(wJku!y=dQ}o-=8">holdingCounter</variable>
     <variable type="Global" id="RE5fXM1d5cOe[Kb,nL?#">holdingTimeout</variable>
     <variable type="Global" id="Rg@dG^smD}}cyqP;kbA?">isGameOngoing</variable>
+    <variable type="Global" id="8bX8WXOU3J-1nPd^Z467">preparationTimeout</variable>
+    <variable type="Global" id="^2#0woMGZ^%,!;R5Ym/?">preparationCounter</variable>
   </variables>
   <block type="modBlock" deletable="false" x="0" y="0">
     <statement name="RULES">
@@ -116,100 +118,60 @@
                                               <block type="variableReferenceBlock">
                                                 <mutation isObjectVar="false"></mutation>
                                                 <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                <field name="VAR" id="8bX8WXOU3J-1nPd^Z467" variabletype="Global">preparationTimeout</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="EmptyArray"></block>
+                                              <block type="Number">
+                                                <field name="NUM">60</field>
+                                              </block>
                                             </value>
                                             <next>
-                                              <block type="If">
-                                                <mutation elseif="2" else="1"></mutation>
+                                              <block type="SetVariable">
                                                 <value name="VALUE-0">
-                                                  <block type="IsCurrentMap">
-                                                    <value name="VALUE-0">
-                                                      <block type="MapsItem">
-                                                        <field name="VALUE-0">Maps</field>
-                                                        <field name="VALUE-1">Frost</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
                                                   </block>
                                                 </value>
-                                                <statement name="DO">
-                                                  <block type="SendErrorReport">
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">60</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="SetVariable">
                                                     <value name="VALUE-0">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Initializing capture points for BOTB</field>
-                                                          </block>
-                                                        </value>
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
                                                       </block>
                                                     </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="EmptyArray"></block>
+                                                    </value>
                                                     <next>
-                                                      <block type="SetVariable">
+                                                      <block type="If">
+                                                        <mutation elseif="2" else="1"></mutation>
                                                         <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="AppendToArray">
+                                                          <block type="IsCurrentMap">
                                                             <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="GetCapturePoint">
-                                                                <value name="VALUE-0">
-                                                                  <block type="CapturePointsItem">
-                                                                    <field name="VALUE-0">CapturePoints</field>
-                                                                    <field name="VALUE-1">B1</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="MapsItem">
+                                                                <field name="VALUE-0">Maps</field>
+                                                                <field name="VALUE-1">Frost</field>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <next>
-                                                          <block type="SetVariable">
+                                                        <statement name="DO">
+                                                          <block type="SendErrorReport">
                                                             <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="AppendToArray">
+                                                              <block type="Message">
                                                                 <value name="VALUE-0">
-                                                                  <block type="GetVariable">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="false"></mutation>
-                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="GetCapturePoint">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="CapturePointsItem">
-                                                                        <field name="VALUE-0">CapturePoints</field>
-                                                                        <field name="VALUE-1">D1</field>
-                                                                      </block>
-                                                                    </value>
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">Initializing capture points for BOTB</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -241,138 +203,7 @@
                                                                         <value name="VALUE-0">
                                                                           <block type="CapturePointsItem">
                                                                             <field name="VALUE-0">CapturePoints</field>
-                                                                            <field name="VALUE-1">E1</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </statement>
-                                                <value name="IF1">
-                                                  <block type="IsCurrentMap">
-                                                    <value name="VALUE-0">
-                                                      <block type="MapsItem">
-                                                        <field name="VALUE-0">Maps</field>
-                                                        <field name="VALUE-1">Rural</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <statement name="DO1">
-                                                  <block type="SendErrorReport">
-                                                    <value name="VALUE-0">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Initializing capture points for Caspian Border</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="SetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="AppendToArray">
-                                                            <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="GetCapturePoint">
-                                                                <value name="VALUE-0">
-                                                                  <block type="CapturePointsItem">
-                                                                    <field name="VALUE-0">CapturePoints</field>
-                                                                    <field name="VALUE-1">B1</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <next>
-                                                          <block type="SetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="AppendToArray">
-                                                                <value name="VALUE-0">
-                                                                  <block type="GetVariable">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="false"></mutation>
-                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="GetCapturePoint">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="CapturePointsItem">
-                                                                        <field name="VALUE-0">CapturePoints</field>
-                                                                        <field name="VALUE-1">A1</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <next>
-                                                              <block type="SetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="AppendToArray">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="GetVariable">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="variableReferenceBlock">
-                                                                            <mutation isObjectVar="false"></mutation>
-                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </value>
-                                                                    <value name="VALUE-1">
-                                                                      <block type="GetCapturePoint">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="CapturePointsItem">
-                                                                            <field name="VALUE-0">CapturePoints</field>
-                                                                            <field name="VALUE-1">D1</field>
+                                                                            <field name="VALUE-1">B1</field>
                                                                           </block>
                                                                         </value>
                                                                       </block>
@@ -406,7 +237,7 @@
                                                                             <value name="VALUE-0">
                                                                               <block type="CapturePointsItem">
                                                                                 <field name="VALUE-0">CapturePoints</field>
-                                                                                <field name="VALUE-1">C1</field>
+                                                                                <field name="VALUE-1">D1</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -454,96 +285,24 @@
                                                               </block>
                                                             </next>
                                                           </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </statement>
-                                                <value name="IF2">
-                                                  <block type="IsCurrentMap">
-                                                    <value name="VALUE-0">
-                                                      <block type="MapsItem">
-                                                        <field name="VALUE-0">Maps</field>
-                                                        <field name="VALUE-1">Oasis</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <statement name="DO2">
-                                                  <block type="SendErrorReport">
-                                                    <value name="VALUE-0">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Initializing capture points for El Alamein</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="SetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="AppendToArray">
+                                                        </statement>
+                                                        <value name="IF1">
+                                                          <block type="IsCurrentMap">
                                                             <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="GetCapturePoint">
-                                                                <value name="VALUE-0">
-                                                                  <block type="CapturePointsItem">
-                                                                    <field name="VALUE-0">CapturePoints</field>
-                                                                    <field name="VALUE-1">C1</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="MapsItem">
+                                                                <field name="VALUE-0">Maps</field>
+                                                                <field name="VALUE-1">Rural</field>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <next>
-                                                          <block type="SetVariable">
+                                                        <statement name="DO1">
+                                                          <block type="SendErrorReport">
                                                             <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="AppendToArray">
+                                                              <block type="Message">
                                                                 <value name="VALUE-0">
-                                                                  <block type="GetVariable">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="false"></mutation>
-                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="GetCapturePoint">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="CapturePointsItem">
-                                                                        <field name="VALUE-0">CapturePoints</field>
-                                                                        <field name="VALUE-1">B1</field>
-                                                                      </block>
-                                                                    </value>
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">Initializing capture points for Caspian Border</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -575,90 +334,24 @@
                                                                         <value name="VALUE-0">
                                                                           <block type="CapturePointsItem">
                                                                             <field name="VALUE-0">CapturePoints</field>
-                                                                            <field name="VALUE-1">A1</field>
+                                                                            <field name="VALUE-1">B1</field>
                                                                           </block>
                                                                         </value>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </statement>
-                                                <statement name="ELSE">
-                                                  <block type="SendErrorReport">
-                                                    <value name="VALUE-0">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Map isn't supported - ending game</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="EndRound">
-                                                        <value name="VALUE-0">
-                                                          <block type="GetTeamId">
-                                                            <value name="VALUE-0">
-                                                              <block type="Number">
-                                                                <field name="NUM">0</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </statement>
-                                                <next>
-                                                  <block type="SendErrorReport">
-                                                    <value name="VALUE-0">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Count of designated capture points = {}</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="CountOf">
-                                                            <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="SetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="Subtract">
-                                                            <value name="VALUE-0">
-                                                              <block type="RoundToInteger">
-                                                                <value name="VALUE-0">
-                                                                  <block type="Divide">
+                                                                <next>
+                                                                  <block type="SetVariable">
                                                                     <value name="VALUE-0">
-                                                                      <block type="CountOf">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="AppendToArray">
                                                                         <value name="VALUE-0">
                                                                           <block type="GetVariable">
                                                                             <value name="VALUE-0">
@@ -670,77 +363,210 @@
                                                                             </value>
                                                                           </block>
                                                                         </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetCapturePoint">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="CapturePointsItem">
+                                                                                <field name="VALUE-0">CapturePoints</field>
+                                                                                <field name="VALUE-1">A1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
                                                                       </block>
                                                                     </value>
-                                                                    <value name="VALUE-1">
-                                                                      <block type="Number">
-                                                                        <field name="NUM">2</field>
+                                                                    <next>
+                                                                      <block type="SetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="AppendToArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetCapturePoint">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="CapturePointsItem">
+                                                                                    <field name="VALUE-0">CapturePoints</field>
+                                                                                    <field name="VALUE-1">D1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="SetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="AppendToArray">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="GetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="GetCapturePoint">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="CapturePointsItem">
+                                                                                        <field name="VALUE-0">CapturePoints</field>
+                                                                                        <field name="VALUE-1">C1</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="SetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="AppendToArray">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="GetCapturePoint">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="CapturePointsItem">
+                                                                                            <field name="VALUE-0">CapturePoints</field>
+                                                                                            <field name="VALUE-1">E1</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
                                                                       </block>
-                                                                    </value>
+                                                                    </next>
                                                                   </block>
-                                                                </value>
+                                                                </next>
                                                               </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="Number">
-                                                                <field name="NUM">1</field>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                        <value name="IF2">
+                                                          <block type="IsCurrentMap">
+                                                            <value name="VALUE-0">
+                                                              <block type="MapsItem">
+                                                                <field name="VALUE-0">Maps</field>
+                                                                <field name="VALUE-1">Oasis</field>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <next>
+                                                        <statement name="DO2">
                                                           <block type="SendErrorReport">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
                                                                   <block type="Text">
-                                                                    <field name="TEXT">Designated first capture point index = {}</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="GetVariable">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="false"></mutation>
-                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                      </block>
-                                                                    </value>
+                                                                    <field name="TEXT">Initializing capture points for El Alamein</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="SendErrorReport">
+                                                              <block type="SetVariable">
                                                                 <value name="VALUE-0">
-                                                                  <block type="Message">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="Text">
-                                                                        <field name="TEXT">Disable all capture points</field>
-                                                                      </block>
-                                                                    </value>
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
                                                                   </block>
                                                                 </value>
-                                                                <next>
-                                                                  <block type="EnableObjective">
+                                                                <value name="VALUE-1">
+                                                                  <block type="AppendToArray">
                                                                     <value name="VALUE-0">
-                                                                      <block type="GetCapturePoint">
+                                                                      <block type="GetVariable">
                                                                         <value name="VALUE-0">
-                                                                          <block type="CapturePointsItem">
-                                                                            <field name="VALUE-0">CapturePoints</field>
-                                                                            <field name="VALUE-1">A1</field>
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
                                                                           </block>
                                                                         </value>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
-                                                                      <block type="Boolean">
-                                                                        <field name="BOOL">FALSE</field>
+                                                                      <block type="GetCapturePoint">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="CapturePointsItem">
+                                                                            <field name="VALUE-0">CapturePoints</field>
+                                                                            <field name="VALUE-1">C1</field>
+                                                                          </block>
+                                                                        </value>
                                                                       </block>
                                                                     </value>
-                                                                    <next>
-                                                                      <block type="EnableObjective">
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="SetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="AppendToArray">
                                                                         <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
                                                                           <block type="GetCapturePoint">
                                                                             <value name="VALUE-0">
                                                                               <block type="CapturePointsItem">
@@ -750,9 +576,182 @@
                                                                             </value>
                                                                           </block>
                                                                         </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="SetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                          </block>
+                                                                        </value>
                                                                         <value name="VALUE-1">
-                                                                          <block type="Boolean">
-                                                                            <field name="BOOL">FALSE</field>
+                                                                          <block type="AppendToArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetCapturePoint">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="CapturePointsItem">
+                                                                                    <field name="VALUE-0">CapturePoints</field>
+                                                                                    <field name="VALUE-1">A1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                        <statement name="ELSE">
+                                                          <block type="SendErrorReport">
+                                                            <value name="VALUE-0">
+                                                              <block type="Message">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">Map isn't supported - ending game</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="EndRound">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetTeamId">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">0</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="Abort"></block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="SendErrorReport">
+                                                            <value name="VALUE-0">
+                                                              <block type="Message">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">Count of designated capture points = {}</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="CountOf">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="SetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Subtract">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="RoundToInteger">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Divide">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="CountOf">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="GetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">2</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="SendErrorReport">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">Designated first capture point index = {}</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="SendErrorReport">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Message">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Text">
+                                                                                <field name="TEXT">Disable all capture points</field>
+                                                                              </block>
+                                                                            </value>
                                                                           </block>
                                                                         </value>
                                                                         <next>
@@ -762,7 +761,7 @@
                                                                                 <value name="VALUE-0">
                                                                                   <block type="CapturePointsItem">
                                                                                     <field name="VALUE-0">CapturePoints</field>
-                                                                                    <field name="VALUE-1">C1</field>
+                                                                                    <field name="VALUE-1">A1</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
@@ -779,7 +778,7 @@
                                                                                     <value name="VALUE-0">
                                                                                       <block type="CapturePointsItem">
                                                                                         <field name="VALUE-0">CapturePoints</field>
-                                                                                        <field name="VALUE-1">D1</field>
+                                                                                        <field name="VALUE-1">B1</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -796,7 +795,7 @@
                                                                                         <value name="VALUE-0">
                                                                                           <block type="CapturePointsItem">
                                                                                             <field name="VALUE-0">CapturePoints</field>
-                                                                                            <field name="VALUE-1">E1</field>
+                                                                                            <field name="VALUE-1">C1</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
@@ -809,61 +808,120 @@
                                                                                     <next>
                                                                                       <block type="EnableObjective">
                                                                                         <value name="VALUE-0">
-                                                                                          <block type="ValueInArray">
+                                                                                          <block type="GetCapturePoint">
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="GetVariable">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="variableReferenceBlock">
-                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                            <value name="VALUE-1">
-                                                                                              <block type="GetVariable">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="variableReferenceBlock">
-                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                                                  </block>
-                                                                                                </value>
+                                                                                              <block type="CapturePointsItem">
+                                                                                                <field name="VALUE-0">CapturePoints</field>
+                                                                                                <field name="VALUE-1">D1</field>
                                                                                               </block>
                                                                                             </value>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="VALUE-1">
                                                                                           <block type="Boolean">
-                                                                                            <field name="BOOL">TRUE</field>
+                                                                                            <field name="BOOL">FALSE</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="SetVariable">
+                                                                                          <block type="EnableObjective">
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="variableReferenceBlock">
-                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                <field name="VAR" id="Rg@dG^smD}}cyqP;kbA?" variabletype="Global">isGameOngoing</field>
+                                                                                              <block type="GetCapturePoint">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="CapturePointsItem">
+                                                                                                    <field name="VALUE-0">CapturePoints</field>
+                                                                                                    <field name="VALUE-1">E1</field>
+                                                                                                  </block>
+                                                                                                </value>
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
                                                                                               <block type="Boolean">
-                                                                                                <field name="BOOL">TRUE</field>
+                                                                                                <field name="BOOL">FALSE</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="SendErrorReport">
+                                                                                              <block type="EnableObjective">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="Message">
+                                                                                                  <block type="ValueInArray">
                                                                                                     <value name="VALUE-0">
-                                                                                                      <block type="Text">
-                                                                                                        <field name="TEXT">Game initialized!</field>
+                                                                                                      <block type="GetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                          </block>
+                                                                                                        </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
                                                                                                 </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="Boolean">
+                                                                                                    <field name="BOOL">TRUE</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="ChaseVariableAtRate">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">0</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-2">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">-1</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="SetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                            <field name="VAR" id="Rg@dG^smD}}cyqP;kbA?" variabletype="Global">isGameOngoing</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="Boolean">
+                                                                                                            <field name="BOOL">TRUE</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="SendErrorReport">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="Message">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Text">
+                                                                                                                    <field name="TEXT">Game initialized!</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
@@ -2837,7 +2895,7 @@
                                 <next>
                                   <block type="ruleBlock">
                                     <mutation isOnGoingEvent="true"></mutation>
-                                    <field name="NAME">displayCountdownSecondEven</field>
+                                    <field name="NAME">gameModeTimeElapsedEven</field>
                                     <field name="EVENTTYPE">Ongoing</field>
                                     <field name="OBJECTTYPE">Team</field>
                                     <statement name="CONDITIONS">
@@ -2876,49 +2934,84 @@
                                                 </value>
                                               </block>
                                             </value>
-                                            <next>
-                                              <block type="conditionBlock">
-                                                <value name="CONDITION">
-                                                  <block type="LessThan">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
                                           </block>
                                         </next>
                                       </block>
                                     </statement>
                                     <statement name="ACTIONS">
-                                      <block type="subroutineInstanceBlock">
-                                        <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="LessThan">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="subroutineInstanceBlock">
+                                            <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="If">
+                                            <value name="VALUE-0">
+                                              <block type="LessThan">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="8bX8WXOU3J-1nPd^Z467" variabletype="Global">preparationTimeout</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">resetObjective</field>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
                                       </block>
                                     </statement>
                                     <next>
                                       <block type="ruleBlock">
                                         <mutation isOnGoingEvent="true"></mutation>
-                                        <field name="NAME">displayCountdownSecondOdd</field>
+                                        <field name="NAME">gameModeTimeElapsedOdd</field>
                                         <field name="EVENTTYPE">Ongoing</field>
                                         <field name="OBJECTTYPE">Team</field>
                                         <statement name="CONDITIONS">
@@ -2961,43 +3054,78 @@
                                                     </value>
                                                   </block>
                                                 </value>
-                                                <next>
-                                                  <block type="conditionBlock">
-                                                    <value name="CONDITION">
-                                                      <block type="LessThan">
-                                                        <value name="VALUE-0">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
                                               </block>
                                             </next>
                                           </block>
                                         </statement>
                                         <statement name="ACTIONS">
-                                          <block type="subroutineInstanceBlock">
-                                            <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
+                                          <block type="If">
+                                            <value name="VALUE-0">
+                                              <block type="LessThan">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="subroutineInstanceBlock">
+                                                <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="If">
+                                                <value name="VALUE-0">
+                                                  <block type="LessThan">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="8bX8WXOU3J-1nPd^Z467" variabletype="Global">preparationTimeout</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="subroutineInstanceBlock">
+                                                    <field name="SUBROUTINE_NAME">resetObjective</field>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
                                           </block>
                                         </statement>
                                       </block>
@@ -3019,7 +3147,400 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9830">
+  <block type="subroutineBlock" deletable="false" x="0" y="10386">
+    <field name="SUBROUTINE_NAME">resetObjective</field>
+    <statement name="ACTIONS">
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="Equals">
+            <value name="VALUE-0">
+              <block type="CapturePointsItem">
+                <field name="VALUE-0">CapturePoints</field>
+                <field name="VALUE-1">A1</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="ValueInArray">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="DisplayCustomNotificationMessage">
+            <value name="VALUE-0">
+              <block type="Message">
+                <value name="VALUE-0">
+                  <block type="Text">
+                    <field name="TEXT">Prepare to capture A1 in {} seconds!</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="If">
+            <value name="VALUE-0">
+              <block type="Equals">
+                <value name="VALUE-0">
+                  <block type="CapturePointsItem">
+                    <field name="VALUE-0">CapturePoints</field>
+                    <field name="VALUE-1">B1</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="ValueInArray">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="DisplayCustomNotificationMessage">
+                <value name="VALUE-0">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="Text">
+                        <field name="TEXT">Prepare to capture B1 in {} seconds!</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="Equals">
+                    <value name="VALUE-0">
+                      <block type="CapturePointsItem">
+                        <field name="VALUE-0">CapturePoints</field>
+                        <field name="VALUE-1">C1</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="ValueInArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="DisplayCustomNotificationMessage">
+                    <value name="VALUE-0">
+                      <block type="Message">
+                        <value name="VALUE-0">
+                          <block type="Text">
+                            <field name="TEXT">Prepare to capture C1 in {} seconds!</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="CapturePointsItem">
+                            <field name="VALUE-0">CapturePoints</field>
+                            <field name="VALUE-1">D1</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="ValueInArray">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="DisplayCustomNotificationMessage">
+                        <value name="VALUE-0">
+                          <block type="Message">
+                            <value name="VALUE-0">
+                              <block type="Text">
+                                <field name="TEXT">Prepare to capture D1 in {} seconds!</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="If">
+                        <value name="VALUE-0">
+                          <block type="Equals">
+                            <value name="VALUE-0">
+                              <block type="CapturePointsItem">
+                                <field name="VALUE-0">CapturePoints</field>
+                                <field name="VALUE-1">E1</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="DisplayCustomNotificationMessage">
+                            <value name="VALUE-0">
+                              <block type="Message">
+                                <value name="VALUE-0">
+                                  <block type="Text">
+                                    <field name="TEXT">Prepare to capture E1 in {} seconds!</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="EnableObjective">
+                            <value name="VALUE-0">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Boolean">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="EnableObjective">
+                                <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Boolean">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="11590">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -3140,7 +3661,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10323">
+  <block type="subroutineBlock" deletable="false" x="0" y="12083">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -3213,7 +3734,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10688">
+  <block type="subroutineBlock" deletable="false" x="0" y="12448">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
