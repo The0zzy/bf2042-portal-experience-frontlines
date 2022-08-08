@@ -1365,12 +1365,12 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="ShowEventGameModeMessage">
+                                                          <block type="ShowHighlightedGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
                                                                   <block type="Text">
-                                                                    <field name="TEXT">We've halted their advance!</field>
+                                                                    <field name="TEXT">Our objective was neutralized! Take it back!</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -1379,11 +1379,55 @@
                                                               <block type="GetTeamId">
                                                                 <value name="VALUE-0">
                                                                   <block type="Number">
-                                                                    <field name="NUM">2</field>
+                                                                    <field name="NUM">1</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
+                                                            <next>
+                                                              <block type="ShowEventGameModeMessage">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Message">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Text">
+                                                                        <field name="TEXT">We've halted their advance!</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="GetTeamId">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">We've halted their advance!</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetTeamId">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
@@ -1442,12 +1486,12 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="ShowEventGameModeMessage">
+                                                          <block type="ShowHighlightedGameModeMessage">
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
                                                                   <block type="Text">
-                                                                    <field name="TEXT">We've halted their advance!</field>
+                                                                    <field name="TEXT">Our objective was neutralized! Take it back!</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -1456,11 +1500,55 @@
                                                               <block type="GetTeamId">
                                                                 <value name="VALUE-0">
                                                                   <block type="Number">
-                                                                    <field name="NUM">1</field>
+                                                                    <field name="NUM">2</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
+                                                            <next>
+                                                              <block type="ShowEventGameModeMessage">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Message">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Text">
+                                                                        <field name="TEXT">We've halted their advance!</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="GetTeamId">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">We've halted their advance!</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetTeamId">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
@@ -1838,12 +1926,12 @@
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="ShowEventGameModeMessage">
+                                                                                      <block type="ShowHighlightedGameModeMessage">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="Message">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Text">
-                                                                                                <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
+                                                                                                <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
                                                                                               </block>
                                                                                             </value>
                                                                                           </block>
@@ -1852,33 +1940,77 @@
                                                                                           <block type="GetTeamId">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Number">
-                                                                                                <field name="NUM">2</field>
+                                                                                                <field name="NUM">1</field>
                                                                                               </block>
                                                                                             </value>
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="SendErrorReport">
+                                                                                          <block type="ShowEventGameModeMessage">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Message">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Text">
-                                                                                                    <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="GetVariable">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="variableReferenceBlock">
-                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                                                      </block>
-                                                                                                    </value>
+                                                                                                    <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
                                                                                             </value>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="GetTeamId">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">2</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="ShowHighlightedGameModeMessage">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Message">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Text">
+                                                                                                        <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="GetTeamId">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">2</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="SendErrorReport">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Message">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Text">
+                                                                                                            <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="GetVariable">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
@@ -2137,12 +2269,12 @@
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="ShowEventGameModeMessage">
+                                                                                          <block type="ShowHighlightedGameModeMessage">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Message">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Text">
-                                                                                                    <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
+                                                                                                    <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
@@ -2151,33 +2283,77 @@
                                                                                               <block type="GetTeamId">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Number">
-                                                                                                    <field name="NUM">1</field>
+                                                                                                    <field name="NUM">2</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="SendErrorReport">
+                                                                                              <block type="ShowEventGameModeMessage">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Message">
                                                                                                     <value name="VALUE-0">
                                                                                                       <block type="Text">
-                                                                                                        <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                    <value name="VALUE-1">
-                                                                                                      <block type="GetVariable">
-                                                                                                        <value name="VALUE-0">
-                                                                                                          <block type="variableReferenceBlock">
-                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                                                          </block>
-                                                                                                        </value>
+                                                                                                        <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
                                                                                                 </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="GetTeamId">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">1</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Message">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Text">
+                                                                                                            <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetTeamId">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">1</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="SendErrorReport">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Message">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="Text">
+                                                                                                                <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="GetVariable">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
@@ -2414,12 +2590,12 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="ShowEventGameModeMessage">
+                                                              <block type="ShowHighlightedGameModeMessage">
                                                                 <value name="VALUE-0">
                                                                   <block type="Message">
                                                                     <value name="VALUE-0">
                                                                       <block type="Text">
-                                                                        <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                        <field name="TEXT">Hold the objective for {} seconds to push forward!</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
@@ -2439,11 +2615,77 @@
                                                                   <block type="GetTeamId">
                                                                     <value name="VALUE-0">
                                                                       <block type="Number">
-                                                                        <field name="NUM">2</field>
+                                                                        <field name="NUM">1</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="ShowEventGameModeMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetTeamId">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="ShowHighlightedGameModeMessage">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Message">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Text">
+                                                                                <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetTeamId">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">2</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
@@ -2480,12 +2722,12 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="ShowEventGameModeMessage">
+                                                              <block type="ShowHighlightedGameModeMessage">
                                                                 <value name="VALUE-0">
                                                                   <block type="Message">
                                                                     <value name="VALUE-0">
                                                                       <block type="Text">
-                                                                        <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                        <field name="TEXT">Hold the objective for {} seconds to push forward!</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
@@ -2505,11 +2747,77 @@
                                                                   <block type="GetTeamId">
                                                                     <value name="VALUE-0">
                                                                       <block type="Number">
-                                                                        <field name="NUM">1</field>
+                                                                        <field name="NUM">2</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="ShowEventGameModeMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetTeamId">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="ShowHighlightedGameModeMessage">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Message">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Text">
+                                                                                <field name="TEXT">Neutralize the objective within {} seconds to halt the enemy's advance</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetTeamId">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
@@ -2711,7 +3019,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9090">
+  <block type="subroutineBlock" deletable="false" x="0" y="9830">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -2832,7 +3140,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9583">
+  <block type="subroutineBlock" deletable="false" x="0" y="10323">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -2905,7 +3213,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="9948">
+  <block type="subroutineBlock" deletable="false" x="0" y="10688">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
