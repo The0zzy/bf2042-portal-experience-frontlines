@@ -1626,6 +1626,11 @@
                             <statement name="ACTIONS">
                               <block type="subroutineInstanceBlock">
                                 <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
+                                <next>
+                                  <block type="subroutineInstanceBlock">
+                                    <field name="SUBROUTINE_NAME">resetObjective</field>
+                                  </block>
+                                </next>
                               </block>
                             </statement>
                             <next>
