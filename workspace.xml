@@ -3064,9 +3064,10 @@
                                             </statement>
                                             <next>
                                               <block type="ruleBlock">
-                                                <mutation isOnGoingEvent="false"></mutation>
-                                                <field name="NAME">New Rule</field>
-                                                <field name="EVENTTYPE">OnCapturePointCapturing</field>
+                                                <mutation isOnGoingEvent="true"></mutation>
+                                                <field name="NAME">resetCapturePointDuringPreparation</field>
+                                                <field name="EVENTTYPE">Ongoing</field>
+                                                <field name="OBJECTTYPE">CapturePoint</field>
                                                 <statement name="CONDITIONS">
                                                   <block type="conditionBlock">
                                                     <value name="CONDITION">
@@ -3131,7 +3132,7 @@
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Number">
-                                                                <field name="NUM">0.8</field>
+                                                                <field name="NUM">0.9</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -3168,7 +3169,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="10862">
+  <block type="subroutineBlock" deletable="false" x="0" y="11188">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -3204,7 +3205,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11187">
+  <block type="subroutineBlock" deletable="false" x="0" y="11513">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -3261,7 +3262,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11563">
+  <block type="subroutineBlock" deletable="false" x="0" y="11889">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -3318,7 +3319,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="11939">
+  <block type="subroutineBlock" deletable="false" x="0" y="12265">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -3354,7 +3355,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="12264">
+  <block type="subroutineBlock" deletable="false" x="0" y="12590">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -3752,7 +3753,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13334">
+  <block type="subroutineBlock" deletable="false" x="0" y="13740">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -3788,44 +3789,70 @@
           </block>
         </value>
         <next>
-          <block type="EnableObjective">
+          <block type="SendErrorReport">
             <value name="VALUE-0">
-              <block type="ValueInArray">
+              <block type="Message">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
+                  <block type="Text">
+                    <field name="TEXT">Disabled objective</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="EnableObjective">
+                <value name="VALUE-0">
+                  <block type="ValueInArray">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="GetVariable">
+                  <block type="Boolean">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="SendErrorReport">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                      <block type="Message">
+                        <value name="VALUE-0">
+                          <block type="Text">
+                            <field name="TEXT">Enabled objective</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
-                </value>
+                </next>
               </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Boolean">
-                <field name="BOOL">TRUE</field>
-              </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="13683">
+  <block type="subroutineBlock" deletable="false" x="0" y="14207">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -3946,7 +3973,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14176">
+  <block type="subroutineBlock" deletable="false" x="0" y="14700">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -4019,7 +4046,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="14541">
+  <block type="subroutineBlock" deletable="false" x="0" y="15065">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
