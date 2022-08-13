@@ -1,0 +1,656 @@
+{
+  "originalPlayground": {
+    "createdAt": {
+      "nanos": 579000000,
+      "seconds": 1659724513
+    },
+    "playgroundDescription": "Both Teams fight over a single moving objective and must push the line towards the enemy HQ to win.",
+    "assetCategories": [
+      {
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AEB"
+            ],
+            "value": null,
+            "teamId": 1
+          }
+        },
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEB"
+      },
+      {
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AF8"
+            ],
+            "value": null,
+            "teamId": 2
+          }
+        },
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AF8"
+      }
+    ],
+    "owner": {
+      "nucleusId": 2828437619,
+      "platformId": 1,
+      "personaId": 841527414,
+      "name": "RoflKartoffelDE",
+      "avatar": "https://secure.download.dm.origin.com/production/avatar/prod/userAvatar/39910743/208x208.PNG"
+    },
+    "mapRotation": {
+      "maps": [
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "El Alamein",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF1942_EA_S.jpg"
+        },
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "Battle of the Bulge",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF1942_BB_S.jpg"
+        },
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "Caspian Border",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF3_CB_S.jpg"
+        }
+      ],
+      "roundBehavior": null,
+      "rotationBehavior": null
+    },
+    "blueprintType": "vanilla",
+    "playgroundId": "580f3630-14ed-11ed-9761-a585402439aa",
+    "settings": {
+      "gameServerMessage": [],
+      "configName": {
+        "value": "FRONTLINES 2042 - Development"
+      },
+      "ConfigDescription": {
+        "value": "Both Teams fight over a single moving objective and must push the line towards the enemy HQ to win."
+      },
+      "description": null,
+      "name": "FRONTLINES 2042 - Development"
+    },
+    "checksum": "5834e7147f1acba5ad929782790dfbb6422c65ad97c5442d2ecf596c9d75d2c4",
+    "updatedAt": {
+      "nanos": 401000000,
+      "seconds": 1659902745
+    },
+    "restrictions": null,
+    "teamComposition": {
+      "teams": [
+        {
+          "capacity": 32,
+          "teamId": 1
+        },
+        {
+          "capacity": 32,
+          "teamId": 2
+        }
+      ],
+      "internalTeams": [],
+      "balancingMethod": null
+    },
+    "modRules": null,
+    "secret": null,
+    "playgroundName": "FRONTLINES 2042 - Development",
+    "mutators": [
+      {
+        "name": "AiSpawnType",
+        "category": "WA_ST_AI,WA_XP_Reduced",
+        "mutatorId": "1666992788",
+        "kind": {
+          "intValue": 2
+        }
+      },
+      {
+        "name": "AiDifficulty_PerTeam",
+        "category": "WA_ST_AI",
+        "mutatorId": "2622397711",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 2
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "2970976356",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 2
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_ArmoredCar__Jaguar_EBRC_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1148101396",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 1
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Tank__M1_Abrams_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "3825040363",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": null
+              }
+            ],
+            "defaultValue": 1
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Tank__T14_Armata_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1008026224",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": 1
+              }
+            ],
+            "defaultValue": null
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_MaxVehicles_NoPassengers",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "3117123585",
+        "kind": {
+          "intValue": 14
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1479656215",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 3
+          }
+        }
+      },
+      {
+        "name": "MaxPlayerCount_PerTeam",
+        "category": "WA_GM_All",
+        "mutatorId": "2976738751",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 32
+          }
+        }
+      },
+      {
+        "name": "FactionID_PerTeam",
+        "category": "WA_ST_Era",
+        "mutatorId": "548273204",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": 18446744072364397000
+              }
+            ],
+            "defaultValue": 753847964
+          }
+        }
+      },
+      {
+        "name": "ModBuilder_GameMode",
+        "category": "WA_GM_Custom,WA_XP_Reduced",
+        "mutatorId": "2047132398",
+        "kind": {
+          "intValue": 5
+        }
+      }
+    ],
+    "state": null
+  },
+  "tag": [
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_KINGSTONERA",
+            "kind": "6",
+            "localizedText": "2042",
+            "localizedTextDesc": "Includes a Battlefield 2042 faction."
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_KINGSTONERA_DESC",
+            "kind": "7",
+            "localizedText": "Includes a Battlefield 2042 faction.",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "kingston_era",
+      "sortOrder": null
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_CUSTOM_SCRIPTED",
+            "kind": "6",
+            "localizedText": "CUSTOM LOGIC",
+            "localizedTextDesc": "Contains Logic Editor scripting."
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_CUSTOM_SCRIPTED_DESC",
+            "kind": "7",
+            "localizedText": "Contains Logic Editor scripting.",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "custom_scripted",
+      "sortOrder": 1
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_MASTERY_RESTRICTED",
+            "kind": "6",
+            "localizedText": "MASTERY LIMITED",
+            "localizedTextDesc": "Ability to gain Mastery Ranks is limited"
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_MASTERY_RESTRICTED_DESC",
+            "kind": "7",
+            "localizedText": "Ability to gain Mastery Ranks is limited",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "mastery_restricted",
+      "sortOrder": 2
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_ASYMMETRIC_SETTINGS",
+            "kind": "6",
+            "localizedText": "ASYMMETRICAL",
+            "localizedTextDesc": "Teams have different Modifiers."
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_ASYMMETRIC_SETTINGS_DESC",
+            "kind": "7",
+            "localizedText": "Teams have different Modifiers.",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "asym_settings",
+      "sortOrder": 3
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_VANILLA_VEHICLES",
+            "kind": "6",
+            "localizedText": "VANILLA VEHICLES",
+            "localizedTextDesc": "Vanilla vehicles are present. "
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_VANILLA_VEHICLES_DESC",
+            "kind": "7",
+            "localizedText": "Vanilla vehicles are present. ",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "vanilla_vehicles",
+      "sortOrder": 4
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_AI_ENABLED",
+            "kind": "6",
+            "localizedText": "PvP AI",
+            "localizedTextDesc": "PvP AI soldiers are present."
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_AI_ENABLED_DESC",
+            "kind": "7",
+            "localizedText": "PvP AI soldiers are present.",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "ai_enabled",
+      "sortOrder": 5
+    },
+    {
+      "metadata": {
+        "translations": [
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_EVEN_TEAM_SIZES",
+            "kind": "6",
+            "localizedText": "SYM. PLAYER COUNT",
+            "localizedTextDesc": "Teams have the same number of maximum players."
+          },
+          {
+            "translationId": "ID_ARRIVAL_SERVERTAG_EVEN_TEAM_SIZES_DESC",
+            "kind": "7",
+            "localizedText": "Teams have the same number of maximum players.",
+            "localizedTextDesc": ""
+          }
+        ],
+        "resources": []
+      },
+      "id": "even_team_sizes",
+      "sortOrder": 6
+    }
+  ],
+  "validatedPlayground": {
+    "createdAt": {
+      "nanos": 579000000,
+      "seconds": 1659724513
+    },
+    "playgroundDescription": "Both Teams fight over a single moving objective and must push the line towards the enemy HQ to win.",
+    "assetCategories": [
+      {
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AEB"
+            ],
+            "value": null,
+            "teamId": 1
+          }
+        },
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEB"
+      },
+      {
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AF8"
+            ],
+            "value": null,
+            "teamId": 2
+          }
+        },
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AF8"
+      }
+    ],
+    "owner": {
+      "nucleusId": 2828437619,
+      "platformId": 1,
+      "personaId": 841527414,
+      "name": "RoflKartoffelDE",
+      "avatar": "https://secure.download.dm.origin.com/production/avatar/prod/userAvatar/39910743/208x208.PNG"
+    },
+    "mapRotation": {
+      "maps": [
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "El Alamein",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF1942_EA_S.jpg"
+        },
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "Battle of the Bulge",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF1942_BB_S.jpg"
+        },
+        {
+          "mode": "Custom",
+          "warmUpSize": 6,
+          "gameSize": 64,
+          "mapname": "Caspian Border",
+          "allowedSpectators": 4,
+          "rounds": 1,
+          "preRoundSize": null,
+          "location": "ModBuilderCustom1",
+          "mutators": [],
+          "image": "https://portal.battlefield.com/1916651/assets/images/maps/Map_Art_BF3_CB_S.jpg"
+        }
+      ],
+      "roundBehavior": null,
+      "rotationBehavior": null
+    },
+    "blueprintType": "vanilla",
+    "playgroundId": "580f3630-14ed-11ed-9761-a585402439aa",
+    "settings": {
+      "gameServerMessage": [],
+      "configName": {
+        "value": "FRONTLINES 2042 - Development"
+      },
+      "ConfigDescription": {
+        "value": "Both Teams fight over a single moving objective and must push the line towards the enemy HQ to win."
+      },
+      "description": null,
+      "name": "FRONTLINES 2042 - Development"
+    },
+    "checksum": "5834e7147f1acba5ad929782790dfbb6422c65ad97c5442d2ecf596c9d75d2c4",
+    "updatedAt": {
+      "nanos": 401000000,
+      "seconds": 1659902745
+    },
+    "restrictions": null,
+    "teamComposition": {
+      "teams": [
+        {
+          "capacity": 32,
+          "teamId": 1
+        },
+        {
+          "capacity": 32,
+          "teamId": 2
+        }
+      ],
+      "internalTeams": [],
+      "balancingMethod": null
+    },
+    "modRules": null,
+    "secret": null,
+    "playgroundName": "FRONTLINES 2042 - Development",
+    "mutators": [
+      {
+        "name": "AiSpawnType",
+        "category": "WA_ST_AI,WA_XP_Reduced",
+        "mutatorId": "1666992788",
+        "kind": {
+          "intValue": 2
+        }
+      },
+      {
+        "name": "AiDifficulty_PerTeam",
+        "category": "WA_ST_AI",
+        "mutatorId": "2622397711",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 2
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "2970976356",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 2
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_ArmoredCar__Jaguar_EBRC_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1148101396",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 1
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Tank__M1_Abrams_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "3825040363",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": null
+              }
+            ],
+            "defaultValue": 1
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Tank__T14_Armata_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1008026224",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": 1
+              }
+            ],
+            "defaultValue": null
+          }
+        }
+      },
+      {
+        "name": "VehicleLimit_MaxVehicles_NoPassengers",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "3117123585",
+        "kind": {
+          "intValue": 14
+        }
+      },
+      {
+        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
+        "category": "WA_AL_Vehicle",
+        "mutatorId": "1479656215",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 3
+          }
+        }
+      },
+      {
+        "name": "MaxPlayerCount_PerTeam",
+        "category": "WA_GM_All",
+        "mutatorId": "2976738751",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [],
+            "defaultValue": 32
+          }
+        }
+      },
+      {
+        "name": "FactionID_PerTeam",
+        "category": "WA_ST_Era",
+        "mutatorId": "548273204",
+        "kind": {
+          "intSparse": {
+            "sparseValues": [
+              {
+                "index": 2,
+                "value": 18446744072364397000
+              }
+            ],
+            "defaultValue": 753847964
+          }
+        }
+      },
+      {
+        "name": "ModBuilder_GameMode",
+        "category": "WA_GM_Custom,WA_XP_Reduced",
+        "mutatorId": "2047132398",
+        "kind": {
+          "intValue": 5
+        }
+      }
+    ],
+    "state": null
+  },
+  "blocklyData": null
+}
