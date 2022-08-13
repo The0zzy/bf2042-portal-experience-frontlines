@@ -1093,6 +1093,27 @@
                 <mutation isOnGoingEvent="false"></mutation>
                 <field name="NAME">showPlayerInfo</field>
                 <field name="EVENTTYPE">OnPlayerJoinGame</field>
+                <statement name="CONDITIONS">
+                  <block type="conditionBlock">
+                    <value name="CONDITION">
+                      <block type="Not">
+                        <value name="VALUE-0">
+                          <block type="GetSoldierState">
+                            <value name="VALUE-0">
+                              <block type="EventPlayer"></block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="SoldierStateBoolItem">
+                                <field name="VALUE-0">SoldierStateBool</field>
+                                <field name="VALUE-1">IsAISoldier</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
                 <statement name="ACTIONS">
                   <block type="ShowNotificationMessage">
                     <value name="VALUE-0">
@@ -1114,6 +1135,27 @@
                     <mutation isOnGoingEvent="false"></mutation>
                     <field name="NAME">initializeMessages</field>
                     <field name="EVENTTYPE">OnPlayerDeployed</field>
+                    <statement name="CONDITIONS">
+                      <block type="conditionBlock">
+                        <value name="CONDITION">
+                          <block type="Not">
+                            <value name="VALUE-0">
+                              <block type="GetSoldierState">
+                                <value name="VALUE-0">
+                                  <block type="EventPlayer"></block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="SoldierStateBoolItem">
+                                    <field name="VALUE-0">SoldierStateBool</field>
+                                    <field name="VALUE-1">IsAISoldier</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
                     <statement name="ACTIONS">
                       <block type="DisplayCustomNotificationMessage">
                         <value name="VALUE-0">
