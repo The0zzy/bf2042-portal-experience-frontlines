@@ -18,7 +18,7 @@ US - B1 - C1 - A1 - RU
 *Due to a bug, the points C1 and B1 need to be interchanged in the code*  
 *[Bug Reference](https://discord.com/channels/870246147455877181/1005929194393440296)*
 ### Battle of the Buldge
-US - B1 - D1 - E1 - RU
+US - A1 - B1 - D1 - C1 - E1 - RU
 
 ## Change/Update History
 See the commits pages of the branches:  
