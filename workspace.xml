@@ -5016,7 +5016,7 @@
                                                                 </value>
                                                                 <value name="VALUE-1">
                                                                   <block type="Number">
-                                                                    <field name="NUM">0.9</field>
+                                                                    <field name="NUM">0.5</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
