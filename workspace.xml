@@ -532,483 +532,6 @@
                                                                                                                                 </value>
                                                                                                                               </block>
                                                                                                                             </value>
-                                                                                                                            <next>
-                                                                                                                              <block type="SetVariableAtIndex">
-                                                                                                                                <value name="VALUE-0">
-                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                    <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
-                                                                                                                                  </block>
-                                                                                                                                </value>
-                                                                                                                                <value name="VALUE-1">
-                                                                                                                                  <block type="Number">
-                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                  </block>
-                                                                                                                                </value>
-                                                                                                                                <value name="VALUE-2">
-                                                                                                                                  <block type="CreateVector">
-                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                      <block type="Number">
-                                                                                                                                        <field name="NUM">-555.0649</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                      <block type="Number">
-                                                                                                                                        <field name="NUM">116.20177</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                      <block type="Number">
-                                                                                                                                        <field name="NUM">-244.25989</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                  </block>
-                                                                                                                                </value>
-                                                                                                                                <next>
-                                                                                                                                  <block type="SetVariableAtIndex">
-                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                        <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                      <block type="Number">
-                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                      <block type="CreateVector">
-                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                          <block type="Number">
-                                                                                                                                            <field name="NUM">-553.8471</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                          <block type="Number">
-                                                                                                                                            <field name="NUM">116.20177</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                          <block type="Number">
-                                                                                                                                            <field name="NUM">-220.60756</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="SetVariableAtIndex">
-                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                          <block type="Number">
-                                                                                                                                            <field name="NUM">2</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                          <block type="CreateVector">
-                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                              <block type="Number">
-                                                                                                                                                <field name="NUM">-551.8471</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                              <block type="Number">
-                                                                                                                                                <field name="NUM">116.20177</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                              <block type="Number">
-                                                                                                                                                <field name="NUM">-230.60756</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <next>
-                                                                                                                                          <block type="SetVariableAtIndex">
-                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                              <block type="Number">
-                                                                                                                                                <field name="NUM">3</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                              <block type="CreateVector">
-                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                  <block type="Number">
-                                                                                                                                                    <field name="NUM">-549.8471</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                  <block type="Number">
-                                                                                                                                                    <field name="NUM">116.20177</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                  <block type="Number">
-                                                                                                                                                    <field name="NUM">-210.60756</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <next>
-                                                                                                                                              <block type="SetVariableAtIndex">
-                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                    <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                  <block type="Number">
-                                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                  <block type="Number">
-                                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                                  </block>
-                                                                                                                                                </value>
-                                                                                                                                                <next>
-                                                                                                                                                  <block type="SetVariableAtIndex">
-                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                        <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
-                                                                                                                                                      </block>
-                                                                                                                                                    </value>
-                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                      <block type="Number">
-                                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                                      </block>
-                                                                                                                                                    </value>
-                                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                                      <block type="Number">
-                                                                                                                                                        <field name="NUM">0</field>
-                                                                                                                                                      </block>
-                                                                                                                                                    </value>
-                                                                                                                                                    <next>
-                                                                                                                                                      <block type="SetVariableAtIndex">
-                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                            <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                          <block type="Number">
-                                                                                                                                                            <field name="NUM">2</field>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                                          <block type="Number">
-                                                                                                                                                            <field name="NUM">0</field>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                        <next>
-                                                                                                                                                          <block type="SetVariableAtIndex">
-                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                              <block type="Number">
-                                                                                                                                                                <field name="NUM">3</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                              <block type="Number">
-                                                                                                                                                                <field name="NUM">0</field>
-                                                                                                                                                              </block>
-                                                                                                                                                            </value>
-                                                                                                                                                            <next>
-                                                                                                                                                              <block type="SetVariableAtIndex">
-                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                                  <block type="Text">
-                                                                                                                                                                    <field name="TEXT">MCOM A</field>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </value>
-                                                                                                                                                                <next>
-                                                                                                                                                                  <block type="SetVariableAtIndex">
-                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                                                      <block type="Text">
-                                                                                                                                                                        <field name="TEXT">MCOM B</field>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </value>
-                                                                                                                                                                    <next>
-                                                                                                                                                                      <block type="SetVariableAtIndex">
-                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </value>
-                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                            <field name="NUM">2</field>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </value>
-                                                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                                                          <block type="Text">
-                                                                                                                                                                            <field name="TEXT">FOO</field>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </value>
-                                                                                                                                                                        <next>
-                                                                                                                                                                          <block type="SetVariableAtIndex">
-                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </value>
-                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                <field name="NUM">3</field>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </value>
-                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                              <block type="Text">
-                                                                                                                                                                                <field name="TEXT">BAR</field>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </value>
-                                                                                                                                                                            <next>
-                                                                                                                                                                              <block type="SetVariableAtIndex">
-                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                    <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </value>
-                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </value>
-                                                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                                                  <block type="GetTeamId">
-                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </value>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </value>
-                                                                                                                                                                                <next>
-                                                                                                                                                                                  <block type="SetVariableAtIndex">
-                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                        <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </value>
-                                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                                        <field name="NUM">1</field>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </value>
-                                                                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                                                                      <block type="GetTeamId">
-                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                            <field name="NUM">2</field>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </value>
-                                                                                                                                                                                    <next>
-                                                                                                                                                                                      <block type="SetVariableAtIndex">
-                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                            <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                            <field name="NUM">2</field>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                                                                          <block type="GetTeamId">
-                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                                <field name="NUM">1</field>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </value>
-                                                                                                                                                                                        <next>
-                                                                                                                                                                                          <block type="SetVariableAtIndex">
-                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                                <field name="NUM">3</field>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                                              <block type="GetTeamId">
-                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                                    <field name="NUM">2</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </value>
-                                                                                                                                                                                            <next>
-                                                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                    <field name="VAR" id="ekVC^+s`?sYEWZemax_(" variabletype="Global">mcomCounter1</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                                    <field name="NUM">0</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <next>
-                                                                                                                                                                                                  <block type="SetVariable">
-                                                                                                                                                                                                    <value name="VALUE-0">
-                                                                                                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                        <field name="VAR" id="n_Xs)#=;?K+KUARe?UWq" variabletype="Global">mcomCounter2</field>
-                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                    <value name="VALUE-1">
-                                                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                                                        <field name="NUM">0</field>
-                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                    </value>
-                                                                                                                                                                                                    <next>
-                                                                                                                                                                                                      <block type="SetVariable">
-                                                                                                                                                                                                        <value name="VALUE-0">
-                                                                                                                                                                                                          <block type="variableReferenceBlock">
-                                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                            <field name="VAR" id="XzvsY?^pn[xf#C+CiC/;" variabletype="Global">mcomCounter3</field>
-                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                        <value name="VALUE-1">
-                                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                                            <field name="NUM">0</field>
-                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                        <next>
-                                                                                                                                                                                                          <block type="SetVariable">
-                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                <field name="VAR" id="!c6*CF=Jg5}#p?)(=*yh" variabletype="Global">mcomCounter4</field>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                                                <field name="NUM">0</field>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                            <next>
-                                                                                                                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                                                                                                                <field name="SUBROUTINE_NAME">initMcomIcons</field>
-                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                            </next>
-                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                        </next>
-                                                                                                                                                                                                      </block>
-                                                                                                                                                                                                    </next>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </next>
-                                                                                                                                                                                              </block>
-                                                                                                                                                                                            </next>
-                                                                                                                                                                                          </block>
-                                                                                                                                                                                        </next>
-                                                                                                                                                                                      </block>
-                                                                                                                                                                                    </next>
-                                                                                                                                                                                  </block>
-                                                                                                                                                                                </next>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </next>
-                                                                                                                                                                          </block>
-                                                                                                                                                                        </next>
-                                                                                                                                                                      </block>
-                                                                                                                                                                    </next>
-                                                                                                                                                                  </block>
-                                                                                                                                                                </next>
-                                                                                                                                                              </block>
-                                                                                                                                                            </next>
-                                                                                                                                                          </block>
-                                                                                                                                                        </next>
-                                                                                                                                                      </block>
-                                                                                                                                                    </next>
-                                                                                                                                                  </block>
-                                                                                                                                                </next>
-                                                                                                                                              </block>
-                                                                                                                                            </next>
-                                                                                                                                          </block>
-                                                                                                                                        </next>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
-                                                                                                                              </block>
-                                                                                                                            </next>
                                                                                                                           </block>
                                                                                                                         </next>
                                                                                                                       </block>
@@ -1419,6 +942,483 @@
                                                                                                                                         </value>
                                                                                                                                       </block>
                                                                                                                                     </value>
+                                                                                                                                    <next>
+                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                          <block type="Number">
+                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                          <block type="CreateVector">
+                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                              <block type="Number">
+                                                                                                                                                <field name="NUM">-231.9942</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                              <block type="Number">
+                                                                                                                                                <field name="NUM">74.1733</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                              <block type="Number">
+                                                                                                                                                <field name="NUM">96.0888</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <next>
+                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                              <block type="Number">
+                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                              <block type="CreateVector">
+                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                  <block type="Number">
+                                                                                                                                                    <field name="NUM">-183.5789</field>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                  <block type="Number">
+                                                                                                                                                    <field name="NUM">77.5756</field>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                  <block type="Number">
+                                                                                                                                                    <field name="NUM">146.7644</field>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <next>
+                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                    <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                  <block type="Number">
+                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                  <block type="CreateVector">
+                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">21.7086</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">64.7111</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">-217.325</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                  </block>
+                                                                                                                                                </value>
+                                                                                                                                                <next>
+                                                                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                        <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                      <block type="Number">
+                                                                                                                                                        <field name="NUM">3</field>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                      <block type="CreateVector">
+                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">88.2534</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">64.4533</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">-205.2281</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                      </block>
+                                                                                                                                                    </value>
+                                                                                                                                                    <next>
+                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                            <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                                          <block type="Number">
+                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                          </block>
+                                                                                                                                                        </value>
+                                                                                                                                                        <next>
+                                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                                                                                                                              </block>
+                                                                                                                                                            </value>
+                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                              <block type="Number">
+                                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                                              </block>
+                                                                                                                                                            </value>
+                                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                                              <block type="Number">
+                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                              </block>
+                                                                                                                                                            </value>
+                                                                                                                                                            <next>
+                                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                    <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                                                                                                                                  </block>
+                                                                                                                                                                </value>
+                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                                  </block>
+                                                                                                                                                                </value>
+                                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                  </block>
+                                                                                                                                                                </value>
+                                                                                                                                                                <next>
+                                                                                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                        <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </value>
+                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                        <field name="NUM">3</field>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </value>
+                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </value>
+                                                                                                                                                                    <next>
+                                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
+                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
+                                                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                                                          <block type="Text">
+                                                                                                                                                                            <field name="TEXT">MCOM A</field>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
+                                                                                                                                                                        <next>
+                                                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                                                              <block type="Text">
+                                                                                                                                                                                <field name="TEXT">MCOM B</field>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                            <next>
+                                                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                                                  <block type="Text">
+                                                                                                                                                                                    <field name="TEXT">MCOM A</field>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                                <next>
+                                                                                                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </value>
+                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                        <field name="NUM">3</field>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </value>
+                                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                                      <block type="Text">
+                                                                                                                                                                                        <field name="TEXT">MCOM B</field>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </value>
+                                                                                                                                                                                    <next>
+                                                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                            <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
+                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
+                                                                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                                                                          <block type="GetTeamId">
+                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                                                                              </block>
+                                                                                                                                                                                            </value>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </value>
+                                                                                                                                                                                        <next>
+                                                                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
+                                                                                                                                                                                              </block>
+                                                                                                                                                                                            </value>
+                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                                                                              </block>
+                                                                                                                                                                                            </value>
+                                                                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                                                                              <block type="GetTeamId">
+                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                                    <field name="NUM">1</field>
+                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                </value>
+                                                                                                                                                                                              </block>
+                                                                                                                                                                                            </value>
+                                                                                                                                                                                            <next>
+                                                                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                    <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
+                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                </value>
+                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                </value>
+                                                                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                                                                  <block type="GetTeamId">
+                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                                        <field name="NUM">2</field>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                </value>
+                                                                                                                                                                                                <next>
+                                                                                                                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                        <field name="VAR" id="?+0u8_ES+hAQi4|r473?" variabletype="Global">mcomOwner</field>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                                        <field name="NUM">3</field>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                                                      <block type="GetTeamId">
+                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                                            <field name="NUM">2</field>
+                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                    <next>
+                                                                                                                                                                                                      <block type="SetVariable">
+                                                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                            <field name="VAR" id="ekVC^+s`?sYEWZemax_(" variabletype="Global">mcomCounter1</field>
+                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                        </value>
+                                                                                                                                                                                                        <next>
+                                                                                                                                                                                                          <block type="SetVariable">
+                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                <field name="VAR" id="n_Xs)#=;?K+KUARe?UWq" variabletype="Global">mcomCounter2</field>
+                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                            <next>
+                                                                                                                                                                                                              <block type="SetVariable">
+                                                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                    <field name="VAR" id="XzvsY?^pn[xf#C+CiC/;" variabletype="Global">mcomCounter3</field>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                                <next>
+                                                                                                                                                                                                                  <block type="SetVariable">
+                                                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                        <field name="VAR" id="!c6*CF=Jg5}#p?)(=*yh" variabletype="Global">mcomCounter4</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                    <next>
+                                                                                                                                                                                                                      <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                                        <field name="SUBROUTINE_NAME">initMcomIcons</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </next>
+                                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                                </next>
+                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                            </next>
+                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                        </next>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </next>
+                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                </next>
+                                                                                                                                                                                              </block>
+                                                                                                                                                                                            </next>
+                                                                                                                                                                                          </block>
+                                                                                                                                                                                        </next>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </next>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </next>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </next>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </next>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </next>
+                                                                                                                                                                  </block>
+                                                                                                                                                                </next>
+                                                                                                                                                              </block>
+                                                                                                                                                            </next>
+                                                                                                                                                          </block>
+                                                                                                                                                        </next>
+                                                                                                                                                      </block>
+                                                                                                                                                    </next>
+                                                                                                                                                  </block>
+                                                                                                                                                </next>
+                                                                                                                                              </block>
+                                                                                                                                            </next>
+                                                                                                                                          </block>
+                                                                                                                                        </next>
+                                                                                                                                      </block>
+                                                                                                                                    </next>
                                                                                                                                   </block>
                                                                                                                                 </next>
                                                                                                                               </block>
