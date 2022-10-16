@@ -9953,7 +9953,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28511">
+  <block type="subroutineBlock" deletable="false" x="0" y="29431">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -10057,8 +10057,50 @@
             <statement name="DO">
               <block type="If">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="Equals" inline="false">
                     <value name="VALUE-0">
+                      <block type="ValueInArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="SetVariableAtIndex">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
                       <block type="GetVariable">
                         <value name="VALUE-0">
                           <block type="variableReferenceBlock">
@@ -10069,41 +10111,11 @@
                         </value>
                       </block>
                     </value>
-                    <value name="VALUE-1">
+                    <value name="VALUE-2">
                       <block type="Number">
                         <field name="NUM">0</field>
                       </block>
                     </value>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="EnableWorldIconImage">
-                    <value name="VALUE-0">
-                      <block type="WorldIconsItem">
-                        <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">A</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">TRUE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="EnableWorldIconText">
-                        <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Boolean">
-                            <field name="BOOL">TRUE</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </statement>
                 <next>
@@ -10123,7 +10135,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">1</field>
+                            <field name="NUM">0</field>
                           </block>
                         </value>
                       </block>
@@ -10133,7 +10145,7 @@
                         <value name="VALUE-0">
                           <block type="WorldIconsItem">
                             <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">B</field>
+                            <field name="VALUE-1">A</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -10146,7 +10158,7 @@
                             <value name="VALUE-0">
                               <block type="WorldIconsItem">
                                 <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">B</field>
+                                <field name="VALUE-1">A</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -10175,7 +10187,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">2</field>
+                                <field name="NUM">1</field>
                               </block>
                             </value>
                           </block>
@@ -10185,7 +10197,7 @@
                             <value name="VALUE-0">
                               <block type="WorldIconsItem">
                                 <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">C</field>
+                                <field name="VALUE-1">B</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -10198,7 +10210,7 @@
                                 <value name="VALUE-0">
                                   <block type="WorldIconsItem">
                                     <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">C</field>
+                                    <field name="VALUE-1">B</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -10227,7 +10239,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">3</field>
+                                    <field name="NUM">2</field>
                                   </block>
                                 </value>
                               </block>
@@ -10237,7 +10249,7 @@
                                 <value name="VALUE-0">
                                   <block type="WorldIconsItem">
                                     <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">D</field>
+                                    <field name="VALUE-1">C</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -10250,7 +10262,7 @@
                                     <value name="VALUE-0">
                                       <block type="WorldIconsItem">
                                         <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">D</field>
+                                        <field name="VALUE-1">C</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -10262,6 +10274,60 @@
                                 </next>
                               </block>
                             </statement>
+                            <next>
+                              <block type="If">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">3</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="EnableWorldIconImage">
+                                    <value name="VALUE-0">
+                                      <block type="WorldIconsItem">
+                                        <field name="VALUE-0">WorldIcons</field>
+                                        <field name="VALUE-1">D</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Boolean">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="EnableWorldIconText">
+                                        <value name="VALUE-0">
+                                          <block type="WorldIconsItem">
+                                            <field name="VALUE-0">WorldIcons</field>
+                                            <field name="VALUE-1">D</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Boolean">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -10638,8 +10704,50 @@
                     <statement name="DO">
                       <block type="If">
                         <value name="VALUE-0">
-                          <block type="Equals">
+                          <block type="Equals" inline="false">
                             <value name="VALUE-0">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="SetVariableAtIndex">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -10650,41 +10758,11 @@
                                 </value>
                               </block>
                             </value>
-                            <value name="VALUE-1">
+                            <value name="VALUE-2">
                               <block type="Number">
                                 <field name="NUM">0</field>
                               </block>
                             </value>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="EnableWorldIconImage">
-                            <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">A</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Boolean">
-                                <field name="BOOL">TRUE</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="EnableWorldIconText">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">A</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Boolean">
-                                    <field name="BOOL">TRUE</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
                           </block>
                         </statement>
                         <next>
@@ -10704,7 +10782,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">1</field>
+                                    <field name="NUM">0</field>
                                   </block>
                                 </value>
                               </block>
@@ -10714,7 +10792,7 @@
                                 <value name="VALUE-0">
                                   <block type="WorldIconsItem">
                                     <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">B</field>
+                                    <field name="VALUE-1">A</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -10727,7 +10805,7 @@
                                     <value name="VALUE-0">
                                       <block type="WorldIconsItem">
                                         <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">B</field>
+                                        <field name="VALUE-1">A</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -10756,7 +10834,7 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
@@ -10766,7 +10844,7 @@
                                     <value name="VALUE-0">
                                       <block type="WorldIconsItem">
                                         <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">C</field>
+                                        <field name="VALUE-1">B</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -10779,7 +10857,7 @@
                                         <value name="VALUE-0">
                                           <block type="WorldIconsItem">
                                             <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">C</field>
+                                            <field name="VALUE-1">B</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -10808,7 +10886,7 @@
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">3</field>
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
                                       </block>
@@ -10818,7 +10896,7 @@
                                         <value name="VALUE-0">
                                           <block type="WorldIconsItem">
                                             <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">D</field>
+                                            <field name="VALUE-1">C</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
@@ -10831,7 +10909,7 @@
                                             <value name="VALUE-0">
                                               <block type="WorldIconsItem">
                                                 <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">D</field>
+                                                <field name="VALUE-1">C</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
@@ -10843,6 +10921,60 @@
                                         </next>
                                       </block>
                                     </statement>
+                                    <next>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="Equals">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">3</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="EnableWorldIconImage">
+                                            <value name="VALUE-0">
+                                              <block type="WorldIconsItem">
+                                                <field name="VALUE-0">WorldIcons</field>
+                                                <field name="VALUE-1">D</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Boolean">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="EnableWorldIconText">
+                                                <value name="VALUE-0">
+                                                  <block type="WorldIconsItem">
+                                                    <field name="VALUE-0">WorldIcons</field>
+                                                    <field name="VALUE-1">D</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Boolean">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
@@ -11162,7 +11294,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33334">
+  <block type="subroutineBlock" deletable="false" x="0" y="34772">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11651,7 +11783,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35116">
+  <block type="subroutineBlock" deletable="false" x="0" y="36554">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -11690,14 +11822,29 @@
         <statement name="DO">
           <block type="If">
             <value name="VALUE-0">
-              <block type="Equals">
+              <block type="Equals" inline="false">
                 <value name="VALUE-0">
-                  <block type="GetVariable">
+                  <block type="ValueInArray">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
@@ -11710,33 +11857,30 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="EnableWorldIconImage">
+              <block type="SetVariableAtIndex">
                 <value name="VALUE-0">
-                  <block type="WorldIconsItem">
-                    <field name="VALUE-0">WorldIcons</field>
-                    <field name="VALUE-1">A</field>
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Boolean">
-                    <field name="BOOL">FALSE</field>
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
-                <next>
-                  <block type="EnableWorldIconText">
-                    <value name="VALUE-0">
-                      <block type="WorldIconsItem">
-                        <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">A</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">FALSE</field>
-                      </block>
-                    </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">5</field>
                   </block>
-                </next>
+                </value>
               </block>
             </statement>
             <next>
@@ -11756,7 +11900,7 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">1</field>
+                        <field name="NUM">0</field>
                       </block>
                     </value>
                   </block>
@@ -11766,7 +11910,7 @@
                     <value name="VALUE-0">
                       <block type="WorldIconsItem">
                         <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">B</field>
+                        <field name="VALUE-1">A</field>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -11779,7 +11923,7 @@
                         <value name="VALUE-0">
                           <block type="WorldIconsItem">
                             <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">B</field>
+                            <field name="VALUE-1">A</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -11808,7 +11952,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">2</field>
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                       </block>
@@ -11818,7 +11962,7 @@
                         <value name="VALUE-0">
                           <block type="WorldIconsItem">
                             <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">C</field>
+                            <field name="VALUE-1">B</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -11831,7 +11975,7 @@
                             <value name="VALUE-0">
                               <block type="WorldIconsItem">
                                 <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">C</field>
+                                <field name="VALUE-1">B</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -11860,7 +12004,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">3</field>
+                                <field name="NUM">2</field>
                               </block>
                             </value>
                           </block>
@@ -11870,7 +12014,7 @@
                             <value name="VALUE-0">
                               <block type="WorldIconsItem">
                                 <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">D</field>
+                                <field name="VALUE-1">C</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -11883,7 +12027,7 @@
                                 <value name="VALUE-0">
                                   <block type="WorldIconsItem">
                                     <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">D</field>
+                                    <field name="VALUE-1">C</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -11895,6 +12039,60 @@
                             </next>
                           </block>
                         </statement>
+                        <next>
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="Equals">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">3</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="EnableWorldIconImage">
+                                <value name="VALUE-0">
+                                  <block type="WorldIconsItem">
+                                    <field name="VALUE-0">WorldIcons</field>
+                                    <field name="VALUE-1">D</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Boolean">
+                                    <field name="BOOL">FALSE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="EnableWorldIconText">
+                                    <value name="VALUE-0">
+                                      <block type="WorldIconsItem">
+                                        <field name="VALUE-0">WorldIcons</field>
+                                        <field name="VALUE-1">D</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Boolean">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
@@ -11906,7 +12104,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36219">
+  <block type="subroutineBlock" deletable="false" x="0" y="37916">
     <field name="SUBROUTINE_NAME">initMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12621,7 +12819,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38362">
+  <block type="subroutineBlock" deletable="false" x="0" y="40059">
     <field name="SUBROUTINE_NAME">tick</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12674,7 +12872,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38703">
+  <block type="subroutineBlock" deletable="false" x="0" y="40400">
     <field name="SUBROUTINE_NAME">setPreviousSlot</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12899,8 +13097,8 @@
       </block>
     </statement>
   </block>
-  <block type="EventPlayer" x="0" y="39800"></block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39888">
+  <block type="EventPlayer" x="0" y="41497"></block>
+  <block type="subroutineBlock" deletable="false" x="0" y="41585">
     <field name="SUBROUTINE_NAME">updateMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -14954,7 +15152,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45395">
+  <block type="subroutineBlock" deletable="false" x="0" y="47092">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14990,7 +15188,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45720">
+  <block type="subroutineBlock" deletable="false" x="0" y="47417">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15047,7 +15245,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46096">
+  <block type="subroutineBlock" deletable="false" x="0" y="47793">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15104,7 +15302,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46472">
+  <block type="subroutineBlock" deletable="false" x="0" y="48169">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15140,7 +15338,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46797">
+  <block type="subroutineBlock" deletable="false" x="0" y="48494">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16328,7 +16526,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49577">
+  <block type="subroutineBlock" deletable="false" x="0" y="51274">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -16427,7 +16625,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50044">
+  <block type="subroutineBlock" deletable="false" x="0" y="51741">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16548,7 +16746,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50537">
+  <block type="subroutineBlock" deletable="false" x="0" y="52234">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -16621,7 +16819,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50902">
+  <block type="subroutineBlock" deletable="false" x="0" y="52599">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
