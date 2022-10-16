@@ -4417,11 +4417,46 @@
                                                                   </block>
                                                                 </statement>
                                                                 <statement name="ELSE">
-                                                                  <block type="subroutineInstanceBlock">
-                                                                    <field name="SUBROUTINE_NAME">TeamOnePushing</field>
+                                                                  <block type="EnableObjective">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="ValueInArray">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Boolean">
+                                                                        <field name="BOOL">FALSE</field>
+                                                                      </block>
+                                                                    </value>
                                                                     <next>
                                                                       <block type="subroutineInstanceBlock">
-                                                                        <field name="SUBROUTINE_NAME">enableMcoms</field>
+                                                                        <field name="SUBROUTINE_NAME">TeamOnePushing</field>
+                                                                        <next>
+                                                                          <block type="subroutineInstanceBlock">
+                                                                            <field name="SUBROUTINE_NAME">enableMcoms</field>
+                                                                          </block>
+                                                                        </next>
                                                                       </block>
                                                                     </next>
                                                                   </block>
@@ -4762,11 +4797,46 @@
                                                                       </block>
                                                                     </statement>
                                                                     <statement name="ELSE">
-                                                                      <block type="subroutineInstanceBlock">
-                                                                        <field name="SUBROUTINE_NAME">Team2Pushing</field>
+                                                                      <block type="EnableObjective">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="ValueInArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Boolean">
+                                                                            <field name="BOOL">FALSE</field>
+                                                                          </block>
+                                                                        </value>
                                                                         <next>
                                                                           <block type="subroutineInstanceBlock">
-                                                                            <field name="SUBROUTINE_NAME">enableMcoms</field>
+                                                                            <field name="SUBROUTINE_NAME">Team2Pushing</field>
+                                                                            <next>
+                                                                              <block type="subroutineInstanceBlock">
+                                                                                <field name="SUBROUTINE_NAME">enableMcoms</field>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -9953,7 +10023,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29431">
+  <block type="subroutineBlock" deletable="false" x="0" y="29565">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -11291,10 +11361,69 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingActive</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Boolean">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="SetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="2Xy%V:;j((DJ@7i/EL^}" variabletype="Global">mcomCaptureTime</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="ChaseVariableAtRate">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">-1</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34772">
+  <block type="subroutineBlock" deletable="false" x="0" y="35067">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -11783,7 +11912,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36554">
+  <block type="subroutineBlock" deletable="false" x="0" y="36849">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12101,10 +12230,37 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="StopChasingVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+              </block>
+            </value>
+            <next>
+              <block type="SetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingActive</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Boolean">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37916">
+  <block type="subroutineBlock" deletable="false" x="0" y="38313">
     <field name="SUBROUTINE_NAME">initMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12819,7 +12975,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40059">
+  <block type="subroutineBlock" deletable="false" x="0" y="40456">
     <field name="SUBROUTINE_NAME">tick</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12872,7 +13028,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40400">
+  <block type="subroutineBlock" deletable="false" x="0" y="40797">
     <field name="SUBROUTINE_NAME">setPreviousSlot</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13097,8 +13253,7 @@
       </block>
     </statement>
   </block>
-  <block type="EventPlayer" x="0" y="41497"></block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41585">
+  <block type="subroutineBlock" deletable="false" x="0" y="41894">
     <field name="SUBROUTINE_NAME">updateMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -15152,7 +15307,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47092">
+  <block type="subroutineBlock" deletable="false" x="0" y="47401">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15188,7 +15343,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47417">
+  <block type="subroutineBlock" deletable="false" x="0" y="47726">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15245,7 +15400,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47793">
+  <block type="subroutineBlock" deletable="false" x="0" y="48102">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15302,7 +15457,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48169">
+  <block type="subroutineBlock" deletable="false" x="0" y="48478">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -15338,7 +15493,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48494">
+  <block type="subroutineBlock" deletable="false" x="0" y="48803">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16526,7 +16681,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51274">
+  <block type="subroutineBlock" deletable="false" x="0" y="51583">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -16625,7 +16780,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51741">
+  <block type="subroutineBlock" deletable="false" x="0" y="52050">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16746,7 +16901,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52234">
+  <block type="subroutineBlock" deletable="false" x="0" y="52543">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -16819,7 +16974,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52599">
+  <block type="subroutineBlock" deletable="false" x="0" y="52908">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
