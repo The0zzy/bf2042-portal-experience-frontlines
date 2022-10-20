@@ -12607,10 +12607,21 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="If">
+              <block type="SetWorldIconImage">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="ValueInArray">
                     <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
                       <block type="GetVariable">
                         <value name="VALUE-0">
                           <block type="variableReferenceBlock">
@@ -12621,79 +12632,30 @@
                         </value>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
                   </block>
                 </value>
-                <statement name="DO">
-                  <block type="SetWorldIconImage">
+                <value name="VALUE-1">
+                  <block type="WorldIconImagesItem">
+                    <field name="VALUE-0">WorldIconImages</field>
+                    <field name="VALUE-1">Bomb</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="SetWorldIconText">
                     <value name="VALUE-0">
-                      <block type="WorldIconsItem">
-                        <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">A</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="WorldIconImagesItem">
-                        <field name="VALUE-0">WorldIconImages</field>
-                        <field name="VALUE-1">Bomb</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetWorldIconText">
+                      <block type="ValueInArray">
                         <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT"> {}</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="ValueInArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <next>
-                  <block type="If">
-                    <value name="VALUE-0">
-                      <block type="Equals">
-                        <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
@@ -12704,79 +12666,29 @@
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
                       </block>
                     </value>
-                    <statement name="DO">
-                      <block type="SetWorldIconImage">
+                    <value name="VALUE-1">
+                      <block type="Message">
                         <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">B</field>
+                          <block type="Text">
+                            <field name="TEXT"> {}</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="WorldIconImagesItem">
-                            <field name="VALUE-0">WorldIconImages</field>
-                            <field name="VALUE-1">Bomb</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetWorldIconText">
+                          <block type="ValueInArray">
                             <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">B</field>
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Message">
-                                <value name="VALUE-0">
-                                  <block type="Text">
-                                    <field name="TEXT"> {}</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </statement>
-                    <next>
-                      <block type="If">
-                        <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -12787,161 +12699,10 @@
                                 </value>
                               </block>
                             </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">2</field>
-                              </block>
-                            </value>
                           </block>
                         </value>
-                        <statement name="DO">
-                          <block type="SetWorldIconImage">
-                            <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">C</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="WorldIconImagesItem">
-                                <field name="VALUE-0">WorldIconImages</field>
-                                <field name="VALUE-1">Bomb</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetWorldIconText">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">C</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Message">
-                                    <value name="VALUE-0">
-                                      <block type="Text">
-                                        <field name="TEXT"> {}</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="ValueInArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <next>
-                          <block type="If">
-                            <value name="VALUE-0">
-                              <block type="Equals">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">3</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <statement name="DO">
-                              <block type="SetWorldIconImage">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">D</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="WorldIconImagesItem">
-                                    <field name="VALUE-0">WorldIconImages</field>
-                                    <field name="VALUE-1">Bomb</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetWorldIconText">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">D</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT"> {}</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                          </block>
-                        </next>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
@@ -12984,10 +12745,21 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="If">
+                  <block type="SetWorldIconImage">
                     <value name="VALUE-0">
-                      <block type="Equals">
+                      <block type="ValueInArray">
                         <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
@@ -12998,79 +12770,30 @@
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">0</field>
-                          </block>
-                        </value>
                       </block>
                     </value>
-                    <statement name="DO">
-                      <block type="SetWorldIconImage">
+                    <value name="VALUE-1">
+                      <block type="WorldIconImagesItem">
+                        <field name="VALUE-0">WorldIconImages</field>
+                        <field name="VALUE-1">Alert</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="SetWorldIconText">
                         <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="WorldIconImagesItem">
-                            <field name="VALUE-0">WorldIconImages</field>
-                            <field name="VALUE-1">Alert</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetWorldIconText">
+                          <block type="ValueInArray">
                             <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">A</field>
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Message">
-                                <value name="VALUE-0">
-                                  <block type="Text">
-                                    <field name="TEXT"> {} (being armed)</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </statement>
-                    <next>
-                      <block type="If">
-                        <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -13081,79 +12804,29 @@
                                 </value>
                               </block>
                             </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
                           </block>
                         </value>
-                        <statement name="DO">
-                          <block type="SetWorldIconImage">
+                        <value name="VALUE-1">
+                          <block type="Message">
                             <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">B</field>
+                              <block type="Text">
+                                <field name="TEXT"> {} (being armed)</field>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="WorldIconImagesItem">
-                                <field name="VALUE-0">WorldIconImages</field>
-                                <field name="VALUE-1">Alert</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetWorldIconText">
+                              <block type="ValueInArray">
                                 <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">B</field>
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Message">
-                                    <value name="VALUE-0">
-                                      <block type="Text">
-                                        <field name="TEXT"> {} (being armed)</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="ValueInArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <next>
-                          <block type="If">
-                            <value name="VALUE-0">
-                              <block type="Equals">
-                                <value name="VALUE-0">
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
                                       <block type="variableReferenceBlock">
@@ -13164,161 +12837,10 @@
                                     </value>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">2</field>
-                                  </block>
-                                </value>
                               </block>
                             </value>
-                            <statement name="DO">
-                              <block type="SetWorldIconImage">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">C</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="WorldIconImagesItem">
-                                    <field name="VALUE-0">WorldIconImages</field>
-                                    <field name="VALUE-1">Alert</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetWorldIconText">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">C</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT"> {} (being armed)</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                            <next>
-                              <block type="If">
-                                <value name="VALUE-0">
-                                  <block type="Equals">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">3</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO">
-                                  <block type="SetWorldIconImage">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">D</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="WorldIconImagesItem">
-                                        <field name="VALUE-0">WorldIconImages</field>
-                                        <field name="VALUE-1">Alert</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetWorldIconText">
-                                        <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">D</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Message">
-                                            <value name="VALUE-0">
-                                              <block type="Text">
-                                                <field name="TEXT"> {} (being armed)</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="ValueInArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </statement>
-                              </block>
-                            </next>
                           </block>
-                        </next>
+                        </value>
                       </block>
                     </next>
                   </block>
@@ -13361,10 +12883,21 @@
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="If">
+                      <block type="SetWorldIconImage">
                         <value name="VALUE-0">
-                          <block type="Equals">
+                          <block type="ValueInArray">
                             <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -13375,90 +12908,30 @@
                                 </value>
                               </block>
                             </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">0</field>
-                              </block>
-                            </value>
                           </block>
                         </value>
-                        <statement name="DO">
-                          <block type="SetWorldIconImage">
+                        <value name="VALUE-1">
+                          <block type="WorldIconImagesItem">
+                            <field name="VALUE-0">WorldIconImages</field>
+                            <field name="VALUE-1">BombArmed</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="SetWorldIconText">
                             <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">A</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="WorldIconImagesItem">
-                                <field name="VALUE-0">WorldIconImages</field>
-                                <field name="VALUE-1">BombArmed</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="SetWorldIconText">
+                              <block type="ValueInArray">
                                 <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">A</field>
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Message">
-                                    <value name="VALUE-0">
-                                      <block type="Text">
-                                        <field name="TEXT"> {} (Countdown: {})</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="ValueInArray">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-2">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="ekVC^+s`?sYEWZemax_(" variabletype="Global">mcomCounter1</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <next>
-                          <block type="If">
-                            <value name="VALUE-0">
-                              <block type="Equals">
-                                <value name="VALUE-0">
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
                                       <block type="variableReferenceBlock">
@@ -13469,90 +12942,29 @@
                                     </value>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
                               </block>
                             </value>
-                            <statement name="DO">
-                              <block type="SetWorldIconImage">
+                            <value name="VALUE-1">
+                              <block type="Message">
                                 <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">B</field>
+                                  <block type="Text">
+                                    <field name="TEXT"> {} (Countdown: {})</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="WorldIconImagesItem">
-                                    <field name="VALUE-0">WorldIconImages</field>
-                                    <field name="VALUE-1">BombArmed</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetWorldIconText">
+                                  <block type="ValueInArray">
                                     <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">B</field>
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT"> {} (Countdown: {})</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-2">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="n_Xs)#=;?K+KUARe?UWq" variabletype="Global">mcomCounter2</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                            <next>
-                              <block type="If">
-                                <value name="VALUE-0">
-                                  <block type="Equals">
-                                    <value name="VALUE-0">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
                                           <block type="variableReferenceBlock">
@@ -13563,183 +12975,21 @@
                                         </value>
                                       </block>
                                     </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="ekVC^+s`?sYEWZemax_(" variabletype="Global">mcomCounter1</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                                <statement name="DO">
-                                  <block type="SetWorldIconImage">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">C</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="WorldIconImagesItem">
-                                        <field name="VALUE-0">WorldIconImages</field>
-                                        <field name="VALUE-1">BombArmed</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetWorldIconText">
-                                        <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">C</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Message">
-                                            <value name="VALUE-0">
-                                              <block type="Text">
-                                                <field name="TEXT"> {} (Countdown: {})</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="ValueInArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-2">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="XzvsY?^pn[xf#C+CiC/;" variabletype="Global">mcomCounter3</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="If">
-                                    <value name="VALUE-0">
-                                      <block type="Equals">
-                                        <value name="VALUE-0">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">3</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <statement name="DO">
-                                      <block type="SetWorldIconImage">
-                                        <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">D</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="WorldIconImagesItem">
-                                            <field name="VALUE-0">WorldIconImages</field>
-                                            <field name="VALUE-1">BombArmed</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetWorldIconText">
-                                            <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">D</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Message">
-                                                <value name="VALUE-0">
-                                                  <block type="Text">
-                                                    <field name="TEXT"> {} (Countdown: {})</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="ValueInArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-2">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="!c6*CF=Jg5}#p?)(=*yh" variabletype="Global">mcomCounter4</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </statement>
-                                  </block>
-                                </next>
                               </block>
-                            </next>
+                            </value>
                           </block>
                         </next>
                       </block>
@@ -13782,10 +13032,21 @@
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="If">
+                          <block type="SetWorldIconImage">
                             <value name="VALUE-0">
-                              <block type="Equals">
+                              <block type="ValueInArray">
                                 <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
                                       <block type="variableReferenceBlock">
@@ -13796,79 +13057,30 @@
                                     </value>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">0</field>
-                                  </block>
-                                </value>
                               </block>
                             </value>
-                            <statement name="DO">
-                              <block type="SetWorldIconImage">
+                            <value name="VALUE-1">
+                              <block type="WorldIconImagesItem">
+                                <field name="VALUE-0">WorldIconImages</field>
+                                <field name="VALUE-1">Diffuse</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="SetWorldIconText">
                                 <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">A</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="WorldIconImagesItem">
-                                    <field name="VALUE-0">WorldIconImages</field>
-                                    <field name="VALUE-1">Diffuse</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="SetWorldIconText">
+                                  <block type="ValueInArray">
                                     <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">A</field>
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT"> {} (being defused)</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="ValueInArray">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                            <next>
-                              <block type="If">
-                                <value name="VALUE-0">
-                                  <block type="Equals">
-                                    <value name="VALUE-0">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
                                           <block type="variableReferenceBlock">
@@ -13879,79 +13091,29 @@
                                         </value>
                                       </block>
                                     </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">1</field>
-                                      </block>
-                                    </value>
                                   </block>
                                 </value>
-                                <statement name="DO">
-                                  <block type="SetWorldIconImage">
+                                <value name="VALUE-1">
+                                  <block type="Message">
                                     <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">B</field>
+                                      <block type="Text">
+                                        <field name="TEXT"> {} (being defused)</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="WorldIconImagesItem">
-                                        <field name="VALUE-0">WorldIconImages</field>
-                                        <field name="VALUE-1">Diffuse</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetWorldIconText">
+                                      <block type="ValueInArray">
                                         <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">B</field>
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Message">
-                                            <value name="VALUE-0">
-                                              <block type="Text">
-                                                <field name="TEXT"> {} (being defused)</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="ValueInArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="If">
-                                    <value name="VALUE-0">
-                                      <block type="Equals">
-                                        <value name="VALUE-0">
                                           <block type="GetVariable">
                                             <value name="VALUE-0">
                                               <block type="variableReferenceBlock">
@@ -13962,161 +13124,10 @@
                                             </value>
                                           </block>
                                         </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">2</field>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
-                                    <statement name="DO">
-                                      <block type="SetWorldIconImage">
-                                        <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">C</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="WorldIconImagesItem">
-                                            <field name="VALUE-0">WorldIconImages</field>
-                                            <field name="VALUE-1">Diffuse</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetWorldIconText">
-                                            <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">C</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Message">
-                                                <value name="VALUE-0">
-                                                  <block type="Text">
-                                                    <field name="TEXT"> {} (being defused)</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="ValueInArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </statement>
-                                    <next>
-                                      <block type="If">
-                                        <value name="VALUE-0">
-                                          <block type="Equals">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">3</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <statement name="DO">
-                                          <block type="SetWorldIconImage">
-                                            <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">D</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="WorldIconImagesItem">
-                                                <field name="VALUE-0">WorldIconImages</field>
-                                                <field name="VALUE-1">Diffuse</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetWorldIconText">
-                                                <value name="VALUE-0">
-                                                  <block type="WorldIconsItem">
-                                                    <field name="VALUE-0">WorldIcons</field>
-                                                    <field name="VALUE-1">D</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Message">
-                                                    <value name="VALUE-0">
-                                                      <block type="Text">
-                                                        <field name="TEXT"> {} (being defused)</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="ValueInArray">
-                                                        <value name="VALUE-0">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </statement>
-                                      </block>
-                                    </next>
                                   </block>
-                                </next>
+                                </value>
                               </block>
                             </next>
                           </block>
@@ -14159,10 +13170,21 @@
                               </block>
                             </value>
                             <statement name="DO">
-                              <block type="If">
+                              <block type="SetWorldIconImage">
                                 <value name="VALUE-0">
-                                  <block type="Equals">
+                                  <block type="ValueInArray">
                                     <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
                                           <block type="variableReferenceBlock">
@@ -14173,98 +13195,30 @@
                                         </value>
                                       </block>
                                     </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">0</field>
-                                      </block>
-                                    </value>
                                   </block>
                                 </value>
-                                <statement name="DO">
-                                  <block type="SetWorldIconImage">
+                                <value name="VALUE-1">
+                                  <block type="WorldIconImagesItem">
+                                    <field name="VALUE-0">WorldIconImages</field>
+                                    <field name="VALUE-1">Explosion</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="SetWorldIconText">
                                     <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">A</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="WorldIconImagesItem">
-                                        <field name="VALUE-0">WorldIconImages</field>
-                                        <field name="VALUE-1">Explosion</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="SetWorldIconText">
+                                      <block type="ValueInArray">
                                         <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">A</field>
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Message">
-                                            <value name="VALUE-0">
-                                              <block type="Text">
-                                                <field name="TEXT"> {} (EXPLODED)</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="ValueInArray">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetWorldIconOwner">
-                                            <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">A</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetTeamId">
-                                                <value name="VALUE-0">
-                                                  <block type="Number">
-                                                    <field name="NUM">0</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </statement>
-                                <next>
-                                  <block type="If">
-                                    <value name="VALUE-0">
-                                      <block type="Equals">
-                                        <value name="VALUE-0">
                                           <block type="GetVariable">
                                             <value name="VALUE-0">
                                               <block type="variableReferenceBlock">
@@ -14275,98 +13229,29 @@
                                             </value>
                                           </block>
                                         </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">1</field>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
-                                    <statement name="DO">
-                                      <block type="SetWorldIconImage">
+                                    <value name="VALUE-1">
+                                      <block type="Message">
                                         <value name="VALUE-0">
-                                          <block type="WorldIconsItem">
-                                            <field name="VALUE-0">WorldIcons</field>
-                                            <field name="VALUE-1">B</field>
+                                          <block type="Text">
+                                            <field name="TEXT"> {} (EXPLODED)</field>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="WorldIconImagesItem">
-                                            <field name="VALUE-0">WorldIconImages</field>
-                                            <field name="VALUE-1">Explosion</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="SetWorldIconText">
+                                          <block type="ValueInArray">
                                             <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">B</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Message">
-                                                <value name="VALUE-0">
-                                                  <block type="Text">
-                                                    <field name="TEXT"> {} (EXPLODED)</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="ValueInArray">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetWorldIconOwner">
-                                                <value name="VALUE-0">
-                                                  <block type="WorldIconsItem">
-                                                    <field name="VALUE-0">WorldIcons</field>
-                                                    <field name="VALUE-1">B</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetTeamId">
-                                                    <value name="VALUE-0">
-                                                      <block type="Number">
-                                                        <field name="NUM">0</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </statement>
-                                    <next>
-                                      <block type="If">
-                                        <value name="VALUE-0">
-                                          <block type="Equals">
-                                            <value name="VALUE-0">
                                               <block type="GetVariable">
                                                 <value name="VALUE-0">
                                                   <block type="variableReferenceBlock">
@@ -14377,197 +13262,47 @@
                                                 </value>
                                               </block>
                                             </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="SetWorldIconOwner">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
                                             <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">2</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                        <statement name="DO">
-                                          <block type="SetWorldIconImage">
+                                        <value name="VALUE-1">
+                                          <block type="GetTeamId">
                                             <value name="VALUE-0">
-                                              <block type="WorldIconsItem">
-                                                <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">C</field>
+                                              <block type="Number">
+                                                <field name="NUM">0</field>
                                               </block>
                                             </value>
-                                            <value name="VALUE-1">
-                                              <block type="WorldIconImagesItem">
-                                                <field name="VALUE-0">WorldIconImages</field>
-                                                <field name="VALUE-1">Explosion</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="SetWorldIconText">
-                                                <value name="VALUE-0">
-                                                  <block type="WorldIconsItem">
-                                                    <field name="VALUE-0">WorldIcons</field>
-                                                    <field name="VALUE-1">C</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Message">
-                                                    <value name="VALUE-0">
-                                                      <block type="Text">
-                                                        <field name="TEXT"> {} (EXPLODED)</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="ValueInArray">
-                                                        <value name="VALUE-0">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="false"></mutation>
-                                                                <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="SetWorldIconOwner">
-                                                    <value name="VALUE-0">
-                                                      <block type="WorldIconsItem">
-                                                        <field name="VALUE-0">WorldIcons</field>
-                                                        <field name="VALUE-1">C</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="GetTeamId">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">0</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
                                           </block>
-                                        </statement>
-                                        <next>
-                                          <block type="If">
-                                            <value name="VALUE-0">
-                                              <block type="Equals">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Number">
-                                                    <field name="NUM">3</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <statement name="DO">
-                                              <block type="SetWorldIconImage">
-                                                <value name="VALUE-0">
-                                                  <block type="WorldIconsItem">
-                                                    <field name="VALUE-0">WorldIcons</field>
-                                                    <field name="VALUE-1">D</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="WorldIconImagesItem">
-                                                    <field name="VALUE-0">WorldIconImages</field>
-                                                    <field name="VALUE-1">Explosion</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="SetWorldIconText">
-                                                    <value name="VALUE-0">
-                                                      <block type="WorldIconsItem">
-                                                        <field name="VALUE-0">WorldIcons</field>
-                                                        <field name="VALUE-1">D</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="Message">
-                                                        <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT"> {} (EXPLODED)</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="ValueInArray">
-                                                            <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="cf%Zw%CjrIM-uX*GCx##" variabletype="Global">mcomName</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="SetWorldIconOwner">
-                                                        <value name="VALUE-0">
-                                                          <block type="WorldIconsItem">
-                                                            <field name="VALUE-0">WorldIcons</field>
-                                                            <field name="VALUE-1">D</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetTeamId">
-                                                            <value name="VALUE-0">
-                                                              <block type="Number">
-                                                                <field name="NUM">0</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </statement>
-                                          </block>
-                                        </next>
+                                        </value>
                                       </block>
                                     </next>
                                   </block>
@@ -14587,7 +13322,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44262">
+  <block type="subroutineBlock" deletable="false" x="0" y="40363">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14623,7 +13358,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44587">
+  <block type="subroutineBlock" deletable="false" x="0" y="40688">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14680,7 +13415,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44963">
+  <block type="subroutineBlock" deletable="false" x="0" y="41064">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14737,7 +13472,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45339">
+  <block type="subroutineBlock" deletable="false" x="0" y="41440">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14773,7 +13508,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45664">
+  <block type="subroutineBlock" deletable="false" x="0" y="41765">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15961,7 +14696,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48444">
+  <block type="subroutineBlock" deletable="false" x="0" y="44545">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -16060,7 +14795,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48911">
+  <block type="subroutineBlock" deletable="false" x="0" y="45012">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16181,7 +14916,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49404">
+  <block type="subroutineBlock" deletable="false" x="0" y="45505">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16404,7 +15139,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50031">
+  <block type="subroutineBlock" deletable="false" x="0" y="46132">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -16477,7 +15212,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50396">
+  <block type="subroutineBlock" deletable="false" x="0" y="46497">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
