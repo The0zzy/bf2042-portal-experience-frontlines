@@ -12398,10 +12398,21 @@
               </block>
             </statement>
             <next>
-              <block type="If">
+              <block type="EnableWorldIconImage">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="ValueInArray">
                     <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
                       <block type="GetVariable">
                         <value name="VALUE-0">
                           <block type="variableReferenceBlock">
@@ -12412,48 +12423,29 @@
                         </value>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
                   </block>
                 </value>
-                <statement name="DO">
-                  <block type="EnableWorldIconImage">
+                <value name="VALUE-1">
+                  <block type="Boolean">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="EnableWorldIconText">
                     <value name="VALUE-0">
-                      <block type="WorldIconsItem">
-                        <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">A</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">FALSE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="EnableWorldIconText">
+                      <block type="ValueInArray">
                         <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="UoR/$@qr-8Xe=SX5`xt#" variabletype="Global">mcomWorldIcon</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Boolean">
-                            <field name="BOOL">FALSE</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <next>
-                  <block type="If">
-                    <value name="VALUE-0">
-                      <block type="Equals">
-                        <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
@@ -12464,151 +12456,13 @@
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
                       </block>
                     </value>
-                    <statement name="DO">
-                      <block type="EnableWorldIconImage">
-                        <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">B</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Boolean">
-                            <field name="BOOL">FALSE</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="EnableWorldIconText">
-                            <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">B</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Boolean">
-                                <field name="BOOL">FALSE</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
+                    <value name="VALUE-1">
+                      <block type="Boolean">
+                        <field name="BOOL">FALSE</field>
                       </block>
-                    </statement>
-                    <next>
-                      <block type="If">
-                        <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">2</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="EnableWorldIconImage">
-                            <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">C</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Boolean">
-                                <field name="BOOL">FALSE</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="EnableWorldIconText">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">C</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Boolean">
-                                    <field name="BOOL">FALSE</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                        <next>
-                          <block type="If">
-                            <value name="VALUE-0">
-                              <block type="Equals">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">3</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <statement name="DO">
-                              <block type="EnableWorldIconImage">
-                                <value name="VALUE-0">
-                                  <block type="WorldIconsItem">
-                                    <field name="VALUE-0">WorldIcons</field>
-                                    <field name="VALUE-1">D</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Boolean">
-                                    <field name="BOOL">FALSE</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="EnableWorldIconText">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">D</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Boolean">
-                                        <field name="BOOL">FALSE</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </statement>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
