@@ -11904,7 +11904,7 @@
                                               <block type="variableReferenceBlock">
                                                 <mutation isObjectVar="false"></mutation>
                                                 <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
                                               </block>
                                             </value>
                                           </block>
@@ -12048,7 +12048,7 @@
                                                   <block type="variableReferenceBlock">
                                                     <mutation isObjectVar="false"></mutation>
                                                     <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                    <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
                                                   </block>
                                                 </value>
                                               </block>
