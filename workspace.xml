@@ -10146,19 +10146,24 @@
                                                                                                           <block type="variableReferenceBlock">
                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                            <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                                                                            <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <value name="VALUE-1">
-                                                                                                      <block type="Equals">
+                                                                                                      <block type="GetMCOMState">
                                                                                                         <value name="VALUE-0">
-                                                                                                          <block type="CurrentArrayElement"></block>
+                                                                                                          <block type="GetCapturePoint">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="CurrentArrayElement"></block>
+                                                                                                            </value>
+                                                                                                          </block>
                                                                                                         </value>
                                                                                                         <value name="VALUE-1">
-                                                                                                          <block type="Number">
-                                                                                                            <field name="NUM">2</field>
+                                                                                                          <block type="MCOMStateBoolItem">
+                                                                                                            <field name="VALUE-0">MCOMStateBool</field>
+                                                                                                            <field name="VALUE-1">IsArmed</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                       </block>
@@ -10357,7 +10362,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30686">
+  <block type="subroutineBlock" deletable="false" x="0" y="30694">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10419,7 +10424,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31062">
+  <block type="subroutineBlock" deletable="false" x="0" y="31070">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -11521,36 +11526,45 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Equals">
+                          <block type="Not">
                             <value name="VALUE-0">
-                              <block type="ValueInArray">
+                              <block type="GetMCOMState">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
+                                  <block type="GetCapturePoint">
                                     <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
+                                  <block type="MCOMStateBoolItem">
+                                    <field name="VALUE-0">MCOMStateBool</field>
+                                    <field name="VALUE-1">IsActive</field>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">4</field>
                               </block>
                             </value>
                           </block>
@@ -11656,36 +11670,45 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Equals">
+                              <block type="Not">
                                 <value name="VALUE-0">
-                                  <block type="ValueInArray">
+                                  <block type="GetMCOMState">
                                     <value name="VALUE-0">
-                                      <block type="GetVariable">
+                                      <block type="GetCapturePoint">
                                         <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="i(0t6vw%FUR.YzL|yzUP" variabletype="Global">mcomStatus</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                          </block>
-                                        </value>
+                                      <block type="MCOMStateBoolItem">
+                                        <field name="VALUE-0">MCOMStateBool</field>
+                                        <field name="VALUE-1">IsActive</field>
                                       </block>
                                     </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">4</field>
                                   </block>
                                 </value>
                               </block>
@@ -11914,7 +11937,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36509">
+  <block type="subroutineBlock" deletable="false" x="0" y="36541">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12128,7 +12151,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37280">
+  <block type="subroutineBlock" deletable="false" x="0" y="37320">
     <field name="SUBROUTINE_NAME">initMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12659,7 +12682,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38269">
+  <block type="subroutineBlock" deletable="false" x="0" y="38341">
     <field name="SUBROUTINE_NAME">tick</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -12712,7 +12735,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38610">
+  <block type="subroutineBlock" deletable="false" x="0" y="38682">
     <field name="SUBROUTINE_NAME">setPreviousSlot</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12937,7 +12960,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39707">
+  <block type="subroutineBlock" deletable="false" x="0" y="39779">
     <field name="SUBROUTINE_NAME">updateMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -14050,7 +14073,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41924">
+  <block type="subroutineBlock" deletable="false" x="0" y="41996">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14086,7 +14109,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42249">
+  <block type="subroutineBlock" deletable="false" x="0" y="42321">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14143,7 +14166,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42625">
+  <block type="subroutineBlock" deletable="false" x="0" y="42697">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14200,7 +14223,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43001">
+  <block type="subroutineBlock" deletable="false" x="0" y="43073">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14236,7 +14259,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43326">
+  <block type="subroutineBlock" deletable="false" x="0" y="43398">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15424,7 +15447,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46106">
+  <block type="subroutineBlock" deletable="false" x="0" y="46178">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -15523,7 +15546,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46573">
+  <block type="subroutineBlock" deletable="false" x="0" y="46645">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15644,7 +15667,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47066">
+  <block type="subroutineBlock" deletable="false" x="0" y="47138">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15867,7 +15890,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47693">
+  <block type="subroutineBlock" deletable="false" x="0" y="47765">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -15940,7 +15963,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48058">
+  <block type="subroutineBlock" deletable="false" x="0" y="48130">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
