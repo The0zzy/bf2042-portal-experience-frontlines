@@ -1425,7 +1425,7 @@
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                                    <field name="NUM">1.570796</field>
                                                                                                                                                                                   </block>
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <next>
@@ -1444,7 +1444,7 @@
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                        <field name="NUM">1.570796</field>
+                                                                                                                                                                                        <field name="NUM">0</field>
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                   </block>
@@ -10670,6 +10670,18 @@
                                                                                                 </statement>
                                                                                               </block>
                                                                                             </statement>
+                                                                                            <next>
+                                                                                              <block type="ruleBlock">
+                                                                                                <mutation isOnGoingEvent="false"></mutation>
+                                                                                                <field name="NAME">New Rule</field>
+                                                                                                <field name="EVENTTYPE">OnMCOMDestroyed</field>
+                                                                                                <statement name="ACTIONS">
+                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                    <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
@@ -10715,7 +10727,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31561">
+  <block type="subroutineBlock" deletable="false" x="0" y="31772">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -10777,7 +10789,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31937">
+  <block type="subroutineBlock" deletable="false" x="0" y="32148">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10870,7 +10882,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32585">
+  <block type="subroutineBlock" deletable="false" x="0" y="32796">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -11783,7 +11795,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35594">
+  <block type="subroutineBlock" deletable="false" x="0" y="35805">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -12290,7 +12302,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37408">
+  <block type="subroutineBlock" deletable="false" x="0" y="37619">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -12504,7 +12516,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38187">
+  <block type="subroutineBlock" deletable="false" x="0" y="38398">
     <field name="SUBROUTINE_NAME">initMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -13056,7 +13068,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39208">
+  <block type="subroutineBlock" deletable="false" x="0" y="39419">
     <field name="SUBROUTINE_NAME">tick</field>
     <statement name="ACTIONS">
       <block type="subroutineInstanceBlock">
@@ -13109,7 +13121,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39549">
+  <block type="subroutineBlock" deletable="false" x="0" y="39760">
     <field name="SUBROUTINE_NAME">setPreviousSlot</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13334,7 +13346,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40646">
+  <block type="subroutineBlock" deletable="false" x="0" y="40857">
     <field name="SUBROUTINE_NAME">updateMcomIcons</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -14447,7 +14459,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42863">
+  <block type="subroutineBlock" deletable="false" x="0" y="43074">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14483,7 +14495,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43188">
+  <block type="subroutineBlock" deletable="false" x="0" y="43399">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14540,7 +14552,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43564">
+  <block type="subroutineBlock" deletable="false" x="0" y="43775">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14597,7 +14609,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43940">
+  <block type="subroutineBlock" deletable="false" x="0" y="44151">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14633,7 +14645,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44265">
+  <block type="subroutineBlock" deletable="false" x="0" y="44476">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15821,7 +15833,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47045">
+  <block type="subroutineBlock" deletable="false" x="0" y="47256">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -15920,7 +15932,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47512">
+  <block type="subroutineBlock" deletable="false" x="0" y="47723">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16041,7 +16053,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48005">
+  <block type="subroutineBlock" deletable="false" x="0" y="48216">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16264,7 +16276,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48632">
+  <block type="subroutineBlock" deletable="false" x="0" y="48843">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -16337,7 +16349,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48997">
+  <block type="subroutineBlock" deletable="false" x="0" y="49208">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
