@@ -10490,27 +10490,12 @@
             <next>
               <block type="If">
                 <value name="VALUE-0">
-                  <block type="LessThan">
+                  <block type="GetVariable">
                     <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="2Xy%V:;j((DJ@7i/EL^}" variabletype="Global">mcomCaptureTime</field>
-                          </block>
-                        </value>
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingActive</field>
                       </block>
                     </value>
                   </block>
