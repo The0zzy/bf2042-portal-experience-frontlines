@@ -11891,7 +11891,7 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Not">
+                          <block type="And">
                             <value name="VALUE-0">
                               <block type="GetMCOMState">
                                 <value name="VALUE-0">
@@ -11928,6 +11928,49 @@
                                   <block type="MCOMStateBoolItem">
                                     <field name="VALUE-0">MCOMStateBool</field>
                                     <field name="VALUE-1">IsActive</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="LessThanEqualTo">
+                                <value name="VALUE-0">
+                                  <block type="GetRemainingFuseTime">
+                                    <value name="VALUE-0">
+                                      <block type="GetCapturePoint">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">0</field>
                                   </block>
                                 </value>
                               </block>
@@ -12035,7 +12078,7 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="And">
                                 <value name="VALUE-0">
                                   <block type="GetMCOMState">
                                     <value name="VALUE-0">
@@ -12072,6 +12115,49 @@
                                       <block type="MCOMStateBoolItem">
                                         <field name="VALUE-0">MCOMStateBool</field>
                                         <field name="VALUE-1">IsActive</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="LessThanEqualTo">
+                                    <value name="VALUE-0">
+                                      <block type="GetRemainingFuseTime">
+                                        <value name="VALUE-0">
+                                          <block type="GetCapturePoint">
+                                            <value name="VALUE-0">
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
                                       </block>
                                     </value>
                                   </block>
