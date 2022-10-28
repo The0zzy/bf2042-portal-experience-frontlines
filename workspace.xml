@@ -4954,7 +4954,7 @@
                                                                                           <block type="Message">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="Text">
-                                                                                                <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
+                                                                                                <field name="TEXT">Objective secured! Advance to the next objective</field>
                                                                                               </block>
                                                                                             </value>
                                                                                           </block>
@@ -4974,7 +4974,7 @@
                                                                                               <block type="Message">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Text">
-                                                                                                    <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
+                                                                                                    <field name="TEXT">Objective secured! Advance to the next objective</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
@@ -4989,73 +4989,158 @@
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="ShowEventGameModeMessage">
+                                                                                              <block type="TriggerAudio">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="Message">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="Text">
-                                                                                                        <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
-                                                                                                      </block>
-                                                                                                    </value>
+                                                                                                  <block type="SoundsItem">
+                                                                                                    <field name="VALUE-0">Sounds</field>
+                                                                                                    <field name="VALUE-1">ObjectiveCappingComplete</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <value name="VALUE-1">
                                                                                                   <block type="GetTeamId">
                                                                                                     <value name="VALUE-0">
                                                                                                       <block type="Number">
-                                                                                                        <field name="NUM">2</field>
+                                                                                                        <field name="NUM">1</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <next>
-                                                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                                                  <block type="TriggerAudio">
                                                                                                     <value name="VALUE-0">
-                                                                                                      <block type="Message">
-                                                                                                        <value name="VALUE-0">
-                                                                                                          <block type="Text">
-                                                                                                            <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
-                                                                                                          </block>
-                                                                                                        </value>
+                                                                                                      <block type="VoiceOversItem">
+                                                                                                        <field name="VALUE-0">VoiceOvers</field>
+                                                                                                        <field name="VALUE-1">ObjectiveTaken_Friendly</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <value name="VALUE-1">
                                                                                                       <block type="GetTeamId">
                                                                                                         <value name="VALUE-0">
                                                                                                           <block type="Number">
-                                                                                                            <field name="NUM">2</field>
+                                                                                                            <field name="NUM">1</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <next>
-                                                                                                      <block type="SendErrorReport">
+                                                                                                      <block type="Wait">
                                                                                                         <value name="VALUE-0">
-                                                                                                          <block type="Message">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">0.01</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="ShowEventGameModeMessage">
                                                                                                             <value name="VALUE-0">
-                                                                                                              <block type="Text">
-                                                                                                                <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                            <value name="VALUE-1">
-                                                                                                              <block type="GetVariable">
+                                                                                                              <block type="Message">
                                                                                                                 <value name="VALUE-0">
-                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                                  <block type="Text">
+                                                                                                                    <field name="TEXT">Objective lost! Retreat to the previous objective</field>
                                                                                                                   </block>
                                                                                                                 </value>
                                                                                                               </block>
                                                                                                             </value>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                        <next>
-                                                                                                          <block type="subroutineInstanceBlock">
-                                                                                                            <field name="SUBROUTINE_NAME">startPreparationTimer</field>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="GetTeamId">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">2</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
                                                                                                             <next>
-                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                <field name="SUBROUTINE_NAME">disableMcoms</field>
+                                                                                                              <block type="ShowHighlightedGameModeMessage">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Message">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="Text">
+                                                                                                                        <field name="TEXT">Objective lost! Retreat to the previous objective</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="GetTeamId">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">2</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                  <block type="TriggerAudio">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="SoundsItem">
+                                                                                                                        <field name="VALUE-0">Sounds</field>
+                                                                                                                        <field name="VALUE-1">ObjectiveCappingComplete</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="GetTeamId">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">2</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="TriggerAudio">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="VoiceOversItem">
+                                                                                                                            <field name="VALUE-0">VoiceOvers</field>
+                                                                                                                            <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="GetTeamId">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">2</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <next>
+                                                                                                                          <block type="SendErrorReport">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="Message">
+                                                                                                                                <value name="VALUE-0">
+                                                                                                                                  <block type="Text">
+                                                                                                                                    <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                                <value name="VALUE-1">
+                                                                                                                                  <block type="GetVariable">
+                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <next>
+                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                <field name="SUBROUTINE_NAME">startPreparationTimer</field>
+                                                                                                                                <next>
+                                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                                    <field name="SUBROUTINE_NAME">disableMcoms</field>
+                                                                                                                                  </block>
+                                                                                                                                </next>
+                                                                                                                              </block>
+                                                                                                                            </next>
+                                                                                                                          </block>
+                                                                                                                        </next>
+                                                                                                                      </block>
+                                                                                                                    </next>
+                                                                                                                  </block>
+                                                                                                                </next>
                                                                                                               </block>
                                                                                                             </next>
                                                                                                           </block>
@@ -5339,7 +5424,7 @@
                                                                                               <block type="Message">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="Text">
-                                                                                                    <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
+                                                                                                    <field name="TEXT">Objective secured! Advance to the next objective</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
@@ -5359,7 +5444,7 @@
                                                                                                   <block type="Message">
                                                                                                     <value name="VALUE-0">
                                                                                                       <block type="Text">
-                                                                                                        <field name="TEXT">Enemy victory prevented! Advance to the next objective!</field>
+                                                                                                        <field name="TEXT">Objective secured! Advance to the next objective</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
@@ -5374,73 +5459,158 @@
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <next>
-                                                                                                  <block type="ShowEventGameModeMessage">
+                                                                                                  <block type="TriggerAudio">
                                                                                                     <value name="VALUE-0">
-                                                                                                      <block type="Message">
-                                                                                                        <value name="VALUE-0">
-                                                                                                          <block type="Text">
-                                                                                                            <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
-                                                                                                          </block>
-                                                                                                        </value>
+                                                                                                      <block type="SoundsItem">
+                                                                                                        <field name="VALUE-0">Sounds</field>
+                                                                                                        <field name="VALUE-1">ObjectiveCappingComplete</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <value name="VALUE-1">
                                                                                                       <block type="GetTeamId">
                                                                                                         <value name="VALUE-0">
                                                                                                           <block type="Number">
-                                                                                                            <field name="NUM">1</field>
+                                                                                                            <field name="NUM">2</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <next>
-                                                                                                      <block type="ShowHighlightedGameModeMessage">
+                                                                                                      <block type="TriggerAudio">
                                                                                                         <value name="VALUE-0">
-                                                                                                          <block type="Message">
-                                                                                                            <value name="VALUE-0">
-                                                                                                              <block type="Text">
-                                                                                                                <field name="TEXT">Your victory was prevented! Retreat to the previous flag!</field>
-                                                                                                              </block>
-                                                                                                            </value>
+                                                                                                          <block type="VoiceOversItem">
+                                                                                                            <field name="VALUE-0">VoiceOvers</field>
+                                                                                                            <field name="VALUE-1">ObjectiveTaken_Friendly</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <value name="VALUE-1">
                                                                                                           <block type="GetTeamId">
                                                                                                             <value name="VALUE-0">
                                                                                                               <block type="Number">
-                                                                                                                <field name="NUM">1</field>
+                                                                                                                <field name="NUM">2</field>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <next>
-                                                                                                          <block type="SendErrorReport">
+                                                                                                          <block type="Wait">
                                                                                                             <value name="VALUE-0">
-                                                                                                              <block type="Message">
+                                                                                                              <block type="Number">
+                                                                                                                <field name="NUM">0.01</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="ShowEventGameModeMessage">
                                                                                                                 <value name="VALUE-0">
-                                                                                                                  <block type="Text">
-                                                                                                                    <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
-                                                                                                                  </block>
-                                                                                                                </value>
-                                                                                                                <value name="VALUE-1">
-                                                                                                                  <block type="GetVariable">
+                                                                                                                  <block type="Message">
                                                                                                                     <value name="VALUE-0">
-                                                                                                                      <block type="variableReferenceBlock">
-                                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                                      <block type="Text">
+                                                                                                                        <field name="TEXT">Objective lost! Retreat to the previous objective</field>
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                   </block>
                                                                                                                 </value>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                            <next>
-                                                                                                              <block type="subroutineInstanceBlock">
-                                                                                                                <field name="SUBROUTINE_NAME">startPreparationTimer</field>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="GetTeamId">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">1</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
                                                                                                                 <next>
-                                                                                                                  <block type="subroutineInstanceBlock">
-                                                                                                                    <field name="SUBROUTINE_NAME">disableMcoms</field>
+                                                                                                                  <block type="ShowHighlightedGameModeMessage">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="Message">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="Text">
+                                                                                                                            <field name="TEXT">Objective lost! Retreat to the previous objective</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="GetTeamId">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">1</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="TriggerAudio">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="SoundsItem">
+                                                                                                                            <field name="VALUE-0">Sounds</field>
+                                                                                                                            <field name="VALUE-1">ObjectiveCappingComplete</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="GetTeamId">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="Number">
+                                                                                                                                <field name="NUM">1</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <next>
+                                                                                                                          <block type="TriggerAudio">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="VoiceOversItem">
+                                                                                                                                <field name="VALUE-0">VoiceOvers</field>
+                                                                                                                                <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <value name="VALUE-1">
+                                                                                                                              <block type="GetTeamId">
+                                                                                                                                <value name="VALUE-0">
+                                                                                                                                  <block type="Number">
+                                                                                                                                    <field name="NUM">1</field>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <next>
+                                                                                                                              <block type="SendErrorReport">
+                                                                                                                                <value name="VALUE-0">
+                                                                                                                                  <block type="Message">
+                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                      <block type="Text">
+                                                                                                                                        <field name="TEXT">HoldingObjectiveFinished - captureChainIndex = {}</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                      <block type="GetVariable">
+                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </value>
+                                                                                                                                <next>
+                                                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                                                    <field name="SUBROUTINE_NAME">startPreparationTimer</field>
+                                                                                                                                    <next>
+                                                                                                                                      <block type="subroutineInstanceBlock">
+                                                                                                                                        <field name="SUBROUTINE_NAME">disableMcoms</field>
+                                                                                                                                      </block>
+                                                                                                                                    </next>
+                                                                                                                                  </block>
+                                                                                                                                </next>
+                                                                                                                              </block>
+                                                                                                                            </next>
+                                                                                                                          </block>
+                                                                                                                        </next>
+                                                                                                                      </block>
+                                                                                                                    </next>
                                                                                                                   </block>
                                                                                                                 </next>
                                                                                                               </block>
