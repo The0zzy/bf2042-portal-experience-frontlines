@@ -6623,6 +6623,103 @@
       </block>
     </statement>
   </block>
+  <block type="subroutineBlock" deletable="false" x="2598" y="8038">
+    <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
+    <statement name="ACTIONS">
+      <block type="SetWorldIconText">
+        <value name="VALUE-0">
+          <block type="WorldIconsItem">
+            <field name="VALUE-0">WorldIcons</field>
+            <field name="VALUE-1">A</field>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="Message">
+            <value name="VALUE-0">
+              <block type="Text">
+                <field name="TEXT">{} seconds remaining</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="SetWorldIconPosition">
+            <value name="VALUE-0">
+              <block type="WorldIconsItem">
+                <field name="VALUE-0">WorldIcons</field>
+                <field name="VALUE-1">A</field>
+              </block>
+            </value>
+            <next>
+              <block type="SetWorldIconOwner">
+                <value name="VALUE-0">
+                  <block type="WorldIconsItem">
+                    <field name="VALUE-0">WorldIcons</field>
+                    <field name="VALUE-1">A</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetTeamId">
+                    <value name="VALUE-0">
+                      <block type="Number">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="SetWorldIconImage">
+                    <value name="VALUE-0">
+                      <block type="WorldIconsItem">
+                        <field name="VALUE-0">WorldIcons</field>
+                        <field name="VALUE-1">A</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="WorldIconImagesItem">
+                        <field name="VALUE-0">WorldIconImages</field>
+                        <field name="VALUE-1">Flag</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="EnableWorldIconImage">
+                        <value name="VALUE-0">
+                          <block type="WorldIconsItem">
+                            <field name="VALUE-0">WorldIcons</field>
+                            <field name="VALUE-1">A</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Boolean">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="EnableWorldIconText">
+                            <value name="VALUE-0">
+                              <block type="WorldIconsItem">
+                                <field name="VALUE-0">WorldIcons</field>
+                                <field name="VALUE-1">A</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Boolean">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
   <block type="subroutineBlock" deletable="false" x="0" y="19361">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
