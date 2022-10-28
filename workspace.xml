@@ -730,17 +730,17 @@
                                                                                                                                       <block type="CreateVector">
                                                                                                                                         <value name="VALUE-0">
                                                                                                                                           <block type="Number">
-                                                                                                                                            <field name="NUM">17.2645</field>
+                                                                                                                                            <field name="NUM">16.89</field>
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                         <value name="VALUE-1">
                                                                                                                                           <block type="Number">
-                                                                                                                                            <field name="NUM">134.7189</field>
+                                                                                                                                            <field name="NUM">132.81</field>
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                         <value name="VALUE-2">
                                                                                                                                           <block type="Number">
-                                                                                                                                            <field name="NUM">307.8238</field>
+                                                                                                                                            <field name="NUM">310.77</field>
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                       </block>
@@ -763,17 +763,17 @@
                                                                                                                                           <block type="CreateVector">
                                                                                                                                             <value name="VALUE-0">
                                                                                                                                               <block type="Number">
-                                                                                                                                                <field name="NUM">92.0416</field>
+                                                                                                                                                <field name="NUM">95.56</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-1">
                                                                                                                                               <block type="Number">
-                                                                                                                                                <field name="NUM">134.3976</field>
+                                                                                                                                                <field name="NUM">132</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-2">
                                                                                                                                               <block type="Number">
-                                                                                                                                                <field name="NUM">286.6709</field>
+                                                                                                                                                <field name="NUM">284.74</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                           </block>
@@ -796,17 +796,17 @@
                                                                                                                                               <block type="CreateVector">
                                                                                                                                                 <value name="VALUE-0">
                                                                                                                                                   <block type="Number">
-                                                                                                                                                    <field name="NUM">-81.4025</field>
+                                                                                                                                                    <field name="NUM">-159.93</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                   <block type="Number">
-                                                                                                                                                    <field name="NUM">141.7597</field>
+                                                                                                                                                    <field name="NUM">140.23</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                   <block type="Number">
-                                                                                                                                                    <field name="NUM">-178.0935</field>
+                                                                                                                                                    <field name="NUM">-202.46</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                               </block>
@@ -829,17 +829,17 @@
                                                                                                                                                   <block type="CreateVector">
                                                                                                                                                     <value name="VALUE-0">
                                                                                                                                                       <block type="Number">
-                                                                                                                                                        <field name="NUM">-177.2559</field>
+                                                                                                                                                        <field name="NUM">-77.15</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                       <block type="Number">
-                                                                                                                                                        <field name="NUM">142.3418</field>
+                                                                                                                                                        <field name="NUM">133.29</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                       <block type="Number">
-                                                                                                                                                        <field name="NUM">-198.0123</field>
+                                                                                                                                                        <field name="NUM">-152.87</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                   </block>
@@ -860,7 +860,7 @@
                                                                                                                                                     </value>
                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                       <block type="Number">
-                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                        <field name="NUM">4.712389</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                     <next>
@@ -879,7 +879,7 @@
                                                                                                                                                         </value>
                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                           <block type="Number">
-                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                            <field name="NUM">1.1</field>
                                                                                                                                                           </block>
                                                                                                                                                         </value>
                                                                                                                                                         <next>
@@ -898,7 +898,7 @@
                                                                                                                                                             </value>
                                                                                                                                                             <value name="VALUE-2">
                                                                                                                                                               <block type="Number">
-                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                                <field name="NUM">4.1</field>
                                                                                                                                                               </block>
                                                                                                                                                             </value>
                                                                                                                                                             <next>
@@ -917,7 +917,7 @@
                                                                                                                                                                 </value>
                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                    <field name="NUM">2.356194</field>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                               </block>
