@@ -6809,17 +6809,6 @@
                         <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -6888,17 +6877,6 @@
                             <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -6946,17 +6924,6 @@
                             <value name="VALUE-0">
                               <block type="Text">
                                 <field name="TEXT">YOU-MCOMs-1-&gt;[2]&lt;-3-4-5-MCOMs-ENEMY</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                  </block>
-                                </value>
                               </block>
                             </value>
                           </block>
@@ -7008,17 +6975,6 @@
                                     <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -7066,17 +7022,6 @@
                                     <value name="VALUE-0">
                                       <block type="Text">
                                         <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
                                   </block>
@@ -7147,17 +7092,6 @@
                                             <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
                                           </block>
                                         </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -7220,17 +7154,6 @@
                                             <value name="VALUE-0">
                                               <block type="Text">
                                                 <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                                  </block>
-                                                </value>
                                               </block>
                                             </value>
                                           </block>
@@ -7311,17 +7234,6 @@
                         <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -7390,17 +7302,6 @@
                             <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
                       </block>
                     </value>
                     <value name="VALUE-1">
@@ -7448,17 +7349,6 @@
                             <value name="VALUE-0">
                               <block type="Text">
                                 <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                  </block>
-                                </value>
                               </block>
                             </value>
                           </block>
@@ -7510,17 +7400,6 @@
                                     <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
@@ -7568,17 +7447,6 @@
                                     <value name="VALUE-0">
                                       <block type="Text">
                                         <field name="TEXT">YOU-MCOMs-1-&gt;[2]&lt;-3-4-5-MCOMs-ENEMY</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
                                   </block>
@@ -7649,17 +7517,6 @@
                                             <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
                                           </block>
                                         </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -7722,17 +7579,6 @@
                                             <value name="VALUE-0">
                                               <block type="Text">
                                                 <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
-                                                  </block>
-                                                </value>
                                               </block>
                                             </value>
                                           </block>
@@ -7847,7 +7693,7 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">7</field>
+                        <field name="NUM">8</field>
                       </block>
                     </value>
                   </block>
