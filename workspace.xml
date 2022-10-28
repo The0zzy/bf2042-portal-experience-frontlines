@@ -6623,7 +6623,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="2598" y="8038">
+  <block type="subroutineBlock" deletable="false" x="0" y="19412">
     <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconText">
@@ -6720,7 +6720,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19361">
+  <block type="subroutineBlock" deletable="false" x="0" y="19949">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -6782,7 +6782,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19737">
+  <block type="subroutineBlock" deletable="false" x="0" y="20325">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -6875,7 +6875,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20385">
+  <block type="subroutineBlock" deletable="false" x="0" y="20973">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -7376,7 +7376,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22340">
+  <block type="subroutineBlock" deletable="false" x="0" y="22928">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8168,7 +8168,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="24673">
+  <block type="subroutineBlock" deletable="false" x="0" y="25261">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -8246,7 +8246,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25059">
+  <block type="subroutineBlock" deletable="false" x="0" y="25647">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -8515,7 +8515,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25670">
+  <block type="subroutineBlock" deletable="false" x="0" y="26258">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -8551,7 +8551,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25995">
+  <block type="subroutineBlock" deletable="false" x="0" y="26583">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -8608,7 +8608,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26371">
+  <block type="subroutineBlock" deletable="false" x="0" y="26959">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -8665,7 +8665,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26747">
+  <block type="subroutineBlock" deletable="false" x="0" y="27335">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -8701,7 +8701,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27072">
+  <block type="subroutineBlock" deletable="false" x="0" y="27660">
     <field name="SUBROUTINE_NAME">initMessages</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -8795,7 +8795,7 @@
                         </value>
                         <value name="VALUE-2">
                           <block type="Text">
-                            <field name="TEXT">Hold the objective for {} sec to secure it</field>
+                            <field name="TEXT">Hold the objective for {} sec</field>
                           </block>
                         </value>
                         <next>
@@ -8893,7 +8893,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27746">
+  <block type="subroutineBlock" deletable="false" x="0" y="28334">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10081,7 +10081,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30526">
+  <block type="subroutineBlock" deletable="false" x="0" y="31114">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -10180,7 +10180,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30993">
+  <block type="subroutineBlock" deletable="false" x="0" y="31581">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10331,7 +10331,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31502">
+  <block type="subroutineBlock" deletable="false" x="0" y="32090">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10614,7 +10614,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32161">
+  <block type="subroutineBlock" deletable="false" x="0" y="32749">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -10687,7 +10687,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32526">
+  <block type="subroutineBlock" deletable="false" x="0" y="33114">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
