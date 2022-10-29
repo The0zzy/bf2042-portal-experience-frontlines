@@ -1,7 +1,7 @@
 # Battlefield 2042 - Frontlines
 Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win.
 
-Get in touch with us on the [Battlefield Portal Discord](https://discord.gg/8un9qY5AvV)
+Get in touch with us on the [Battlefield Portal Community](https://www.bfportal.gg)'s [Discord Server](https://discord.gg/8un9qY5AvV)
 
 ## Experience Codes
 - **AA1J18** - Frontlines with PVP-AI (Stable)
