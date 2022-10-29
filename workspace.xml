@@ -216,7 +216,7 @@
                                                                     </value>
                                                                     <value name="VALUE-1">
                                                                       <block type="Number">
-                                                                        <field name="NUM">30</field>
+                                                                        <field name="NUM">40</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
@@ -7698,7 +7698,7 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">7</field>
+                        <field name="NUM">8</field>
                       </block>
                     </value>
                   </block>
@@ -8185,7 +8185,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">7.5</field>
+                                <field name="NUM">8</field>
                               </block>
                             </value>
                           </block>
