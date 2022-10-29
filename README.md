@@ -1,24 +1,23 @@
 # Battlefield 2042 - Frontlines
-This is an attempt to remake the Battlefield mode "Frontlines" within Battlefield 2042 Portal.
-
-Thanks to `Recon Riptor#2042` for the initial code! 
+Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win.
 
 Get in touch with us on the [Battlefield Portal Discord](https://discord.gg/8un9qY5AvV)
 
 ## Experience Codes
-- **aaxsk4** - Frontlines with PVP-AI (Stable)
-- **aaxrvu** - Frontlines with PVP-AI (Development)
+- **AA1J18** - Frontlines with PVP-AI (Stable)
+- **AA1P7Y** - Frontlines with PVP-AI (Development)
 
 ## Maps and Capture Point Order
 Unfortunately not all maps are currently supported by the underlying "Ground Superiority" mode. Also the location and amount of capture points isn't always in the favor of the frontlines mode. Therefore this is the currently supported map rotation:
+
 ### Caspian Border
-US - B1 - A1 - D1 - C1 - E1 - RU
-### El Alamein
-US - B1 - C1 - A1 - RU  
-*Due to a bug, the points C1 and B1 need to be interchanged in the code*  
-*[Bug Reference](https://discord.com/channels/870246147455877181/1005929194393440296)*
-### Battle of the Buldge
-US - A1 - B1 - D1 - C1 - E1 - RU
+US MCOMs - B1 - A1 - C1 - D1 - E1 - RU MCOMs
+### Arica Harbor
+US MCOMs - A1 - B1 - B3 - B2 - C1 - RU MCOMs
+### Renewal
+US MCOMs - B1 - A1 - D1 - C1 - E1 - RU MCOMs
+### Orbital
+US MCOMs - A2 - B1 - B2 - C1 - E1 - RU MCOMs
 
 ## Change/Update History
 See the commits pages of the branches:  
@@ -30,10 +29,10 @@ Development: [Change History](https://github.com/RoflKartoffelDE/bf2042-portal-e
 You can copy this experience by accessing the experience URL:
 
 **Stable Version**  
-[https://portal.battlefield.com/experience/rules?playgroundId=04c71f80-157c-11ed-9761-a585402439aa](https://portal.battlefield.com/experience/rules?playgroundId=04c71f80-157c-11ed-9761-a585402439aa)
+[https://portal.battlefield.com/experience/rules?playgroundId=c8c4cb80-53c0-11ed-af10-d3b271b3fd0a](https://portal.battlefield.com/experience/rules?playgroundId=c8c4cb80-53c0-11ed-af10-d3b271b3fd0a)
 
 **Development Version**   
-[https://portal.battlefield.com/experience/rules?playgroundId=580f3630-14ed-11ed-9761-a585402439aa](https://portal.battlefield.com/experience/rules?playgroundId=580f3630-14ed-11ed-9761-a585402439aa)
+[https://portal.battlefield.com/experience/rules?playgroundId=325a8490-5795-11ed-af10-d3b271b3fd0a](https://portal.battlefield.com/experience/rules?playgroundId=325a8490-5795-11ed-af10-d3b271b3fd0a)
 
 ### GitHub Plugin
 You can import the `workspace.xml` (containing the Rule Editor part) of this repository into your own experience by using the [GitHub Plugin](https://github.com/RoflKartoffelDE/bf2042-portal-github-plugin) for the [Portal Browser Extension](https://github.com/LennardF1989/BF2042-Portal-Extensions).
