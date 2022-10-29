@@ -3191,30 +3191,35 @@
                                                                                                                                                                                                           <block type="subroutineInstanceBlock">
                                                                                                                                                                                                             <field name="SUBROUTINE_NAME">disableMcoms</field>
                                                                                                                                                                                                             <next>
-                                                                                                                                                                                                              <block type="SetVariable">
-                                                                                                                                                                                                                <value name="VALUE-0">
-                                                                                                                                                                                                                  <block type="variableReferenceBlock">
-                                                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                    <field name="VAR" id="Rg@dG^smD}}cyqP;kbA?" variabletype="Global">isGameOngoing</field>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
-                                                                                                                                                                                                                <value name="VALUE-1">
-                                                                                                                                                                                                                  <block type="Boolean">
-                                                                                                                                                                                                                    <field name="BOOL">TRUE</field>
-                                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                                </value>
+                                                                                                                                                                                                              <block type="subroutineInstanceBlock">
+                                                                                                                                                                                                                <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
                                                                                                                                                                                                                 <next>
-                                                                                                                                                                                                                  <block type="SendErrorReport">
+                                                                                                                                                                                                                  <block type="SetVariable">
                                                                                                                                                                                                                     <value name="VALUE-0">
-                                                                                                                                                                                                                      <block type="Message">
+                                                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                                                        <field name="VAR" id="Rg@dG^smD}}cyqP;kbA?" variabletype="Global">isGameOngoing</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                    <value name="VALUE-1">
+                                                                                                                                                                                                                      <block type="Boolean">
+                                                                                                                                                                                                                        <field name="BOOL">TRUE</field>
+                                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                    <next>
+                                                                                                                                                                                                                      <block type="SendErrorReport">
                                                                                                                                                                                                                         <value name="VALUE-0">
-                                                                                                                                                                                                                          <block type="Text">
-                                                                                                                                                                                                                            <field name="TEXT">Game initialized!</field>
+                                                                                                                                                                                                                          <block type="Message">
+                                                                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                                                                              <block type="Text">
+                                                                                                                                                                                                                                <field name="TEXT">Game initialized!</field>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                       </block>
-                                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                                    </next>
                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                 </next>
                                                                                                                                                                                                               </block>
@@ -8180,7 +8185,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">7</field>
+                                <field name="NUM">7.5</field>
                               </block>
                             </value>
                           </block>
@@ -8235,7 +8240,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Boolean">
-                                <field name="BOOL">TRUE</field>
+                                <field name="BOOL">FALSE</field>
                               </block>
                             </value>
                             <next>
