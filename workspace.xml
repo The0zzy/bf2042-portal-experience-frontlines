@@ -4178,6 +4178,7 @@
                                 </statement>
                                 <statement name="ACTIONS">
                                   <block type="If">
+                                    <mutation else="1"></mutation>
                                     <value name="VALUE-0">
                                       <block type="Equals">
                                         <value name="VALUE-0">
@@ -4328,7 +4329,7 @@
                                         </next>
                                       </block>
                                     </statement>
-                                    <next>
+                                    <statement name="ELSE">
                                       <block type="If">
                                         <value name="VALUE-0">
                                           <block type="Equals">
@@ -4462,7 +4463,7 @@
                                           </block>
                                         </statement>
                                       </block>
-                                    </next>
+                                    </statement>
                                   </block>
                                 </statement>
                                 <next>
