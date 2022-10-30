@@ -8888,21 +8888,124 @@
   <block type="subroutineBlock" deletable="false" x="0" y="28491">
     <field name="SUBROUTINE_NAME">updateObjectiveIcon</field>
     <statement name="ACTIONS">
-      <block type="SendErrorReport">
+      <block type="If">
+        <mutation else="1"></mutation>
         <value name="VALUE-0">
-          <block type="Message">
+          <block type="Or">
             <value name="VALUE-0">
-              <block type="Text">
-                <field name="TEXT">DEBUG: Updating objective icon...</field>
+              <block type="LessThan">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="8bX8WXOU3J-1nPd^Z467" variabletype="Global">preparationTimeout</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="LessThan">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
               </block>
             </value>
           </block>
         </value>
-        <next>
+        <statement name="DO">
           <block type="If">
-            <mutation else="1"></mutation>
             <value name="VALUE-0">
-              <block type="Or">
+              <block type="LessThan">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="SetWorldIconText">
+                <value name="VALUE-0">
+                  <block type="WorldIconsItem">
+                    <field name="VALUE-0">WorldIcons</field>
+                    <field name="VALUE-1">A</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="Text">
+                        <field name="TEXT">{} sec remaining</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="If">
                 <value name="VALUE-0">
                   <block type="LessThan">
                     <value name="VALUE-0">
@@ -8929,110 +9032,22 @@
                     </value>
                   </block>
                 </value>
-                <value name="VALUE-1">
-                  <block type="LessThan">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="If">
-                <value name="VALUE-0">
-                  <block type="LessThan">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="RE5fXM1d5cOe[Kb,nL?#" variabletype="Global">holdingTimeout</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
                 <statement name="DO">
-                  <block type="SendErrorReport">
+                  <block type="SetWorldIconText">
                     <value name="VALUE-0">
+                      <block type="WorldIconsItem">
+                        <field name="VALUE-0">WorldIcons</field>
+                        <field name="VALUE-1">A</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
                       <block type="Message">
                         <value name="VALUE-0">
                           <block type="Text">
-                            <field name="TEXT">DEBUG: Show holding counter on objective icon</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetWorldIconText">
-                        <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
+                            <field name="TEXT">{} sec preparation</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">{} sec remaining</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <next>
-                  <block type="If">
-                    <value name="VALUE-0">
-                      <block type="LessThan">
-                        <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
@@ -9043,43 +9058,33 @@
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="8bX8WXOU3J-1nPd^Z467" variabletype="Global">preparationTimeout</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
                       </block>
                     </value>
-                    <statement name="DO">
-                      <block type="SendErrorReport">
+                  </block>
+                </statement>
+                <next>
+                  <block type="SetWorldIconPosition">
+                    <value name="VALUE-0">
+                      <block type="WorldIconsItem">
+                        <field name="VALUE-0">WorldIcons</field>
+                        <field name="VALUE-1">A</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Add">
                         <value name="VALUE-0">
-                          <block type="Message">
+                          <block type="GetCapturePointPosition">
                             <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">DEBUG: Show preparation counter on objective icon</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetWorldIconText">
-                            <value name="VALUE-0">
-                              <block type="WorldIconsItem">
-                                <field name="VALUE-0">WorldIcons</field>
-                                <field name="VALUE-1">A</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Message">
+                              <block type="ValueInArray">
                                 <value name="VALUE-0">
-                                  <block type="Text">
-                                    <field name="TEXT">{} sec preparation</field>
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -9088,7 +9093,7 @@
                                       <block type="variableReferenceBlock">
                                         <mutation isObjectVar="false"></mutation>
                                         <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="^2#0woMGZ^%,!;R5Ym/?" variabletype="Global">preparationCounter</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
                                       </block>
                                     </value>
                                   </block>
@@ -9096,11 +9101,23 @@
                               </block>
                             </value>
                           </block>
-                        </next>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Multiply">
+                            <value name="VALUE-0">
+                              <block type="UpVector"></block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">8</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
                       </block>
-                    </statement>
+                    </value>
                     <next>
-                      <block type="SetWorldIconPosition">
+                      <block type="SetWorldIconOwner">
                         <value name="VALUE-0">
                           <block type="WorldIconsItem">
                             <field name="VALUE-0">WorldIcons</field>
@@ -9108,45 +9125,29 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Add">
+                          <block type="GetCurrentOwnerTeamID">
                             <value name="VALUE-0">
-                              <block type="GetCapturePointPosition">
+                              <block type="ValueInArray">
                                 <value name="VALUE-0">
-                                  <block type="ValueInArray">
+                                  <block type="GetVariable">
                                     <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                          </block>
-                                        </value>
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Multiply">
-                                <value name="VALUE-0">
-                                  <block type="UpVector"></block>
-                                </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">8</field>
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
@@ -9154,7 +9155,7 @@
                           </block>
                         </value>
                         <next>
-                          <block type="SetWorldIconOwner">
+                          <block type="EnableWorldIconImage">
                             <value name="VALUE-0">
                               <block type="WorldIconsItem">
                                 <field name="VALUE-0">WorldIcons</field>
@@ -9162,37 +9163,12 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="GetCurrentOwnerTeamID">
-                                <value name="VALUE-0">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
+                              <block type="Boolean">
+                                <field name="BOOL">FALSE</field>
                               </block>
                             </value>
                             <next>
-                              <block type="EnableWorldIconImage">
+                              <block type="EnableWorldIconText">
                                 <value name="VALUE-0">
                                   <block type="WorldIconsItem">
                                     <field name="VALUE-0">WorldIcons</field>
@@ -9201,24 +9177,9 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Boolean">
-                                    <field name="BOOL">FALSE</field>
+                                    <field name="BOOL">TRUE</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="EnableWorldIconText">
-                                    <value name="VALUE-0">
-                                      <block type="WorldIconsItem">
-                                        <field name="VALUE-0">WorldIcons</field>
-                                        <field name="VALUE-1">A</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Boolean">
-                                        <field name="BOOL">TRUE</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
@@ -9228,52 +9189,39 @@
                   </block>
                 </next>
               </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="SendErrorReport">
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="EnableWorldIconImage">
+            <value name="VALUE-0">
+              <block type="WorldIconsItem">
+                <field name="VALUE-0">WorldIcons</field>
+                <field name="VALUE-1">A</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Boolean">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="EnableWorldIconText">
                 <value name="VALUE-0">
-                  <block type="Message">
-                    <value name="VALUE-0">
-                      <block type="Text">
-                        <field name="TEXT">DEBUG: Disabling objective icon</field>
-                      </block>
-                    </value>
+                  <block type="WorldIconsItem">
+                    <field name="VALUE-0">WorldIcons</field>
+                    <field name="VALUE-1">A</field>
                   </block>
                 </value>
-                <next>
-                  <block type="EnableWorldIconImage">
-                    <value name="VALUE-0">
-                      <block type="WorldIconsItem">
-                        <field name="VALUE-0">WorldIcons</field>
-                        <field name="VALUE-1">A</field>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">FALSE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="EnableWorldIconText">
-                        <value name="VALUE-0">
-                          <block type="WorldIconsItem">
-                            <field name="VALUE-0">WorldIcons</field>
-                            <field name="VALUE-1">A</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Boolean">
-                            <field name="BOOL">FALSE</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
+                <value name="VALUE-1">
+                  <block type="Boolean">
+                    <field name="BOOL">FALSE</field>
                   </block>
-                </next>
+                </value>
               </block>
-            </statement>
+            </next>
           </block>
-        </next>
+        </statement>
       </block>
     </statement>
   </block>
