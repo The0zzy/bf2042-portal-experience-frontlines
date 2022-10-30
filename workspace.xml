@@ -3486,6 +3486,9 @@
                         </value>
                       </block>
                     </value>
+                    <value name="VALUE-1">
+                      <block type="EventPlayer"></block>
+                    </value>
                   </block>
                 </statement>
                 <next>
