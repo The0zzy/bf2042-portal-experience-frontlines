@@ -2938,8 +2938,14 @@
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <value name="VALUE-1">
-                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                    <field name="NUM">5</field>
+                                                                                                                                                                  <block type="GetVariable">
+                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                        <field name="VAR" id="8;g%fLJM7](}=7(]g{i2" variabletype="Global">captureTime</field>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </value>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <next>
@@ -2963,8 +2969,14 @@
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                      <block type="Number">
-                                                                                                                                                                        <field name="NUM">5</field>
+                                                                                                                                                                      <block type="GetVariable">
+                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                            <field name="VAR" id="[Xq1:(srkIs:;SkweVy3" variabletype="Global">neutralizationTime</field>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
                                                                                                                                                                   </block>
