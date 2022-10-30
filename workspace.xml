@@ -5935,7 +5935,7 @@
                               <block type="variableReferenceBlock">
                                 <mutation isObjectVar="false"></mutation>
                                 <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
                               </block>
                             </value>
                           </block>
@@ -6202,7 +6202,7 @@
                                   <block type="variableReferenceBlock">
                                     <mutation isObjectVar="false"></mutation>
                                     <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
                                   </block>
                                 </value>
                               </block>
@@ -6272,7 +6272,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Boolean">
-                                    <field name="BOOL">TRUE</field>
+                                    <field name="BOOL">FALSE</field>
                                   </block>
                                 </value>
                                 <next>
@@ -6398,7 +6398,7 @@
                                       <block type="variableReferenceBlock">
                                         <mutation isObjectVar="false"></mutation>
                                         <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
                                       </block>
                                     </value>
                                   </block>
@@ -6642,7 +6642,7 @@
                                           <block type="variableReferenceBlock">
                                             <mutation isObjectVar="false"></mutation>
                                             <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
                                           </block>
                                         </value>
                                       </block>
