@@ -12954,7 +12954,7 @@
   <block type="subroutineBlock" deletable="false" x="0" y="41031">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
-      <block type="EnableObjective">
+      <block type="EnableCapturing">
         <value name="VALUE-0">
           <block type="ValueInArray">
             <value name="VALUE-0">
@@ -12983,7 +12983,7 @@
         </value>
         <value name="VALUE-1">
           <block type="Boolean">
-            <field name="BOOL">FALSE</field>
+            <field name="BOOL">TRUE</field>
           </block>
         </value>
         <next>
@@ -12992,7 +12992,7 @@
               <block type="Message">
                 <value name="VALUE-0">
                   <block type="Text">
-                    <field name="TEXT">Disabled current objective {}</field>
+                    <field name="TEXT">Made current objective {} cappable</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -13008,71 +13008,12 @@
                 </value>
               </block>
             </value>
-            <next>
-              <block type="EnableObjective">
-                <value name="VALUE-0">
-                  <block type="ValueInArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Boolean">
-                    <field name="BOOL">TRUE</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="SendErrorReport">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">Enabled current objective {}</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41514">
+  <block type="subroutineBlock" deletable="false" x="0" y="41380">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13223,7 +13164,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42023">
+  <block type="subroutineBlock" deletable="false" x="0" y="41889">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13506,7 +13447,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42682">
+  <block type="subroutineBlock" deletable="false" x="0" y="42548">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -13579,7 +13520,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43047">
+  <block type="subroutineBlock" deletable="false" x="0" y="42913">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
