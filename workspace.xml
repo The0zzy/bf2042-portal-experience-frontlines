@@ -6002,215 +6002,54 @@
   <block type="subroutineBlock" deletable="false" x="0" y="18407">
     <field name="SUBROUTINE_NAME">updateObjectives</field>
     <statement name="ACTIONS">
-      <block type="ForVariable">
+      <block type="SendErrorReport">
         <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <value name="VALUE-2">
-          <block type="CountOf">
+          <block type="Message">
             <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                  </block>
-                </value>
+              <block type="Text">
+                <field name="TEXT">DEBUG: Updating objectives...</field>
               </block>
             </value>
           </block>
         </value>
-        <value name="VALUE-3">
-          <block type="Number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="If">
+        <next>
+          <block type="ForVariable">
             <value name="VALUE-0">
-              <block type="LessThan">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="CountOf">
                 <value name="VALUE-0">
                   <block type="GetVariable">
                     <value name="VALUE-0">
                       <block type="variableReferenceBlock">
                         <mutation isObjectVar="false"></mutation>
                         <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
                       </block>
                     </value>
                   </block>
                 </value>
-                <value name="VALUE-1">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
+              </block>
+            </value>
+            <value name="VALUE-3">
+              <block type="Number">
+                <field name="NUM">1</field>
               </block>
             </value>
             <statement name="DO">
-              <block type="EnableObjective">
-                <value name="VALUE-0">
-                  <block type="ValueInArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Boolean">
-                    <field name="BOOL">TRUE</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="EnableCapturing">
-                    <value name="VALUE-0">
-                      <block type="ValueInArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">FALSE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="SetCapturePointOwner">
-                        <value name="VALUE-0">
-                          <block type="ValueInArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetTeamId">
-                            <value name="VALUE-0">
-                              <block type="Number">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="EnableCapturePointSpawning">
-                            <value name="VALUE-0">
-                              <block type="ValueInArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Boolean">
-                                <field name="BOOL">FALSE</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </statement>
-            <next>
               <block type="If">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="LessThan">
                     <value name="VALUE-0">
                       <block type="GetVariable">
                         <value name="VALUE-0">
@@ -6236,162 +6075,12 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="EnableObjective">
+                  <block type="SendErrorReport">
                     <value name="VALUE-0">
-                      <block type="ValueInArray">
+                      <block type="Message">
                         <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Boolean">
-                        <field name="BOOL">TRUE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="EnableCapturing">
-                        <value name="VALUE-0">
-                          <block type="ValueInArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Boolean">
-                            <field name="BOOL">TRUE</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="SetCapturePointOwner">
-                            <value name="VALUE-0">
-                              <block type="ValueInArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetTeamId">
-                                <value name="VALUE-0">
-                                  <block type="Number">
-                                    <field name="NUM">0</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="EnableCapturePointSpawning">
-                                <value name="VALUE-0">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Boolean">
-                                    <field name="BOOL">FALSE</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <next>
-                  <block type="If">
-                    <value name="VALUE-0">
-                      <block type="GreaterThan">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                              </block>
-                            </value>
+                          <block type="Text">
+                            <field name="TEXT">DEBUG: Updating objective {}: enabled, not cappable, team1, not deployable</field>
                           </block>
                         </value>
                         <value name="VALUE-1">
@@ -6407,7 +6096,7 @@
                         </value>
                       </block>
                     </value>
-                    <statement name="DO">
+                    <next>
                       <block type="EnableObjective">
                         <value name="VALUE-0">
                           <block type="ValueInArray">
@@ -6505,7 +6194,7 @@
                                   <block type="GetTeamId">
                                     <value name="VALUE-0">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
@@ -6550,61 +6239,45 @@
                           </block>
                         </next>
                       </block>
-                    </statement>
-                    <next>
-                      <block type="If">
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="And" inline="false">
                         <value name="VALUE-0">
-                          <block type="Or" inline="false">
+                          <block type="Equals">
                             <value name="VALUE-0">
-                              <block type="Equals">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Add">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">-1</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Equals">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="Add">
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Not">
+                            <value name="VALUE-0">
+                              <block type="Or" inline="false">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
                                     <value name="VALUE-0">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
@@ -6618,7 +6291,46 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">1</field>
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Add">
+                                        <value name="VALUE-0">
+                                          <block type="CountOf">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">-1</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                   </block>
@@ -6627,8 +6339,32 @@
                             </value>
                           </block>
                         </value>
-                        <statement name="DO">
-                          <block type="EnableCapturePointSpawning">
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="SendErrorReport">
+                        <value name="VALUE-0">
+                          <block type="Message">
+                            <value name="VALUE-0">
+                              <block type="Text">
+                                <field name="TEXT">DEBUG: Updating objective {}: enabled, cappable, neutral, not deployable</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="EnableObjective">
                             <value name="VALUE-0">
                               <block type="ValueInArray">
                                 <value name="VALUE-0">
@@ -6660,22 +6396,700 @@
                                 <field name="BOOL">TRUE</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="EnableCapturing">
+                                <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Boolean">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="SetCapturePointOwner">
+                                    <value name="VALUE-0">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetTeamId">
+                                        <value name="VALUE-0">
+                                          <block type="Number">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="EnableCapturePointSpawning">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Boolean">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="If">
+                        <value name="VALUE-0">
+                          <block type="GreaterThan">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="SendErrorReport">
+                            <value name="VALUE-0">
+                              <block type="Message">
+                                <value name="VALUE-0">
+                                  <block type="Text">
+                                    <field name="TEXT">DEBUG: Updating objective {}: enabled, not cappable, team2, not deployable</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="EnableObjective">
+                                <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Boolean">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="EnableCapturing">
+                                    <value name="VALUE-0">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Boolean">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="SetCapturePointOwner">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetTeamId">
+                                            <value name="VALUE-0">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="EnableCapturePointSpawning">
+                                            <value name="VALUE-0">
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Boolean">
+                                                <field name="BOOL">FALSE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </statement>
+                        <next>
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="Or" inline="false">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Add">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">-1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Add">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="SendErrorReport">
+                                <value name="VALUE-0">
+                                  <block type="Message">
+                                    <value name="VALUE-0">
+                                      <block type="Text">
+                                        <field name="TEXT">DEBUG: Updating objective {}: deployable</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="EnableCapturePointSpawning">
+                                    <value name="VALUE-0">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Boolean">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
                 </next>
               </block>
+            </statement>
+            <next>
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="Or" inline="false">
+                    <value name="VALUE-0">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Add">
+                            <value name="VALUE-0">
+                              <block type="CountOf">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">-1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="SendErrorReport">
+                    <value name="VALUE-0">
+                      <block type="Message">
+                        <value name="VALUE-0">
+                          <block type="Text">
+                            <field name="TEXT">DEBUG: Updating objective {}: deployable, not cappable</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="EnableCapturePointSpawning">
+                        <value name="VALUE-0">
+                          <block type="ValueInArray">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Boolean">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="EnableCapturing">
+                            <value name="VALUE-0">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Boolean">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
             </next>
           </block>
-        </statement>
-        <next>
-          <block type="If">
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="21133">
+    <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
+    <statement name="ACTIONS">
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="LessThan">
             <value name="VALUE-0">
-              <block type="Or" inline="false">
+              <block type="GetVariable">
                 <value name="VALUE-0">
-                  <block type="Equals">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Add">
+                <value name="VALUE-0">
+                  <block type="CountOf">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">-1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="SendErrorReport">
+            <value name="VALUE-0">
+              <block type="Message">
+                <value name="VALUE-0">
+                  <block type="Text">
+                    <field name="TEXT">DEBUG: Increasing capture chain index - current = {}</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="SetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="false"></mutation>
+                    <field name="OBJECTTYPE">Global</field>
+                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Add">
                     <value name="VALUE-0">
                       <block type="GetVariable">
                         <value name="VALUE-0">
@@ -6689,123 +7103,39 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">0</field>
+                        <field name="NUM">1</field>
                       </block>
                     </value>
                   </block>
                 </value>
-                <value name="VALUE-1">
-                  <block type="Equals">
+                <next>
+                  <block type="SendErrorReport">
                     <value name="VALUE-0">
-                      <block type="GetVariable">
+                      <block type="Message">
                         <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                          <block type="Text">
+                            <field name="TEXT">DEBUG: Increasing capture chain index - current = {}</field>
                           </block>
                         </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Add">
-                        <value name="VALUE-0">
-                          <block type="CountOf">
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
                             <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                                  </block>
-                                </value>
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
                               </block>
                             </value>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">-1</field>
-                          </block>
-                        </value>
                       </block>
                     </value>
                   </block>
-                </value>
+                </next>
               </block>
-            </value>
-            <statement name="DO">
-              <block type="EnableCapturePointSpawning">
-                <value name="VALUE-0">
-                  <block type="ValueInArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Boolean">
-                    <field name="BOOL">TRUE</field>
-                  </block>
-                </value>
-              </block>
-            </statement>
+            </next>
           </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20408">
-    <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
-    <statement name="ACTIONS">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Add">
-            <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-          </block>
-        </value>
+        </statement>
         <next>
           <block type="subroutineInstanceBlock">
             <field name="SUBROUTINE_NAME">updateObjectives</field>
@@ -7009,19 +7339,12 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21210">
+  <block type="subroutineBlock" deletable="false" x="0" y="22047">
     <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
     <statement name="ACTIONS">
-      <block type="SetVariable">
+      <block type="If">
         <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="false"></mutation>
-            <field name="OBJECTTYPE">Global</field>
-            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Add">
+          <block type="GreaterThan">
             <value name="VALUE-0">
               <block type="GetVariable">
                 <value name="VALUE-0">
@@ -7035,11 +7358,42 @@
             </value>
             <value name="VALUE-1">
               <block type="Number">
-                <field name="NUM">-1</field>
+                <field name="NUM">0</field>
               </block>
             </value>
           </block>
         </value>
+        <statement name="DO">
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="false"></mutation>
+                <field name="OBJECTTYPE">Global</field>
+                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Add">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">-1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
         <next>
           <block type="subroutineInstanceBlock">
             <field name="SUBROUTINE_NAME">updateObjectives</field>
@@ -7243,7 +7597,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22012">
+  <block type="subroutineBlock" deletable="false" x="0" y="22945">
     <field name="SUBROUTINE_NAME">showStatusMessage</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8117,7 +8471,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25453">
+  <block type="subroutineBlock" deletable="false" x="0" y="26386">
     <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="SetWorldIconText">
@@ -8292,7 +8646,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26046">
+  <block type="subroutineBlock" deletable="false" x="0" y="26979">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -8354,7 +8708,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26422">
+  <block type="subroutineBlock" deletable="false" x="0" y="27355">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8457,7 +8811,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27172">
+  <block type="subroutineBlock" deletable="false" x="0" y="28105">
     <field name="SUBROUTINE_NAME">updateObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8797,7 +9151,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28211">
+  <block type="subroutineBlock" deletable="false" x="0" y="29144">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -9298,7 +9652,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30166">
+  <block type="subroutineBlock" deletable="false" x="0" y="31099">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10371,7 +10725,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33371">
+  <block type="subroutineBlock" deletable="false" x="0" y="34304">
     <field name="SUBROUTINE_NAME">initMessages</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -10584,7 +10938,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34096">
+  <block type="subroutineBlock" deletable="false" x="0" y="35029">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -10662,7 +11016,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34482">
+  <block type="subroutineBlock" deletable="false" x="0" y="35415">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="ForVariable">
@@ -10931,7 +11285,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35093">
+  <block type="subroutineBlock" deletable="false" x="0" y="36026">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -10967,7 +11321,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35418">
+  <block type="subroutineBlock" deletable="false" x="0" y="36351">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -11024,7 +11378,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35794">
+  <block type="subroutineBlock" deletable="false" x="0" y="36727">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -11081,7 +11435,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36170">
+  <block type="subroutineBlock" deletable="false" x="0" y="37103">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -11117,7 +11471,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36495">
+  <block type="subroutineBlock" deletable="false" x="0" y="37428">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12305,7 +12659,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39275">
+  <block type="subroutineBlock" deletable="false" x="0" y="40208">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableObjective">
@@ -12404,7 +12758,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39742">
+  <block type="subroutineBlock" deletable="false" x="0" y="40675">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12555,7 +12909,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40251">
+  <block type="subroutineBlock" deletable="false" x="0" y="41184">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12838,7 +13192,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40910">
+  <block type="subroutineBlock" deletable="false" x="0" y="41843">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -12911,7 +13265,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41275">
+  <block type="subroutineBlock" deletable="false" x="0" y="42208">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
