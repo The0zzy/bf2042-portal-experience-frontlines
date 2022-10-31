@@ -3203,6 +3203,60 @@
                                                                                                                                                                         </value>
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
+                                                                                                                                                                    <next>
+                                                                                                                                                                      <block type="SetNeutralizationMultiplier">
+                                                                                                                                                                        <value name="VALUE-0">
+                                                                                                                                                                          <block type="ValueInArray">
+                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                              <block type="AllCapturePoints"></block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                              <block type="GetVariable">
+                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                    <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
+                                                                                                                                                                        <value name="VALUE-1">
+                                                                                                                                                                          <block type="Number">
+                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </value>
+                                                                                                                                                                        <next>
+                                                                                                                                                                          <block type="SetMaxCaptureMultiplier">
+                                                                                                                                                                            <value name="VALUE-0">
+                                                                                                                                                                              <block type="ValueInArray">
+                                                                                                                                                                                <value name="VALUE-0">
+                                                                                                                                                                                  <block type="AllCapturePoints"></block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                                <value name="VALUE-1">
+                                                                                                                                                                                  <block type="GetVariable">
+                                                                                                                                                                                    <value name="VALUE-0">
+                                                                                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                                                                                        <field name="VAR" id="FOx%b#aj*u]|4Sw*1;X%" variabletype="Global">iterator</field>
+                                                                                                                                                                                      </block>
+                                                                                                                                                                                    </value>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                            <value name="VALUE-1">
+                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                                              </block>
+                                                                                                                                                                            </value>
+                                                                                                                                                                          </block>
+                                                                                                                                                                        </next>
+                                                                                                                                                                      </block>
+                                                                                                                                                                    </next>
                                                                                                                                                                   </block>
                                                                                                                                                                 </next>
                                                                                                                                                               </block>
@@ -5300,7 +5354,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="16062">
+  <block type="subroutineBlock" deletable="false" x="0" y="16486">
     <field name="SUBROUTINE_NAME">initMessages</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -5618,7 +5672,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="17042">
+  <block type="subroutineBlock" deletable="false" x="0" y="17466">
     <field name="SUBROUTINE_NAME">updateObjectives</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -6861,7 +6915,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20389">
+  <block type="subroutineBlock" deletable="false" x="0" y="20813">
     <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -7157,7 +7211,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21319">
+  <block type="subroutineBlock" deletable="false" x="0" y="21743">
     <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -7434,7 +7488,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22233">
+  <block type="subroutineBlock" deletable="false" x="0" y="22657">
     <field name="SUBROUTINE_NAME">showStatusMessage</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -8392,7 +8446,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25674">
+  <block type="subroutineBlock" deletable="false" x="0" y="26248">
     <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8580,7 +8634,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26326">
+  <block type="subroutineBlock" deletable="false" x="0" y="26900">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8655,7 +8709,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26761">
+  <block type="subroutineBlock" deletable="false" x="0" y="27335">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8843,7 +8897,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27826">
+  <block type="subroutineBlock" deletable="false" x="0" y="28400">
     <field name="SUBROUTINE_NAME">updateObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -9198,7 +9252,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="28873">
+  <block type="subroutineBlock" deletable="false" x="0" y="29447">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -9808,7 +9862,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31155">
+  <block type="subroutineBlock" deletable="false" x="0" y="31729">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10881,7 +10935,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34360">
+  <block type="subroutineBlock" deletable="false" x="0" y="34934">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10996,7 +11050,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34872">
+  <block type="subroutineBlock" deletable="false" x="0" y="35446">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -11278,7 +11332,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35542">
+  <block type="subroutineBlock" deletable="false" x="0" y="36116">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -11338,7 +11392,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35934">
+  <block type="subroutineBlock" deletable="false" x="0" y="36508">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -11419,7 +11473,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36377">
+  <block type="subroutineBlock" deletable="false" x="0" y="36951">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -11500,7 +11554,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36820">
+  <block type="subroutineBlock" deletable="false" x="0" y="37394">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -11560,7 +11614,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37212">
+  <block type="subroutineBlock" deletable="false" x="0" y="37786">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12748,7 +12802,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="39992">
+  <block type="subroutineBlock" deletable="false" x="0" y="40566">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableCapturing">
@@ -12810,7 +12864,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40341">
+  <block type="subroutineBlock" deletable="false" x="0" y="40915">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12961,7 +13015,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40850">
+  <block type="subroutineBlock" deletable="false" x="0" y="41424">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13244,7 +13298,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41509">
+  <block type="subroutineBlock" deletable="false" x="0" y="42083">
     <field name="SUBROUTINE_NAME">TeamOnePushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -13317,7 +13371,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41874">
+  <block type="subroutineBlock" deletable="false" x="0" y="42448">
     <field name="SUBROUTINE_NAME">Team2Pushing</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
