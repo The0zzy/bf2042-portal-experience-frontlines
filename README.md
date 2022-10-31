@@ -18,6 +18,8 @@ US MCOMs - A1 - B1 - B3 - B2 - C1 - RU MCOMs
 US MCOMs - B1 - A1 - D1 - C1 - E1 - RU MCOMs
 ### Orbital
 US MCOMs - A2 - B1 - B2 - C1 - E1 - RU MCOMs
+### Manifest
+US MCOMs - C2 - C1 - B1 - A1 - A2 - RU MCOMs
 
 ## Change/Update History
 See the commits pages of the branches:  
