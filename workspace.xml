@@ -9783,6 +9783,26 @@
                             <value name="VALUE-1">
                               <block type="Add" inline="false">
                                 <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
                                   <block type="Divide">
                                     <value name="VALUE-0">
                                       <block type="VectorTowards" inline="false">
@@ -9835,26 +9855,6 @@
                                     </value>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">0</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
                               </block>
                             </value>
                           </block>
@@ -9870,6 +9870,26 @@
                             <value name="VALUE-1">
                               <block type="Add" inline="false">
                                 <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
                                   <block type="Divide">
                                     <value name="VALUE-0">
                                       <block type="VectorTowards" inline="false">
@@ -9911,26 +9931,6 @@
                                                 <field name="NUM">3</field>
                                               </block>
                                             </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="Number">
-                                        <field name="NUM">2</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="ValueInArray">
-                                    <value name="VALUE-0">
-                                      <block type="GetVariable">
-                                        <value name="VALUE-0">
-                                          <block type="variableReferenceBlock">
-                                            <mutation isObjectVar="false"></mutation>
-                                            <field name="OBJECTTYPE">Global</field>
-                                            <field name="VAR" id="oW5?[`9*!*41w5F.zNp]" variabletype="Global">mcomLocation</field>
                                           </block>
                                         </value>
                                       </block>
@@ -11829,7 +11829,7 @@
                                 </value>
                                 <value name="VALUE-1">
                                   <block type="Number">
-                                    <field name="NUM">2</field>
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
@@ -12038,7 +12038,7 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
