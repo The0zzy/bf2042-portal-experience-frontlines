@@ -6172,7 +6172,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">0.2</field>
+                            <field name="NUM">0.15</field>
                           </block>
                         </value>
                       </block>
