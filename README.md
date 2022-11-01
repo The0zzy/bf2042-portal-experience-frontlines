@@ -3,7 +3,10 @@ Experience a mix of Conquest and Rush as you fight for chained control points in
 
 Further information on the mode can be found here:  
 [https://battlefield.fandom.com/wiki/Frontlines](https://battlefield.fandom.com/wiki/Frontlines)  
-[https://www.youtube.com/watch?v=ibbdW2Kl6hg](https://www.youtube.com/watch?v=ibbdW2Kl6hg)
+Official Tutorial Video of the mode of BF1:  
+[https://youtu.be/oFFfpubkhfw](https://youtu.be/oFFfpubkhfw)  
+JackFrags Gameplay video on the mode of BF1:  
+[https://www.youtube.com/watch?v=ibbdW2Kl6hg](https://www.youtube.com/watch?v=ibbdW2Kl6hg)  
 
 Get in touch with us for feedback and more on the [Battlefield Portal Community](https://www.bfportal.gg)'s [Discord Server](https://discord.gg/8un9qY5AvV)
 
