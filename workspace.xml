@@ -6325,19 +6325,28 @@
                     <value name="VALUE-1">
                       <block type="Multiply">
                         <value name="VALUE-0">
-                          <block type="GetVariable">
+                          <block type="Add">
                             <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="v?g+se2_:,fSu~ML}tCO" variabletype="Global">tmpPlayersOnPoint</field>
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="v?g+se2_:,fSu~ML}tCO" variabletype="Global">tmpPlayersOnPoint</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">-1</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">0.15</field>
+                            <field name="NUM">0.25</field>
                           </block>
                         </value>
                       </block>
