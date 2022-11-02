@@ -5291,7 +5291,7 @@
                                                                 <field name="SUBROUTINE_NAME">updateObjectives</field>
                                                                 <next>
                                                                   <block type="subroutineInstanceBlock">
-                                                                    <field name="SUBROUTINE_NAME">TeamOnePushing</field>
+                                                                    <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
                                                                     <next>
                                                                       <block type="subroutineInstanceBlock">
                                                                         <field name="SUBROUTINE_NAME">startPreparationTimer</field>
@@ -5313,7 +5313,7 @@
                                                             <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
                                                             <next>
                                                               <block type="subroutineInstanceBlock">
-                                                                <field name="SUBROUTINE_NAME">TeamOnePushing</field>
+                                                                <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
                                                                 <next>
                                                                   <block type="subroutineInstanceBlock">
                                                                     <field name="SUBROUTINE_NAME">enableMcoms</field>
@@ -5424,7 +5424,7 @@
                                                                     <field name="SUBROUTINE_NAME">updateObjectives</field>
                                                                     <next>
                                                                       <block type="subroutineInstanceBlock">
-                                                                        <field name="SUBROUTINE_NAME">Team2Pushing</field>
+                                                                        <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
                                                                         <next>
                                                                           <block type="subroutineInstanceBlock">
                                                                             <field name="SUBROUTINE_NAME">startPreparationTimer</field>
@@ -5446,7 +5446,7 @@
                                                                 <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
                                                                 <next>
                                                                   <block type="subroutineInstanceBlock">
-                                                                    <field name="SUBROUTINE_NAME">Team2Pushing</field>
+                                                                    <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
                                                                     <next>
                                                                       <block type="subroutineInstanceBlock">
                                                                         <field name="SUBROUTINE_NAME">enableMcoms</field>
@@ -14803,7 +14803,7 @@
     </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="47384">
-    <field name="SUBROUTINE_NAME">TeamOnePushing</field>
+    <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
         <value name="VALUE-0">
@@ -14876,7 +14876,7 @@
     </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="47749">
-    <field name="SUBROUTINE_NAME">Team2Pushing</field>
+    <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
         <value name="VALUE-0">
