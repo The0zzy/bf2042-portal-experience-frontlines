@@ -6323,10 +6323,20 @@
                       </block>
                     </value>
                     <value name="VALUE-1">
-                      <block type="Multiply">
+                      <block type="Subtract">
                         <value name="VALUE-0">
-                          <block type="Add">
+                          <block type="Number">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Divide">
                             <value name="VALUE-0">
+                              <block type="Number">
+                                <field name="NUM">1.5</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -6337,16 +6347,6 @@
                                 </value>
                               </block>
                             </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">-1</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">0.25</field>
                           </block>
                         </value>
                       </block>
