@@ -11926,6 +11926,36 @@
                                         <field name="BOOL">FALSE</field>
                                       </block>
                                     </value>
+                                    <next>
+                                      <block type="EnableWorldIconImage">
+                                        <value name="VALUE-0">
+                                          <block type="WorldIconsItem">
+                                            <field name="VALUE-0">WorldIcons</field>
+                                            <field name="VALUE-1">A</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Boolean">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="EnableWorldIconText">
+                                            <value name="VALUE-0">
+                                              <block type="WorldIconsItem">
+                                                <field name="VALUE-0">WorldIcons</field>
+                                                <field name="VALUE-1">A</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Boolean">
+                                                <field name="BOOL">FALSE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
@@ -12467,6 +12497,36 @@
                                                     <field name="BOOL">FALSE</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="EnableWorldIconImage">
+                                                    <value name="VALUE-0">
+                                                      <block type="WorldIconsItem">
+                                                        <field name="VALUE-0">WorldIcons</field>
+                                                        <field name="VALUE-1">A</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Boolean">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="EnableWorldIconText">
+                                                        <value name="VALUE-0">
+                                                          <block type="WorldIconsItem">
+                                                            <field name="VALUE-0">WorldIcons</field>
+                                                            <field name="VALUE-1">A</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Boolean">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
