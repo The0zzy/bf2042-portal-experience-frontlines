@@ -10077,6 +10077,304 @@
                                     <field name="BOOL">TRUE</field>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="SetWorldIconText">
+                                    <value name="VALUE-0">
+                                      <block type="WorldIconsItem">
+                                        <field name="VALUE-0">WorldIcons</field>
+                                        <field name="VALUE-1">B</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="Text">
+                                            <field name="TEXT">HQ Team1 - not capturable</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="SetWorldIconPosition">
+                                        <value name="VALUE-0">
+                                          <block type="WorldIconsItem">
+                                            <field name="VALUE-0">WorldIcons</field>
+                                            <field name="VALUE-1">B</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Add">
+                                            <value name="VALUE-0">
+                                              <block type="GetCapturePointPosition">
+                                                <value name="VALUE-0">
+                                                  <block type="ValueInArray">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Add">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">-1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Multiply">
+                                                <value name="VALUE-0">
+                                                  <block type="UpVector"></block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">9</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="SetWorldIconOwner">
+                                            <value name="VALUE-0">
+                                              <block type="WorldIconsItem">
+                                                <field name="VALUE-0">WorldIcons</field>
+                                                <field name="VALUE-1">B</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetTeamId">
+                                                <value name="VALUE-0">
+                                                  <block type="Number">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="SetWorldIconImage">
+                                                <value name="VALUE-0">
+                                                  <block type="WorldIconsItem">
+                                                    <field name="VALUE-0">WorldIcons</field>
+                                                    <field name="VALUE-1">B</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="WorldIconImagesItem">
+                                                    <field name="VALUE-0">WorldIconImages</field>
+                                                    <field name="VALUE-1">Skull</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="EnableWorldIconImage">
+                                                    <value name="VALUE-0">
+                                                      <block type="WorldIconsItem">
+                                                        <field name="VALUE-0">WorldIcons</field>
+                                                        <field name="VALUE-1">B</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Boolean">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="EnableWorldIconText">
+                                                        <value name="VALUE-0">
+                                                          <block type="WorldIconsItem">
+                                                            <field name="VALUE-0">WorldIcons</field>
+                                                            <field name="VALUE-1">B</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Boolean">
+                                                            <field name="BOOL">TRUE</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="SetWorldIconText">
+                                                            <value name="VALUE-0">
+                                                              <block type="WorldIconsItem">
+                                                                <field name="VALUE-0">WorldIcons</field>
+                                                                <field name="VALUE-1">C</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Message">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">HQ Team2 - not capturable</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="SetWorldIconPosition">
+                                                                <value name="VALUE-0">
+                                                                  <block type="WorldIconsItem">
+                                                                    <field name="VALUE-0">WorldIcons</field>
+                                                                    <field name="VALUE-1">C</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Add">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetCapturePointPosition">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="ValueInArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Add">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="GetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Multiply">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="UpVector"></block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">9</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="SetWorldIconOwner">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="WorldIconsItem">
+                                                                        <field name="VALUE-0">WorldIcons</field>
+                                                                        <field name="VALUE-1">C</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetTeamId">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="SetWorldIconImage">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="WorldIconsItem">
+                                                                            <field name="VALUE-0">WorldIcons</field>
+                                                                            <field name="VALUE-1">C</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="WorldIconImagesItem">
+                                                                            <field name="VALUE-0">WorldIconImages</field>
+                                                                            <field name="VALUE-1">Skull</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="EnableWorldIconImage">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="WorldIconsItem">
+                                                                                <field name="VALUE-0">WorldIcons</field>
+                                                                                <field name="VALUE-1">C</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Boolean">
+                                                                                <field name="BOOL">TRUE</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="EnableWorldIconText">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="WorldIconsItem">
+                                                                                    <field name="VALUE-0">WorldIcons</field>
+                                                                                    <field name="VALUE-1">C</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="Boolean">
+                                                                                    <field name="BOOL">TRUE</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
@@ -10092,7 +10390,12 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31831">
+  <block type="variableReferenceBlock" x="960" y="32185">
+    <mutation isObjectVar="false"></mutation>
+    <field name="OBJECTTYPE">Global</field>
+    <field name="VAR" id=";C4H7(wJku!y=dQ}o-=8" variabletype="Global">holdingCounter</field>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="32587">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10412,7 +10715,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33187">
+  <block type="subroutineBlock" deletable="false" x="0" y="33943">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10600,7 +10903,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34252">
+  <block type="subroutineBlock" deletable="false" x="0" y="35008">
     <field name="SUBROUTINE_NAME">updateObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -11056,7 +11359,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35457">
+  <block type="subroutineBlock" deletable="false" x="0" y="36213">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -11666,7 +11969,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37739">
+  <block type="subroutineBlock" deletable="false" x="0" y="38495">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -12809,7 +13112,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41094">
+  <block type="subroutineBlock" deletable="false" x="0" y="41850">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -12924,7 +13227,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41606">
+  <block type="subroutineBlock" deletable="false" x="0" y="42362">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13206,7 +13509,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42276">
+  <block type="subroutineBlock" deletable="false" x="0" y="43032">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13266,7 +13569,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42668">
+  <block type="subroutineBlock" deletable="false" x="0" y="43424">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -13347,7 +13650,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43111">
+  <block type="subroutineBlock" deletable="false" x="0" y="43867">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -13428,7 +13731,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43554">
+  <block type="subroutineBlock" deletable="false" x="0" y="44310">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13488,7 +13791,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43946">
+  <block type="subroutineBlock" deletable="false" x="0" y="44702">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14676,7 +14979,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46726">
+  <block type="subroutineBlock" deletable="false" x="0" y="47482">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableCapturing">
@@ -14738,7 +15041,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47075">
+  <block type="subroutineBlock" deletable="false" x="0" y="47831">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14889,7 +15192,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47584">
+  <block type="subroutineBlock" deletable="false" x="0" y="48340">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15172,7 +15475,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48243">
+  <block type="subroutineBlock" deletable="false" x="0" y="48999">
     <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -15245,7 +15548,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48608">
+  <block type="subroutineBlock" deletable="false" x="0" y="49364">
     <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
