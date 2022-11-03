@@ -10363,7 +10363,7 @@
                                                 <value name="VALUE-1">
                                                   <block type="WorldIconImagesItem">
                                                     <field name="VALUE-0">WorldIconImages</field>
-                                                    <field name="VALUE-1">Skull</field>
+                                                    <field name="VALUE-1">Cross</field>
                                                   </block>
                                                 </value>
                                                 <next>
@@ -10521,7 +10521,7 @@
                                                                         <value name="VALUE-1">
                                                                           <block type="WorldIconImagesItem">
                                                                             <field name="VALUE-0">WorldIconImages</field>
-                                                                            <field name="VALUE-1">Skull</field>
+                                                                            <field name="VALUE-1">Cross</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
