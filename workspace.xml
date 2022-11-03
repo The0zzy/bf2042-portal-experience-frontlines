@@ -6921,7 +6921,7 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Text">
-                                                        <field name="TEXT">GO! Capture the objective!</field>
+                                                        <field name="TEXT">Capture [{}] to secure the frontline!</field>
                                                       </block>
                                                     </value>
                                                     <next>
@@ -7038,6 +7038,48 @@
                                                                                 <field name="TEXT">HQ Team2 - not capturable</field>
                                                                               </block>
                                                                             </value>
+                                                                            <next>
+                                                                              <block type="SetVariableAtIndex">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">18</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-2">
+                                                                                  <block type="Text">
+                                                                                    <field name="TEXT">Preparation - Objective opens in {} sec</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="SetVariableAtIndex">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">19</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-2">
+                                                                                      <block type="Text">
+                                                                                        <field name="TEXT">Frontline objective [{}] opens in {} seconds!</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -7075,7 +7117,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22435">
+  <block type="subroutineBlock" deletable="false" x="0" y="22537">
     <field name="SUBROUTINE_NAME">updateObjectives</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8482,7 +8524,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26050">
+  <block type="subroutineBlock" deletable="false" x="0" y="26152">
     <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8778,7 +8820,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26980">
+  <block type="subroutineBlock" deletable="false" x="0" y="27082">
     <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -9055,7 +9097,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27894">
+  <block type="subroutineBlock" deletable="false" x="0" y="27996">
     <field name="SUBROUTINE_NAME">showStatusMessage</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -10013,7 +10055,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31485">
+  <block type="subroutineBlock" deletable="false" x="0" y="31587">
     <field name="SUBROUTINE_NAME">initObjectiveIcons</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10547,7 +10589,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32893">
+  <block type="subroutineBlock" deletable="false" x="0" y="32995">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10867,7 +10909,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34249">
+  <block type="subroutineBlock" deletable="false" x="0" y="34351">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -11002,42 +11044,8 @@
               </block>
             </statement>
             <statement name="ELSE">
-              <block type="DisplayCustomNotificationMessage">
-                <value name="VALUE-0">
-                  <block type="Message">
-                    <value name="VALUE-0">
-                      <block type="ValueInArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">11</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="CustomMessagesItem">
-                    <field name="VALUE-0">CustomMessages</field>
-                    <field name="VALUE-1">HeaderText</field>
-                  </block>
-                </value>
-                <value name="VALUE-2">
-                  <block type="Number">
-                    <field name="NUM">2</field>
-                  </block>
-                </value>
+              <block type="subroutineInstanceBlock">
+                <field name="SUBROUTINE_NAME">displayCaptureObjective</field>
               </block>
             </statement>
             <next>
@@ -11055,7 +11063,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="35314">
+  <block type="subroutineBlock" deletable="false" x="0" y="35392">
     <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12625,7 +12633,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38961">
+  <block type="subroutineBlock" deletable="false" x="0" y="39243">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13235,7 +13243,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41243">
+  <block type="subroutineBlock" deletable="false" x="0" y="41525">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14378,7 +14386,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="44598">
+  <block type="subroutineBlock" deletable="false" x="0" y="44880">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14493,7 +14501,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45110">
+  <block type="subroutineBlock" deletable="false" x="0" y="45392">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14775,7 +14783,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45780">
+  <block type="subroutineBlock" deletable="false" x="0" y="46062">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14835,7 +14843,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46172">
+  <block type="subroutineBlock" deletable="false" x="0" y="46454">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14916,7 +14924,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46615">
+  <block type="subroutineBlock" deletable="false" x="0" y="46897">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -14997,7 +15005,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47058">
+  <block type="subroutineBlock" deletable="false" x="0" y="47340">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -15057,7 +15065,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47450">
+  <block type="subroutineBlock" deletable="false" x="0" y="47732">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -15106,11 +15114,31 @@
             <value name="VALUE-0">
               <block type="Message">
                 <value name="VALUE-0">
-                  <block type="Text">
-                    <field name="TEXT">Prepare to capture A1 in {} seconds!</field>
+                  <block type="ValueInArray">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">19</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
                 <value name="VALUE-1">
+                  <block type="Text">
+                    <field name="TEXT">A1</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
                   <block type="GetVariable">
                     <value name="VALUE-0">
                       <block type="variableReferenceBlock">
@@ -15183,11 +15211,31 @@
                 <value name="VALUE-0">
                   <block type="Message">
                     <value name="VALUE-0">
-                      <block type="Text">
-                        <field name="TEXT">Prepare to capture A2 in {} seconds!</field>
+                      <block type="ValueInArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">19</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                     <value name="VALUE-1">
+                      <block type="Text">
+                        <field name="TEXT">A2</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
                       <block type="GetVariable">
                         <value name="VALUE-0">
                           <block type="variableReferenceBlock">
@@ -15260,11 +15308,31 @@
                     <value name="VALUE-0">
                       <block type="Message">
                         <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">Prepare to capture A3 in {} seconds!</field>
+                          <block type="ValueInArray">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">19</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                         <value name="VALUE-1">
+                          <block type="Text">
+                            <field name="TEXT">A3</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
                           <block type="GetVariable">
                             <value name="VALUE-0">
                               <block type="variableReferenceBlock">
@@ -15337,11 +15405,31 @@
                         <value name="VALUE-0">
                           <block type="Message">
                             <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">Prepare to capture B1 in {} seconds!</field>
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">19</field>
+                                  </block>
+                                </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
+                              <block type="Text">
+                                <field name="TEXT">B1</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
                               <block type="GetVariable">
                                 <value name="VALUE-0">
                                   <block type="variableReferenceBlock">
@@ -15414,11 +15502,31 @@
                             <value name="VALUE-0">
                               <block type="Message">
                                 <value name="VALUE-0">
-                                  <block type="Text">
-                                    <field name="TEXT">Prepare to capture B2 in {} seconds!</field>
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">19</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
+                                  <block type="Text">
+                                    <field name="TEXT">B2</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
                                   <block type="GetVariable">
                                     <value name="VALUE-0">
                                       <block type="variableReferenceBlock">
@@ -15491,11 +15599,31 @@
                                 <value name="VALUE-0">
                                   <block type="Message">
                                     <value name="VALUE-0">
-                                      <block type="Text">
-                                        <field name="TEXT">Prepare to capture B3 in {} seconds!</field>
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">19</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
+                                      <block type="Text">
+                                        <field name="TEXT">B3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
                                       <block type="GetVariable">
                                         <value name="VALUE-0">
                                           <block type="variableReferenceBlock">
@@ -15568,11 +15696,31 @@
                                     <value name="VALUE-0">
                                       <block type="Message">
                                         <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT">Prepare to capture C1 in {} seconds!</field>
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">19</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
+                                          <block type="Text">
+                                            <field name="TEXT">C1</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
                                           <block type="GetVariable">
                                             <value name="VALUE-0">
                                               <block type="variableReferenceBlock">
@@ -15645,11 +15793,31 @@
                                         <value name="VALUE-0">
                                           <block type="Message">
                                             <value name="VALUE-0">
-                                              <block type="Text">
-                                                <field name="TEXT">Prepare to capture C2 in {} seconds!</field>
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">19</field>
+                                                  </block>
+                                                </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
+                                              <block type="Text">
+                                                <field name="TEXT">C2</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
                                               <block type="GetVariable">
                                                 <value name="VALUE-0">
                                                   <block type="variableReferenceBlock">
@@ -15722,11 +15890,31 @@
                                             <value name="VALUE-0">
                                               <block type="Message">
                                                 <value name="VALUE-0">
-                                                  <block type="Text">
-                                                    <field name="TEXT">Prepare to capture C3 in {} seconds!</field>
+                                                  <block type="ValueInArray">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">19</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
+                                                  <block type="Text">
+                                                    <field name="TEXT">C3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
                                                   <block type="GetVariable">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
@@ -15799,11 +15987,31 @@
                                                 <value name="VALUE-0">
                                                   <block type="Message">
                                                     <value name="VALUE-0">
-                                                      <block type="Text">
-                                                        <field name="TEXT">Prepare to capture D1 in {} seconds!</field>
+                                                      <block type="ValueInArray">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">19</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
+                                                      <block type="Text">
+                                                        <field name="TEXT">D1</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
                                                       <block type="GetVariable">
                                                         <value name="VALUE-0">
                                                           <block type="variableReferenceBlock">
@@ -15876,11 +16084,31 @@
                                                     <value name="VALUE-0">
                                                       <block type="Message">
                                                         <value name="VALUE-0">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Prepare to capture D2 in {} seconds!</field>
+                                                          <block type="ValueInArray">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">19</field>
+                                                              </block>
+                                                            </value>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-1">
+                                                          <block type="Text">
+                                                            <field name="TEXT">D2</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
                                                           <block type="GetVariable">
                                                             <value name="VALUE-0">
                                                               <block type="variableReferenceBlock">
@@ -15953,11 +16181,31 @@
                                                         <value name="VALUE-0">
                                                           <block type="Message">
                                                             <value name="VALUE-0">
-                                                              <block type="Text">
-                                                                <field name="TEXT">Prepare to capture D3 in {} seconds!</field>
+                                                              <block type="ValueInArray">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">19</field>
+                                                                  </block>
+                                                                </value>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-1">
+                                                              <block type="Text">
+                                                                <field name="TEXT">D3</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
                                                               <block type="GetVariable">
                                                                 <value name="VALUE-0">
                                                                   <block type="variableReferenceBlock">
@@ -16030,11 +16278,31 @@
                                                             <value name="VALUE-0">
                                                               <block type="Message">
                                                                 <value name="VALUE-0">
-                                                                  <block type="Text">
-                                                                    <field name="TEXT">Prepare to capture E1 in {} seconds!</field>
+                                                                  <block type="ValueInArray">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">19</field>
+                                                                      </block>
+                                                                    </value>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-1">
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">E1</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
                                                                   <block type="GetVariable">
                                                                     <value name="VALUE-0">
                                                                       <block type="variableReferenceBlock">
@@ -16107,11 +16375,31 @@
                                                                 <value name="VALUE-0">
                                                                   <block type="Message">
                                                                     <value name="VALUE-0">
-                                                                      <block type="Text">
-                                                                        <field name="TEXT">Prepare to capture E2 in {} seconds!</field>
+                                                                      <block type="ValueInArray">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">19</field>
+                                                                          </block>
+                                                                        </value>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
+                                                                      <block type="Text">
+                                                                        <field name="TEXT">E2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-2">
                                                                       <block type="GetVariable">
                                                                         <value name="VALUE-0">
                                                                           <block type="variableReferenceBlock">
@@ -16184,11 +16472,31 @@
                                                                     <value name="VALUE-0">
                                                                       <block type="Message">
                                                                         <value name="VALUE-0">
-                                                                          <block type="Text">
-                                                                            <field name="TEXT">Prepare to capture E3 in {} seconds!</field>
+                                                                          <block type="ValueInArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">19</field>
+                                                                              </block>
+                                                                            </value>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-1">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">E3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-2">
                                                                           <block type="GetVariable">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
@@ -16245,7 +16553,1330 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50230">
+  <block type="subroutineBlock" deletable="false" x="0" y="50632">
+    <field name="SUBROUTINE_NAME">displayCaptureObjective</field>
+    <statement name="ACTIONS">
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="Equals">
+            <value name="VALUE-0">
+              <block type="GetCapturePoint">
+                <value name="VALUE-0">
+                  <block type="CapturePointsItem">
+                    <field name="VALUE-0">CapturePoints</field>
+                    <field name="VALUE-1">A1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="ValueInArray">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="DisplayCustomNotificationMessage">
+            <value name="VALUE-0">
+              <block type="Message">
+                <value name="VALUE-0">
+                  <block type="ValueInArray">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">11</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Text">
+                    <field name="TEXT">A1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="CustomMessagesItem">
+                <field name="VALUE-0">CustomMessages</field>
+                <field name="VALUE-1">HeaderText</field>
+              </block>
+            </value>
+            <value name="VALUE-2">
+              <block type="Number">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="If">
+            <value name="VALUE-0">
+              <block type="Equals">
+                <value name="VALUE-0">
+                  <block type="GetCapturePoint">
+                    <value name="VALUE-0">
+                      <block type="CapturePointsItem">
+                        <field name="VALUE-0">CapturePoints</field>
+                        <field name="VALUE-1">A2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="ValueInArray">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="DisplayCustomNotificationMessage">
+                <value name="VALUE-0">
+                  <block type="Message">
+                    <value name="VALUE-0">
+                      <block type="ValueInArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">11</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Text">
+                        <field name="TEXT">A2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="CustomMessagesItem">
+                    <field name="VALUE-0">CustomMessages</field>
+                    <field name="VALUE-1">HeaderText</field>
+                  </block>
+                </value>
+                <value name="VALUE-2">
+                  <block type="Number">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="Equals">
+                    <value name="VALUE-0">
+                      <block type="GetCapturePoint">
+                        <value name="VALUE-0">
+                          <block type="CapturePointsItem">
+                            <field name="VALUE-0">CapturePoints</field>
+                            <field name="VALUE-1">A3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="ValueInArray">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="DisplayCustomNotificationMessage">
+                    <value name="VALUE-0">
+                      <block type="Message">
+                        <value name="VALUE-0">
+                          <block type="ValueInArray">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">11</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Text">
+                            <field name="TEXT">A3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="CustomMessagesItem">
+                        <field name="VALUE-0">CustomMessages</field>
+                        <field name="VALUE-1">HeaderText</field>
+                      </block>
+                    </value>
+                    <value name="VALUE-2">
+                      <block type="Number">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="GetCapturePoint">
+                            <value name="VALUE-0">
+                              <block type="CapturePointsItem">
+                                <field name="VALUE-0">CapturePoints</field>
+                                <field name="VALUE-1">B1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="ValueInArray">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="DisplayCustomNotificationMessage">
+                        <value name="VALUE-0">
+                          <block type="Message">
+                            <value name="VALUE-0">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">11</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Text">
+                                <field name="TEXT">B1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="CustomMessagesItem">
+                            <field name="VALUE-0">CustomMessages</field>
+                            <field name="VALUE-1">HeaderText</field>
+                          </block>
+                        </value>
+                        <value name="VALUE-2">
+                          <block type="Number">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="If">
+                        <value name="VALUE-0">
+                          <block type="Equals">
+                            <value name="VALUE-0">
+                              <block type="GetCapturePoint">
+                                <value name="VALUE-0">
+                                  <block type="CapturePointsItem">
+                                    <field name="VALUE-0">CapturePoints</field>
+                                    <field name="VALUE-1">B2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="DisplayCustomNotificationMessage">
+                            <value name="VALUE-0">
+                              <block type="Message">
+                                <value name="VALUE-0">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">11</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Text">
+                                    <field name="TEXT">B2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="CustomMessagesItem">
+                                <field name="VALUE-0">CustomMessages</field>
+                                <field name="VALUE-1">HeaderText</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-2">
+                              <block type="Number">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="Equals">
+                                <value name="VALUE-0">
+                                  <block type="GetCapturePoint">
+                                    <value name="VALUE-0">
+                                      <block type="CapturePointsItem">
+                                        <field name="VALUE-0">CapturePoints</field>
+                                        <field name="VALUE-1">B3</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="DisplayCustomNotificationMessage">
+                                <value name="VALUE-0">
+                                  <block type="Message">
+                                    <value name="VALUE-0">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">11</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Text">
+                                        <field name="TEXT">B3</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="CustomMessagesItem">
+                                    <field name="VALUE-0">CustomMessages</field>
+                                    <field name="VALUE-1">HeaderText</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="If">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetCapturePoint">
+                                        <value name="VALUE-0">
+                                          <block type="CapturePointsItem">
+                                            <field name="VALUE-0">CapturePoints</field>
+                                            <field name="VALUE-1">C1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="DisplayCustomNotificationMessage">
+                                    <value name="VALUE-0">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">11</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Text">
+                                            <field name="TEXT">C1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="CustomMessagesItem">
+                                        <field name="VALUE-0">CustomMessages</field>
+                                        <field name="VALUE-1">HeaderText</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="If">
+                                    <value name="VALUE-0">
+                                      <block type="Equals">
+                                        <value name="VALUE-0">
+                                          <block type="GetCapturePoint">
+                                            <value name="VALUE-0">
+                                              <block type="CapturePointsItem">
+                                                <field name="VALUE-0">CapturePoints</field>
+                                                <field name="VALUE-1">C2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="ValueInArray">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="DisplayCustomNotificationMessage">
+                                        <value name="VALUE-0">
+                                          <block type="Message">
+                                            <value name="VALUE-0">
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">11</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Text">
+                                                <field name="TEXT">C2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="CustomMessagesItem">
+                                            <field name="VALUE-0">CustomMessages</field>
+                                            <field name="VALUE-1">HeaderText</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="Equals">
+                                            <value name="VALUE-0">
+                                              <block type="GetCapturePoint">
+                                                <value name="VALUE-0">
+                                                  <block type="CapturePointsItem">
+                                                    <field name="VALUE-0">CapturePoints</field>
+                                                    <field name="VALUE-1">C3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="ValueInArray">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="DisplayCustomNotificationMessage">
+                                            <value name="VALUE-0">
+                                              <block type="Message">
+                                                <value name="VALUE-0">
+                                                  <block type="ValueInArray">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">11</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Text">
+                                                    <field name="TEXT">C3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="CustomMessagesItem">
+                                                <field name="VALUE-0">CustomMessages</field>
+                                                <field name="VALUE-1">HeaderText</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="If">
+                                            <value name="VALUE-0">
+                                              <block type="Equals">
+                                                <value name="VALUE-0">
+                                                  <block type="GetCapturePoint">
+                                                    <value name="VALUE-0">
+                                                      <block type="CapturePointsItem">
+                                                        <field name="VALUE-0">CapturePoints</field>
+                                                        <field name="VALUE-1">D1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="ValueInArray">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="DisplayCustomNotificationMessage">
+                                                <value name="VALUE-0">
+                                                  <block type="Message">
+                                                    <value name="VALUE-0">
+                                                      <block type="ValueInArray">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">11</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Text">
+                                                        <field name="TEXT">D1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="CustomMessagesItem">
+                                                    <field name="VALUE-0">CustomMessages</field>
+                                                    <field name="VALUE-1">HeaderText</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="If">
+                                                <value name="VALUE-0">
+                                                  <block type="Equals">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetCapturePoint">
+                                                        <value name="VALUE-0">
+                                                          <block type="CapturePointsItem">
+                                                            <field name="VALUE-0">CapturePoints</field>
+                                                            <field name="VALUE-1">D2</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="ValueInArray">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="DisplayCustomNotificationMessage">
+                                                    <value name="VALUE-0">
+                                                      <block type="Message">
+                                                        <value name="VALUE-0">
+                                                          <block type="ValueInArray">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">11</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Text">
+                                                            <field name="TEXT">D2</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="CustomMessagesItem">
+                                                        <field name="VALUE-0">CustomMessages</field>
+                                                        <field name="VALUE-1">HeaderText</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="If">
+                                                    <value name="VALUE-0">
+                                                      <block type="Equals">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetCapturePoint">
+                                                            <value name="VALUE-0">
+                                                              <block type="CapturePointsItem">
+                                                                <field name="VALUE-0">CapturePoints</field>
+                                                                <field name="VALUE-1">D3</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="ValueInArray">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO">
+                                                      <block type="DisplayCustomNotificationMessage">
+                                                        <value name="VALUE-0">
+                                                          <block type="Message">
+                                                            <value name="VALUE-0">
+                                                              <block type="ValueInArray">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">11</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Text">
+                                                                <field name="TEXT">D3</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="CustomMessagesItem">
+                                                            <field name="VALUE-0">CustomMessages</field>
+                                                            <field name="VALUE-1">HeaderText</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="If">
+                                                        <value name="VALUE-0">
+                                                          <block type="Equals">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetCapturePoint">
+                                                                <value name="VALUE-0">
+                                                                  <block type="CapturePointsItem">
+                                                                    <field name="VALUE-0">CapturePoints</field>
+                                                                    <field name="VALUE-1">E1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="ValueInArray">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO">
+                                                          <block type="DisplayCustomNotificationMessage">
+                                                            <value name="VALUE-0">
+                                                              <block type="Message">
+                                                                <value name="VALUE-0">
+                                                                  <block type="ValueInArray">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">11</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Text">
+                                                                    <field name="TEXT">E1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="CustomMessagesItem">
+                                                                <field name="VALUE-0">CustomMessages</field>
+                                                                <field name="VALUE-1">HeaderText</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="Number">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="If">
+                                                            <value name="VALUE-0">
+                                                              <block type="Equals">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetCapturePoint">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="CapturePointsItem">
+                                                                        <field name="VALUE-0">CapturePoints</field>
+                                                                        <field name="VALUE-1">E2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="ValueInArray">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO">
+                                                              <block type="DisplayCustomNotificationMessage">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Message">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="ValueInArray">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">11</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Text">
+                                                                        <field name="TEXT">E2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="CustomMessagesItem">
+                                                                    <field name="VALUE-0">CustomMessages</field>
+                                                                    <field name="VALUE-1">HeaderText</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">2</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="If">
+                                                                <value name="VALUE-0">
+                                                                  <block type="Equals">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetCapturePoint">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="CapturePointsItem">
+                                                                            <field name="VALUE-0">CapturePoints</field>
+                                                                            <field name="VALUE-1">E3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="ValueInArray">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO">
+                                                                  <block type="DisplayCustomNotificationMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="ValueInArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">11</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">E3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="CustomMessagesItem">
+                                                                        <field name="VALUE-0">CustomMessages</field>
+                                                                        <field name="VALUE-1">HeaderText</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-2">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="0" y="53532">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableCapturing">
@@ -16307,7 +17938,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50579">
+  <block type="subroutineBlock" deletable="false" x="0" y="53881">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16458,7 +18089,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51088">
+  <block type="subroutineBlock" deletable="false" x="0" y="54390">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16741,7 +18372,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="51747">
+  <block type="subroutineBlock" deletable="false" x="0" y="55049">
     <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -16814,7 +18445,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="52112">
+  <block type="subroutineBlock" deletable="false" x="0" y="55414">
     <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
