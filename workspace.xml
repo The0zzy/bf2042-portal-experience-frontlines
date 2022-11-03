@@ -70,7 +70,7 @@
                         </value>
                         <value name="VALUE-1">
                           <block type="Number">
-                            <field name="NUM">50</field>
+                            <field name="NUM">100</field>
                           </block>
                         </value>
                         <next>
@@ -4045,24 +4045,14 @@
                         <statement name="CONDITIONS">
                           <block type="conditionBlock">
                             <value name="CONDITION">
-                              <block type="Equals">
+                              <block type="GetSoldierState">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">Player</field>
-                                        <field name="VAR" id="Sp!lvr-D.2$ttJC%)!$:" variabletype="Player">switchTeamCounter</field>
-                                        <value name="OBJECT">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
+                                  <block type="EventPlayer"></block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">0</field>
+                                  <block type="SoldierStateBoolItem">
+                                    <field name="VALUE-0">SoldierStateBool</field>
+                                    <field name="VALUE-1">IsAlive</field>
                                   </block>
                                 </value>
                               </block>
@@ -4070,18 +4060,24 @@
                             <next>
                               <block type="conditionBlock">
                                 <value name="CONDITION">
-                                  <block type="Not">
+                                  <block type="Equals">
                                     <value name="VALUE-0">
-                                      <block type="GetSoldierState">
+                                      <block type="GetVariable">
                                         <value name="VALUE-0">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
-                                            <field name="VALUE-0">SoldierStateBool</field>
-                                            <field name="VALUE-1">IsReviving</field>
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">Player</field>
+                                            <field name="VAR" id="Sp!lvr-D.2$ttJC%)!$:" variabletype="Player">switchTeamCounter</field>
+                                            <value name="OBJECT">
+                                              <block type="EventPlayer"></block>
+                                            </value>
                                           </block>
                                         </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
                                       </block>
                                     </value>
                                   </block>
@@ -4089,30 +4085,8 @@
                                 <next>
                                   <block type="conditionBlock">
                                     <value name="CONDITION">
-                                      <block type="LessThanEqualTo">
+                                      <block type="Not">
                                         <value name="VALUE-0">
-                                          <block type="GetSoldierState">
-                                            <value name="VALUE-0">
-                                              <block type="EventPlayer"></block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="SoldierStateNumberItem">
-                                                <field name="VALUE-0">SoldierStateNumber</field>
-                                                <field name="VALUE-1">Speed</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">1</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="conditionBlock">
-                                        <value name="CONDITION">
                                           <block type="GetSoldierState">
                                             <value name="VALUE-0">
                                               <block type="EventPlayer"></block>
@@ -4120,14 +4094,18 @@
                                             <value name="VALUE-1">
                                               <block type="SoldierStateBoolItem">
                                                 <field name="VALUE-0">SoldierStateBool</field>
-                                                <field name="VALUE-1">IsProne</field>
+                                                <field name="VALUE-1">IsReviving</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="conditionBlock">
-                                            <value name="CONDITION">
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="conditionBlock">
+                                        <value name="CONDITION">
+                                          <block type="Not">
+                                            <value name="VALUE-0">
                                               <block type="GetSoldierState">
                                                 <value name="VALUE-0">
                                                   <block type="EventPlayer"></block>
@@ -4135,11 +4113,71 @@
                                                 <value name="VALUE-1">
                                                   <block type="SoldierStateBoolItem">
                                                     <field name="VALUE-0">SoldierStateBool</field>
-                                                    <field name="VALUE-1">IsInteracting</field>
+                                                    <field name="VALUE-1">IsManDown</field>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="conditionBlock">
+                                            <value name="CONDITION">
+                                              <block type="LessThanEqualTo">
+                                                <value name="VALUE-0">
+                                                  <block type="GetSoldierState">
+                                                    <value name="VALUE-0">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="SoldierStateNumberItem">
+                                                        <field name="VALUE-0">SoldierStateNumber</field>
+                                                        <field name="VALUE-1">Speed</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="conditionBlock">
+                                                <value name="CONDITION">
+                                                  <block type="GetSoldierState">
+                                                    <value name="VALUE-0">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="SoldierStateBoolItem">
+                                                        <field name="VALUE-0">SoldierStateBool</field>
+                                                        <field name="VALUE-1">IsProne</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="conditionBlock">
+                                                    <value name="CONDITION">
+                                                      <block type="GetSoldierState">
+                                                        <value name="VALUE-0">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="SoldierStateBoolItem">
+                                                            <field name="VALUE-0">SoldierStateBool</field>
+                                                            <field name="VALUE-1">IsInteracting</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
@@ -4159,50 +4197,88 @@
                                     <value name="VALUE-0">
                                       <block type="And" inline="false">
                                         <value name="VALUE-0">
-                                          <block type="LessThanEqualTo">
+                                          <block type="And" inline="false">
                                             <value name="VALUE-0">
-                                              <block type="GetSoldierState">
+                                              <block type="And" inline="false">
                                                 <value name="VALUE-0">
-                                                  <block type="EventPlayer"></block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="SoldierStateNumberItem">
-                                                    <field name="VALUE-0">SoldierStateNumber</field>
-                                                    <field name="VALUE-1">Speed</field>
+                                                  <block type="LessThanEqualTo">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetSoldierState">
+                                                        <value name="VALUE-0">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="SoldierStateNumberItem">
+                                                            <field name="VALUE-0">SoldierStateNumber</field>
+                                                            <field name="VALUE-1">Speed</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
-                                              </block>
-                                            </value>
-                                            <value name="VALUE-1">
-                                              <block type="Number">
-                                                <field name="NUM">1</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="LessThan">
-                                            <value name="VALUE-0">
-                                              <block type="GetVariable">
-                                                <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="true"></mutation>
-                                                    <field name="OBJECTTYPE">Player</field>
-                                                    <field name="VAR" id="Sp!lvr-D.2$ttJC%)!$:" variabletype="Player">switchTeamCounter</field>
-                                                    <value name="OBJECT">
-                                                      <block type="EventPlayer"></block>
+                                                <value name="VALUE-1">
+                                                  <block type="LessThan">
+                                                    <value name="VALUE-0">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="true"></mutation>
+                                                            <field name="OBJECTTYPE">Player</field>
+                                                            <field name="VAR" id="Sp!lvr-D.2$ttJC%)!$:" variabletype="Player">switchTeamCounter</field>
+                                                            <value name="OBJECT">
+                                                              <block type="EventPlayer"></block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="GetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id=")nl=-)}qWj/+)`mdr6f." variabletype="Global">switchTeamTime</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="GetVariable">
+                                              <block type="GetSoldierState">
                                                 <value name="VALUE-0">
-                                                  <block type="variableReferenceBlock">
-                                                    <mutation isObjectVar="false"></mutation>
-                                                    <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id=")nl=-)}qWj/+)`mdr6f." variabletype="Global">switchTeamTime</field>
+                                                  <block type="EventPlayer"></block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="SoldierStateBoolItem">
+                                                    <field name="VALUE-0">SoldierStateBool</field>
+                                                    <field name="VALUE-1">IsProne</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Not">
+                                            <value name="VALUE-0">
+                                              <block type="GetSoldierState">
+                                                <value name="VALUE-0">
+                                                  <block type="EventPlayer"></block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="SoldierStateBoolItem">
+                                                    <field name="VALUE-0">SoldierStateBool</field>
+                                                    <field name="VALUE-1">IsReviving</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -4212,14 +4288,18 @@
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
-                                      <block type="GetSoldierState">
+                                      <block type="Not">
                                         <value name="VALUE-0">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
-                                            <field name="VALUE-0">SoldierStateBool</field>
-                                            <field name="VALUE-1">IsProne</field>
+                                          <block type="GetSoldierState">
+                                            <value name="VALUE-0">
+                                              <block type="EventPlayer"></block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="SoldierStateBoolItem">
+                                                <field name="VALUE-0">SoldierStateBool</field>
+                                                <field name="VALUE-1">IsManDown</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
@@ -4227,18 +4307,14 @@
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Not">
+                                  <block type="GetSoldierState">
                                     <value name="VALUE-0">
-                                      <block type="GetSoldierState">
-                                        <value name="VALUE-0">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="SoldierStateBoolItem">
-                                            <field name="VALUE-0">SoldierStateBool</field>
-                                            <field name="VALUE-1">IsReviving</field>
-                                          </block>
-                                        </value>
+                                      <block type="EventPlayer"></block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="SoldierStateBoolItem">
+                                        <field name="VALUE-0">SoldierStateBool</field>
+                                        <field name="VALUE-1">IsAlive</field>
                                       </block>
                                     </value>
                                   </block>
@@ -6158,7 +6234,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="19630">
+  <block type="subroutineBlock" deletable="false" x="0" y="19988">
     <field name="SUBROUTINE_NAME">adjustCaptureMultiplier</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -6551,7 +6627,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="20740">
+  <block type="subroutineBlock" deletable="false" x="0" y="21098">
     <field name="SUBROUTINE_NAME">initMessages</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -6869,7 +6945,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="21720">
+  <block type="subroutineBlock" deletable="false" x="0" y="22078">
     <field name="SUBROUTINE_NAME">updateObjectives</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8276,7 +8352,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25335">
+  <block type="subroutineBlock" deletable="false" x="0" y="25693">
     <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8572,7 +8648,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="26265">
+  <block type="subroutineBlock" deletable="false" x="0" y="26623">
     <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -8849,7 +8925,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="27179">
+  <block type="subroutineBlock" deletable="false" x="0" y="27537">
     <field name="SUBROUTINE_NAME">showStatusMessage</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -9807,7 +9883,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="30770">
+  <block type="subroutineBlock" deletable="false" x="0" y="31128">
     <field name="SUBROUTINE_NAME">initObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -9995,7 +10071,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="31422">
+  <block type="subroutineBlock" deletable="false" x="0" y="31780">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -10315,7 +10391,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="32778">
+  <block type="subroutineBlock" deletable="false" x="0" y="33136">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10503,7 +10579,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33843">
+  <block type="subroutineBlock" deletable="false" x="0" y="34201">
     <field name="SUBROUTINE_NAME">updateObjectiveIcon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -10858,7 +10934,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="34890">
+  <block type="subroutineBlock" deletable="false" x="0" y="35248">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -11468,7 +11544,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37172">
+  <block type="subroutineBlock" deletable="false" x="0" y="37530">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -12611,7 +12687,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40527">
+  <block type="subroutineBlock" deletable="false" x="0" y="40885">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -12726,7 +12802,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41039">
+  <block type="subroutineBlock" deletable="false" x="0" y="41397">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13008,7 +13084,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41709">
+  <block type="subroutineBlock" deletable="false" x="0" y="42067">
     <field name="SUBROUTINE_NAME">resetPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13068,7 +13144,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42101">
+  <block type="subroutineBlock" deletable="false" x="0" y="42459">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -13149,7 +13225,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42544">
+  <block type="subroutineBlock" deletable="false" x="0" y="42902">
     <field name="SUBROUTINE_NAME">startHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="StopChasingVariable">
@@ -13230,7 +13306,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42987">
+  <block type="subroutineBlock" deletable="false" x="0" y="43345">
     <field name="SUBROUTINE_NAME">resetHoldingTimer</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -13290,7 +13366,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="43379">
+  <block type="subroutineBlock" deletable="false" x="0" y="43737">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14478,7 +14554,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46159">
+  <block type="subroutineBlock" deletable="false" x="0" y="46517">
     <field name="SUBROUTINE_NAME">resetObjective</field>
     <statement name="ACTIONS">
       <block type="EnableCapturing">
@@ -14540,7 +14616,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="46508">
+  <block type="subroutineBlock" deletable="false" x="0" y="46866">
     <field name="SUBROUTINE_NAME">displayHoldingCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14691,7 +14767,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47017">
+  <block type="subroutineBlock" deletable="false" x="0" y="47375">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -14974,7 +15050,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="47676">
+  <block type="subroutineBlock" deletable="false" x="0" y="48034">
     <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -15047,7 +15123,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48041">
+  <block type="subroutineBlock" deletable="false" x="0" y="48399">
     <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
