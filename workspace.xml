@@ -7016,7 +7016,7 @@
                                                                         </value>
                                                                         <value name="VALUE-2">
                                                                           <block type="Text">
-                                                                            <field name="TEXT">HQ Team1 - not capturable</field>
+                                                                            <field name="TEXT">Outpost - not capturable</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
@@ -7035,7 +7035,7 @@
                                                                             </value>
                                                                             <value name="VALUE-2">
                                                                               <block type="Text">
-                                                                                <field name="TEXT">HQ Team2 - not capturable</field>
+                                                                                <field name="TEXT">Outpost - not capturable</field>
                                                                               </block>
                                                                             </value>
                                                                             <next>
@@ -9098,7 +9098,7 @@
     </statement>
   </block>
   <block type="subroutineBlock" deletable="false" x="0" y="27996">
-    <field name="SUBROUTINE_NAME">showStatusMessage</field>
+    <field name="SUBROUTINE_NAME">displayStatusMessage</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
         <value name="VALUE-0">
@@ -11050,7 +11050,7 @@
             </statement>
             <next>
               <block type="subroutineInstanceBlock">
-                <field name="SUBROUTINE_NAME">showStatusMessage</field>
+                <field name="SUBROUTINE_NAME">displayStatusMessage</field>
                 <next>
                   <block type="subroutineInstanceBlock">
                     <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
