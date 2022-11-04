@@ -119,7 +119,7 @@
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">8</field>
+                                            <field name="NUM">9</field>
                                           </block>
                                         </value>
                                         <next>
