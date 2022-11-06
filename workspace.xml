@@ -5137,7 +5137,7 @@
                                     <next>
                                       <block type="ruleBlock">
                                         <mutation isOnGoingEvent="false"></mutation>
-                                        <field name="NAME">startHoldingObjective</field>
+                                        <field name="NAME">onCPCaptured</field>
                                         <field name="EVENTTYPE">OnCapturePointCaptured</field>
                                         <statement name="CONDITIONS">
                                           <block type="conditionBlock">
@@ -5363,6 +5363,11 @@
                                                                         <next>
                                                                           <block type="subroutineInstanceBlock">
                                                                             <field name="SUBROUTINE_NAME">updateObjectives</field>
+                                                                            <next>
+                                                                              <block type="subroutineInstanceBlock">
+                                                                                <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -5496,6 +5501,11 @@
                                                                             <next>
                                                                               <block type="subroutineInstanceBlock">
                                                                                 <field name="SUBROUTINE_NAME">updateObjectives</field>
+                                                                                <next>
+                                                                                  <block type="subroutineInstanceBlock">
+                                                                                    <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
