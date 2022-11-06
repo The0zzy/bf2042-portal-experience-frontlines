@@ -11749,12 +11749,12 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">2</field>
+                        <field name="NUM">0</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">4</field>
+                        <field name="NUM">2</field>
                       </block>
                     </value>
                     <value name="VALUE-3">
@@ -12027,12 +12027,12 @@
                     </value>
                     <value name="VALUE-1">
                       <block type="Number">
-                        <field name="NUM">0</field>
+                        <field name="NUM">2</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
                       <block type="Number">
-                        <field name="NUM">2</field>
+                        <field name="NUM">4</field>
                       </block>
                     </value>
                     <value name="VALUE-3">
