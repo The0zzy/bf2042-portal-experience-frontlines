@@ -19,14 +19,20 @@ Unfortunately not all maps are currently supported by the underlying "Ground Sup
 
 ### Caspian Border
 US MCOMs - B1 - A1 - C1 - D1 - E1 - RU MCOMs
+### EXPOSURE
+US MCOMs - A1 - C1 - B1 - D1 - B2 - RU MCOMs
 ### Arica Harbor
 US MCOMs - A1 - B1 - B3 - B2 - C1 - RU MCOMs
-### Renewal
-US MCOMs - B1 - A1 - D1 - C1 - E1 - RU MCOMs
 ### Orbital
-US MCOMs - A2 - B1 - B2 - C1 - E1 - RU MCOMs
+US MCOMs - A2 - B1 - B2 - C1 - C2 - RU MCOMs
 ### Manifest
 US MCOMs - C2 - C1 - B1 - A1 - A2 - RU MCOMs
+### Renewal
+US MCOMs - A2 - B1 - C1 - D1 - E1 - RU MCOMs
+### Stranded
+US MCOMs - C1 - B1 - A1 - RU MCOMs
+### Discarded
+US MCOMs - C1 - B1 - A1 - RU MCOMs
 
 ## Change/Update History
 See the commits pages of the branches:  
