@@ -1,9 +1,370 @@
 {
+  "progressionMode": {
+    "value": "portal-unranked",
+    "progressibles": [
+      {
+        "name": "AwardFilter",
+        "kind": {
+          "boolSparse": {}
+        },
+        "mutatorId": "3878594831",
+        "category": "Persistence"
+      },
+      {
+        "name": "MasteryLevelCap",
+        "kind": {
+          "intValue": 1
+        },
+        "mutatorId": "2587263936",
+        "category": "Persistence"
+      },
+      {
+        "name": "PersistStats",
+        "kind": {
+          "boolValue": false
+        },
+        "mutatorId": "877869937",
+        "category": "Persistence"
+      },
+      {
+        "name": "ProgressionModeUIType",
+        "kind": {
+          "intValue": 2
+        },
+        "mutatorId": "1058629035",
+        "category": "Persistence"
+      },
+      {
+        "name": "XpCapValue",
+        "kind": {
+          "intValue": 300
+        },
+        "mutatorId": "400274122",
+        "category": "Persistence"
+      }
+    ]
+  },
+  "originalPlayground": {
+    "owner": {
+      "nucleusId": 2828437619,
+      "personaId": 841527414,
+      "platformId": 1,
+      "name": "Th3Ozzy",
+      "avatar": "https://secure.download.dm.origin.com/production/avatar/prod/userAvatar/39910743/208x208.PNG"
+    },
+    "mapRotation": {
+      "rotationBehavior": null,
+      "roundBehavior": null,
+      "maps": [
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Manifest",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/22/b3/Map_Art_BF2042_LH_L-22b32735.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Arica Harbor",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Orbital",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d1/5a/Map_Art_BF2042_ORB_L-d15a84f6.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom0",
+          "preRoundSize": null,
+          "mapname": "Stranded",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/5f/Map_Art_BF2042_DRA_L-d75f98a0.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Exposure",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/66/e8/Map_Art_BF2042_RID_L-66e845a2.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Caspian Border",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/df/50/Map_Art_BF3_CB_L-df505a1f.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Renewal",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/ad/09/Map_Art_BF2042_TW_L-ad09f15f.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom0",
+          "preRoundSize": null,
+          "mapname": "Discarded",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/76/46/Map_Art_BF2042_DIS_L-764694ca.png"
+        }
+      ]
+    },
+    "playgroundDescription": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win.",
+    "restrictions": null,
+    "playgroundName": "FRONTLINES 2042 - Development",
+    "mutators": [
+      {
+        "name": "VehicleSpawnDelayMultiplier_PerTeam",
+        "kind": {
+          "floatSparse": {}
+        },
+        "mutatorId": "3192277320",
+        "category": "Native,WA_ST_Vehicle,WA_XP_Reduced"
+      },
+      {
+        "name": "AiSpawnType",
+        "kind": {
+          "intValue": 2
+        },
+        "mutatorId": "1666992788",
+        "category": "WA_ST_AI,WA_XP_Reduced"
+      },
+      {
+        "name": "VehicleCallInCoolDownMultiplier_PerTeam",
+        "kind": {
+          "floatSparse": {}
+        },
+        "mutatorId": "745298605",
+        "category": "WA_ST_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "2970976356",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Helicopter__LittleBird_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "526518045",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_MaxVehicles_NoPassengers",
+        "kind": {
+          "intValue": 10
+        },
+        "mutatorId": "3117123585",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "1479656215",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "DiceAI_AllowMixedSquads",
+        "kind": {
+          "boolValue": true
+        },
+        "mutatorId": "2237801375",
+        "category": "WA_ST_AI"
+      },
+      {
+        "name": "MaxPlayerCount_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "2976738751",
+        "category": "WA_GM_All"
+      },
+      {
+        "name": "FactionID_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "548273204",
+        "category": "WA_ST_Era"
+      },
+      {
+        "name": "ModBuilder_GameMode",
+        "kind": {
+          "intValue": 3
+        },
+        "mutatorId": "2047132398",
+        "category": "WA_GM_Custom,WA_XP_Reduced"
+      }
+    ],
+    "secret": null,
+    "state": null,
+    "teamComposition": {
+      "internalTeams": [],
+      "balancingMethod": null,
+      "teams": [
+        {
+          "teamId": 1,
+          "capacity": 20
+        },
+        {
+          "teamId": 2,
+          "capacity": 20
+        }
+      ]
+    },
+    "assetCategories": [
+      {
+        "tagId": "392E765B-767C-00C3-94D6-33E251530A07",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": null,
+          "teamOverrides": null
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AE9",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AE9"
+            ],
+            "teamId": 1,
+            "value": null
+          }
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEA",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AEA"
+            ],
+            "teamId": 2,
+            "value": null
+          }
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA"
+            ],
+            "teamId": 1,
+            "value": null
+          }
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE"
+            ],
+            "teamId": 2,
+            "value": null
+          }
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEE",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": null,
+          "teamOverrides": null
+        }
+      }
+    ],
+    "modRules": null,
+    "blueprintType": "vanilla",
+    "createdAt": {
+      "nanos": 549000000,
+      "seconds": 1667053382
+    },
+    "settings": {
+      "gameServerMessage": [],
+      "description": null,
+      "configName": {
+        "value": "FRONTLINES 2042 - Development"
+      },
+      "ConfigDescription": {
+        "value": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win."
+      },
+      "name": "FRONTLINES 2042 - Development"
+    },
+    "updatedAt": {
+      "nanos": 623000000,
+      "seconds": 1668193340
+    },
+    "checksum": "dc9c8e3fbce29e1762ee90239c2ca081b3448853c79b36f83085569c80242f54",
+    "playgroundId": "325a8490-5795-11ed-af10-d3b271b3fd0a"
+  },
   "tag": [
     {
-      "id": "kingston_era",
+      "sortOrder": null,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_KINGSTONERA",
@@ -17,14 +378,14 @@
             "localizedText": "Includes a Battlefield 2042 faction.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": null
+      "id": "kingston_era"
     },
     {
-      "id": "custom_scripted",
+      "sortOrder": 1,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_CUSTOM_SCRIPTED",
@@ -38,14 +399,14 @@
             "localizedText": "Contains Logic Editor scripting.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 1
+      "id": "custom_scripted"
     },
     {
-      "id": "mastery_restricted",
+      "sortOrder": 2,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_MASTERY_RESTRICTED",
@@ -59,14 +420,14 @@
             "localizedText": "Ability to gain Mastery Ranks is limited",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 2
+      "id": "mastery_restricted"
     },
     {
-      "id": "custom_vehicle_settings",
+      "sortOrder": 3,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_CUSTOM_VEHICLE_SETTINGS",
@@ -80,14 +441,14 @@
             "localizedText": "Vehicle Modifiers have been changed.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 3
+      "id": "custom_vehicle_settings"
     },
     {
-      "id": "ai_enabled",
+      "sortOrder": 4,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_AI_ENABLED",
@@ -101,14 +462,14 @@
             "localizedText": "PvP AI soldiers are present.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 4
+      "id": "ai_enabled"
     },
     {
-      "id": "even_team_sizes",
+      "sortOrder": 5,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_EVEN_TEAM_SIZES",
@@ -122,14 +483,14 @@
             "localizedText": "Teams have the same number of maximum players.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 5
+      "id": "even_team_sizes"
     },
     {
-      "id": "sym_team_settings",
+      "sortOrder": 6,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_SYMMETRIC_TEAM_SETTINGS",
@@ -143,14 +504,14 @@
             "localizedText": "Teams have the same Modifiers.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 6
+      "id": "sym_team_settings"
     },
     {
-      "id": "custom_spawning",
+      "sortOrder": 7,
       "metadata": {
-        "resources": [],
         "translations": [
           {
             "translationId": "ID_ARRIVAL_SERVERTAG_CUSTOM_SPAWN_SETTINGS",
@@ -164,575 +525,328 @@
             "localizedText": "Spawning or respawning rules have changed.",
             "localizedTextDesc": ""
           }
-        ]
+        ],
+        "resources": []
       },
-      "sortOrder": 7
+      "id": "custom_spawning"
     }
   ],
-  "progressionMode": {
-    "value": "portal-unranked",
-    "progressibles": [
-      {
-        "mutatorId": "3878594831",
-        "category": "Persistence",
-        "name": "AwardFilter",
-        "kind": {
-          "boolSparse": {
-            "defaultValue": true
-          }
-        }
-      },
-      {
-        "mutatorId": "2587263936",
-        "category": "Persistence",
-        "name": "MasteryLevelCap",
-        "kind": {
-          "intValue": 1
-        }
-      },
-      {
-        "mutatorId": "877869937",
-        "category": "Persistence",
-        "name": "PersistStats",
-        "kind": {
-          "boolValue": false
-        }
-      },
-      {
-        "mutatorId": "1058629035",
-        "category": "Persistence",
-        "name": "ProgressionModeUIType",
-        "kind": {
-          "intValue": 2
-        }
-      },
-      {
-        "mutatorId": "400274122",
-        "category": "Persistence",
-        "name": "XpCapValue",
-        "kind": {
-          "intValue": 300
-        }
-      }
-    ]
-  },
-  "originalPlayground": {
-    "secret": null,
-    "checksum": "4d07bd08f2149cf0b7bb41cda163e8655d92a25e0f2abf0b6690690ca6c5657e",
-    "owner": {
-      "personaId": 841527414,
-      "nucleusId": 2828437619,
-      "platformId": 1,
-      "name": "Th3Ozzy",
-      "avatar": "https://secure.download.dm.origin.com/production/avatar/prod/userAvatar/39910743/208x208.PNG"
-    },
-    "blueprintType": "vanilla",
-    "createdAt": {
-      "seconds": 1667053382,
-      "nanos": 549000000
-    },
-    "playgroundName": "FRONTLINES 2042 - Development",
-    "teamComposition": {
-      "balancingMethod": null,
-      "teams": [
-        {
-          "capacity": 16,
-          "teamId": 1
-        },
-        {
-          "capacity": 16,
-          "teamId": 2
-        }
-      ],
-      "internalTeams": []
-    },
-    "updatedAt": {
-      "seconds": 1667206524,
-      "nanos": 642000000
-    },
-    "restrictions": null,
-    "modRules": null,
-    "mutators": [
-      {
-        "mutatorId": "3192277320",
-        "category": "Native,WA_ST_Vehicle,WA_XP_Reduced",
-        "name": "VehicleSpawnDelayMultiplier_PerTeam",
-        "kind": {
-          "floatSparse": {
-            "defaultValue": 0.5
-          }
-        }
-      },
-      {
-        "mutatorId": "164479616",
-        "category": "WA_GM_Custom",
-        "name": "ModBuilder_PerSquadCharacterLimit",
-        "kind": {
-          "intValue": 1
-        }
-      },
-      {
-        "mutatorId": "1666992788",
-        "category": "WA_ST_AI,WA_XP_Reduced",
-        "name": "AiSpawnType",
-        "kind": {
-          "intValue": 2
-        }
-      },
-      {
-        "mutatorId": "745298605",
-        "category": "WA_ST_Vehicle",
-        "name": "VehicleCallInCoolDownMultiplier_PerTeam",
-        "kind": {
-          "floatSparse": {
-            "defaultValue": 0.5
-          }
-        }
-      },
-      {
-        "mutatorId": "2970976356",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 1
-          }
-        }
-      },
-      {
-        "mutatorId": "526518045",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Helicopter__LittleBird_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 1
-          }
-        }
-      },
-      {
-        "mutatorId": "3117123585",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_MaxVehicles_NoPassengers",
-        "kind": {
-          "intValue": 10
-        }
-      },
-      {
-        "mutatorId": "1479656215",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 3
-          }
-        }
-      },
-      {
-        "mutatorId": "2237801375",
-        "category": "WA_ST_AI",
-        "name": "DiceAI_AllowMixedSquads",
-        "kind": {
-          "boolValue": true
-        }
-      },
-      {
-        "mutatorId": "2976738751",
-        "category": "WA_GM_All",
-        "name": "MaxPlayerCount_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 16
-          }
-        }
-      },
-      {
-        "mutatorId": "548273204",
-        "category": "WA_ST_Era",
-        "name": "FactionID_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 753847964
-          }
-        }
-      },
-      {
-        "mutatorId": "2047132398",
-        "category": "WA_GM_Custom,WA_XP_Reduced",
-        "name": "ModBuilder_GameMode",
-        "kind": {
-          "intValue": 3
-        }
-      }
-    ],
-    "playgroundId": "325a8490-5795-11ed-af10-d3b271b3fd0a",
-    "settings": {
-      "gameServerMessage": [],
-      "name": "FRONTLINES 2042 - Development",
-      "description": null,
-      "ConfigDescription": {
-        "value": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy and finally destroy their MCOMs to win."
-      },
-      "configName": {
-        "value": "FRONTLINES 2042 - Development"
-      }
-    },
-    "state": null,
-    "mapRotation": {
-      "roundBehavior": null,
-      "maps": [
-        {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
-          "mode": "Custom",
-          "allowedSpectators": 4,
-          "mapname": "Manifest",
-          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/22/b3/Map_Art_BF2042_LH_L-22b32735.png"
-        },
-        {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
-          "mode": "Custom",
-          "allowedSpectators": 4,
-          "mapname": "Arica Harbor",
-          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png"
-        },
-        {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
-          "mode": "Custom",
-          "allowedSpectators": 4,
-          "mapname": "Orbital",
-          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d1/5a/Map_Art_BF2042_ORB_L-d15a84f6.png"
-        },
-        {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
-          "mode": "Custom",
-          "allowedSpectators": 4,
-          "mapname": "Caspian Border",
-          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/df/50/Map_Art_BF3_CB_L-df505a1f.png"
-        },
-        {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
-          "mode": "Custom",
-          "allowedSpectators": 4,
-          "mapname": "Renewal",
-          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/ad/09/Map_Art_BF2042_TW_L-ad09f15f.png"
-        }
-      ],
-      "rotationBehavior": null
-    },
-    "playgroundDescription": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy and finally destroy their MCOMs to win.",
-    "assetCategories": [
-      {
-        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA",
-        "boolean": {
-          "defaultValue": true,
-          "overrides": null,
-          "teamOverrides": {
-            "value": null,
-            "teamId": 1,
-            "assetCategoryTags": [
-              "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA"
-            ]
-          }
-        }
-      },
-      {
-        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE",
-        "boolean": {
-          "defaultValue": true,
-          "overrides": null,
-          "teamOverrides": {
-            "value": null,
-            "teamId": 2,
-            "assetCategoryTags": [
-              "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE"
-            ]
-          }
-        }
-      }
-    ]
-  },
   "validatedPlayground": {
-    "secret": null,
-    "checksum": "4d07bd08f2149cf0b7bb41cda163e8655d92a25e0f2abf0b6690690ca6c5657e",
     "owner": {
-      "personaId": 841527414,
       "nucleusId": 2828437619,
+      "personaId": 841527414,
       "platformId": 1,
       "name": "Th3Ozzy",
       "avatar": "https://secure.download.dm.origin.com/production/avatar/prod/userAvatar/39910743/208x208.PNG"
     },
-    "blueprintType": "vanilla",
-    "createdAt": {
-      "seconds": 1667053382,
-      "nanos": 549000000
-    },
-    "playgroundName": "FRONTLINES 2042 - Development",
-    "teamComposition": {
-      "balancingMethod": null,
-      "teams": [
-        {
-          "capacity": 16,
-          "teamId": 1
-        },
-        {
-          "capacity": 16,
-          "teamId": 2
-        }
-      ],
-      "internalTeams": []
-    },
-    "updatedAt": {
-      "seconds": 1667206524,
-      "nanos": 642000000
-    },
-    "restrictions": null,
-    "modRules": null,
-    "mutators": [
-      {
-        "mutatorId": "3192277320",
-        "category": "Native,WA_ST_Vehicle,WA_XP_Reduced",
-        "name": "VehicleSpawnDelayMultiplier_PerTeam",
-        "kind": {
-          "floatSparse": {
-            "defaultValue": 0.5
-          }
-        }
-      },
-      {
-        "mutatorId": "164479616",
-        "category": "WA_GM_Custom",
-        "name": "ModBuilder_PerSquadCharacterLimit",
-        "kind": {
-          "intValue": 1
-        }
-      },
-      {
-        "mutatorId": "1666992788",
-        "category": "WA_ST_AI,WA_XP_Reduced",
-        "name": "AiSpawnType",
-        "kind": {
-          "intValue": 2
-        }
-      },
-      {
-        "mutatorId": "745298605",
-        "category": "WA_ST_Vehicle",
-        "name": "VehicleCallInCoolDownMultiplier_PerTeam",
-        "kind": {
-          "floatSparse": {
-            "defaultValue": 0.5
-          }
-        }
-      },
-      {
-        "mutatorId": "2970976356",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 1
-          }
-        }
-      },
-      {
-        "mutatorId": "526518045",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Helicopter__LittleBird_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 1
-          }
-        }
-      },
-      {
-        "mutatorId": "3117123585",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_MaxVehicles_NoPassengers",
-        "kind": {
-          "intValue": 10
-        }
-      },
-      {
-        "mutatorId": "1479656215",
-        "category": "WA_AL_Vehicle",
-        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 3
-          }
-        }
-      },
-      {
-        "mutatorId": "2237801375",
-        "category": "WA_ST_AI",
-        "name": "DiceAI_AllowMixedSquads",
-        "kind": {
-          "boolValue": true
-        }
-      },
-      {
-        "mutatorId": "2976738751",
-        "category": "WA_GM_All",
-        "name": "MaxPlayerCount_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 16
-          }
-        }
-      },
-      {
-        "mutatorId": "548273204",
-        "category": "WA_ST_Era",
-        "name": "FactionID_PerTeam",
-        "kind": {
-          "intSparse": {
-            "defaultValue": 753847964
-          }
-        }
-      },
-      {
-        "mutatorId": "2047132398",
-        "category": "WA_GM_Custom,WA_XP_Reduced",
-        "name": "ModBuilder_GameMode",
-        "kind": {
-          "intValue": 3
-        }
-      }
-    ],
-    "playgroundId": "325a8490-5795-11ed-af10-d3b271b3fd0a",
-    "settings": {
-      "gameServerMessage": [],
-      "name": "FRONTLINES 2042 - Development",
-      "description": null,
-      "ConfigDescription": {
-        "value": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy and finally destroy their MCOMs to win."
-      },
-      "configName": {
-        "value": "FRONTLINES 2042 - Development"
-      }
-    },
-    "state": null,
     "mapRotation": {
+      "rotationBehavior": null,
       "roundBehavior": null,
       "maps": [
         {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
           "mode": "Custom",
-          "allowedSpectators": 4,
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
           "mapname": "Manifest",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
           "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/22/b3/Map_Art_BF2042_LH_L-22b32735.png"
         },
         {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
           "mode": "Custom",
-          "allowedSpectators": 4,
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
           "mapname": "Arica Harbor",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
           "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/60/b4/Map_Art_BFBC2_AH_L-60b49760.png"
         },
         {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
           "mode": "Custom",
-          "allowedSpectators": 4,
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
           "mapname": "Orbital",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
           "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d1/5a/Map_Art_BF2042_ORB_L-d15a84f6.png"
         },
         {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
           "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom0",
+          "preRoundSize": null,
+          "mapname": "Stranded",
+          "warmUpSize": 6,
           "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/d7/5f/Map_Art_BF2042_DRA_L-d75f98a0.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
+          "mapname": "Exposure",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/66/e8/Map_Art_BF2042_RID_L-66e845a2.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
           "mapname": "Caspian Border",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
           "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/df/50/Map_Art_BF3_CB_L-df505a1f.png"
         },
         {
-          "location": "ModBuilderCustom1",
-          "warmUpSize": 6,
-          "gameSize": 32,
-          "preRoundSize": null,
-          "rounds": 1,
-          "mutators": [],
           "mode": "Custom",
-          "allowedSpectators": 4,
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom1",
+          "preRoundSize": null,
           "mapname": "Renewal",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
           "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/ad/09/Map_Art_BF2042_TW_L-ad09f15f.png"
+        },
+        {
+          "mode": "Custom",
+          "rounds": 1,
+          "gameSize": 40,
+          "mutators": [],
+          "location": "ModBuilderCustom0",
+          "preRoundSize": null,
+          "mapname": "Discarded",
+          "warmUpSize": 6,
+          "allowedSpectators": 4,
+          "image": "https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/kingston/76/46/Map_Art_BF2042_DIS_L-764694ca.png"
         }
-      ],
-      "rotationBehavior": null
+      ]
     },
-    "playgroundDescription": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy and finally destroy their MCOMs to win.",
+    "playgroundDescription": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win.",
+    "restrictions": null,
+    "playgroundName": "FRONTLINES 2042 - Development",
+    "mutators": [
+      {
+        "name": "VehicleSpawnDelayMultiplier_PerTeam",
+        "kind": {
+          "floatSparse": {}
+        },
+        "mutatorId": "3192277320",
+        "category": "Native,WA_ST_Vehicle,WA_XP_Reduced"
+      },
+      {
+        "name": "AiSpawnType",
+        "kind": {
+          "intValue": 2
+        },
+        "mutatorId": "1666992788",
+        "category": "WA_ST_AI,WA_XP_Reduced"
+      },
+      {
+        "name": "VehicleCallInCoolDownMultiplier_PerTeam",
+        "kind": {
+          "floatSparse": {}
+        },
+        "mutatorId": "745298605",
+        "category": "WA_ST_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Amphibious__FNSS_ZAHA_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "2970976356",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Helicopter__LittleBird_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "526518045",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_MaxVehicles_NoPassengers",
+        "kind": {
+          "intValue": 10
+        },
+        "mutatorId": "3117123585",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "VehicleLimit_Asset_Car__HDT_Storm_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "1479656215",
+        "category": "WA_AL_Vehicle"
+      },
+      {
+        "name": "DiceAI_AllowMixedSquads",
+        "kind": {
+          "boolValue": true
+        },
+        "mutatorId": "2237801375",
+        "category": "WA_ST_AI"
+      },
+      {
+        "name": "MaxPlayerCount_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "2976738751",
+        "category": "WA_GM_All"
+      },
+      {
+        "name": "FactionID_PerTeam",
+        "kind": {
+          "intSparse": {}
+        },
+        "mutatorId": "548273204",
+        "category": "WA_ST_Era"
+      },
+      {
+        "name": "ModBuilder_GameMode",
+        "kind": {
+          "intValue": 3
+        },
+        "mutatorId": "2047132398",
+        "category": "WA_GM_Custom,WA_XP_Reduced"
+      }
+    ],
+    "secret": null,
+    "state": null,
+    "teamComposition": {
+      "internalTeams": [],
+      "balancingMethod": null,
+      "teams": [
+        {
+          "teamId": 1,
+          "capacity": 20
+        },
+        {
+          "teamId": 2,
+          "capacity": 20
+        }
+      ]
+    },
     "assetCategories": [
+      {
+        "tagId": "392E765B-767C-00C3-94D6-33E251530A07",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": null,
+          "teamOverrides": null
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AE9",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AE9"
+            ],
+            "teamId": 1,
+            "value": null
+          }
+        }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEA",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": true,
+          "teamOverrides": {
+            "assetCategoryTags": [
+              "6203AB24-874C-2B00-A6D1-CCA10E8F5AEA"
+            ],
+            "teamId": 2,
+            "value": null
+          }
+        }
+      },
       {
         "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA",
         "boolean": {
-          "defaultValue": true,
           "overrides": null,
+          "defaultValue": true,
           "teamOverrides": {
-            "value": null,
-            "teamId": 1,
             "assetCategoryTags": [
               "6203AB24-874C-2B00-A6D1-CCA10E8F5AFA"
-            ]
+            ],
+            "teamId": 1,
+            "value": null
           }
         }
       },
       {
         "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE",
         "boolean": {
-          "defaultValue": true,
           "overrides": null,
+          "defaultValue": true,
           "teamOverrides": {
-            "value": null,
-            "teamId": 2,
             "assetCategoryTags": [
               "6203AB24-874C-2B00-A6D1-CCA10E8F5AFE"
-            ]
+            ],
+            "teamId": 2,
+            "value": null
           }
         }
+      },
+      {
+        "tagId": "6203AB24-874C-2B00-A6D1-CCA10E8F5AEE",
+        "boolean": {
+          "overrides": null,
+          "defaultValue": null,
+          "teamOverrides": null
+        }
       }
-    ]
+    ],
+    "modRules": null,
+    "blueprintType": "vanilla",
+    "createdAt": {
+      "nanos": 549000000,
+      "seconds": 1667053382
+    },
+    "settings": {
+      "gameServerMessage": [],
+      "description": null,
+      "configName": {
+        "value": "FRONTLINES 2042 - Development"
+      },
+      "ConfigDescription": {
+        "value": "Experience a mix of Conquest and Rush as you fight for chained control points in a tug-of-war frontline. Both teams fight for one objective at a time. Push the frontline towards the enemy headquarter and finally destroy their MCOMs to win."
+      },
+      "name": "FRONTLINES 2042 - Development"
+    },
+    "updatedAt": {
+      "nanos": 623000000,
+      "seconds": 1668193340
+    },
+    "checksum": "dc9c8e3fbce29e1762ee90239c2ca081b3448853c79b36f83085569c80242f54",
+    "playgroundId": "325a8490-5795-11ed-af10-d3b271b3fd0a"
   },
   "blocklyData": null
 }
