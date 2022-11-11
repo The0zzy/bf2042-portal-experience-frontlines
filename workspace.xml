@@ -18540,9 +18540,6 @@
                             <field name="NUM">2</field>
                           </block>
                         </value>
-                        <value name="VALUE-3">
-                          <block type="EventTeam"></block>
-                        </value>
                       </block>
                     </statement>
                     <next>
@@ -18634,9 +18631,6 @@
                               <block type="Number">
                                 <field name="NUM">2</field>
                               </block>
-                            </value>
-                            <value name="VALUE-3">
-                              <block type="EventTeam"></block>
                             </value>
                           </block>
                         </statement>
@@ -18730,9 +18724,6 @@
                                     <field name="NUM">2</field>
                                   </block>
                                 </value>
-                                <value name="VALUE-3">
-                                  <block type="EventTeam"></block>
-                                </value>
                               </block>
                             </statement>
                             <next>
@@ -18825,46 +18816,8 @@
                                         <field name="NUM">2</field>
                                       </block>
                                     </value>
-                                    <value name="VALUE-3">
-                                      <block type="EventTeam"></block>
-                                    </value>
                                   </block>
                                 </statement>
-                                <next>
-                                  <block type="SendErrorReport">
-                                    <value name="VALUE-0">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT">TIME IS RUNNING OUT: - {}:{} minutes left!</field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="HUxoBGS|D)(D8z6t}H*^" variabletype="Global">minutesLeft</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-2">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="eEg%OXv0_%0*nt!ZiMo." variabletype="Global">secondsLeft</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
@@ -18906,33 +18859,6 @@
                         <field name="NUM">2</field>
                       </block>
                     </value>
-                    <value name="VALUE-3">
-                      <block type="EventTeam"></block>
-                    </value>
-                    <next>
-                      <block type="SendErrorReport">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">TIME IS RUNNING OUT: {} seconds left!</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="eEg%OXv0_%0*nt!ZiMo." variabletype="Global">secondsLeft</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </statement>
               </block>
