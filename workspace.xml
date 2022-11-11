@@ -80,7 +80,7 @@
                           <block type="SetRoundTimeLimit">
                             <value name="VALUE-0">
                               <block type="Number">
-                                <field name="NUM">2400</field>
+                                <field name="NUM">400</field>
                               </block>
                             </value>
                             <next>
@@ -6349,7 +6349,7 @@
                                                             <next>
                                                               <block type="ruleBlock">
                                                                 <mutation isOnGoingEvent="true"></mutation>
-                                                                <field name="NAME">onMcomCapturingTimeout</field>
+                                                                <field name="NAME">New Rule</field>
                                                                 <field name="EVENTTYPE">Ongoing</field>
                                                                 <field name="OBJECTTYPE">Global</field>
                                                                 <statement name="CONDITIONS">
@@ -6368,12 +6368,49 @@
                                                                     <next>
                                                                       <block type="conditionBlock">
                                                                         <value name="CONDITION">
+                                                                          <block type="LessThanEqualTo">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetMatchTimeElapsed"></block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">300</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                                <statement name="ACTIONS">
+                                                                  <block type="ShowEventGameModeMessage">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Message">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Text">
+                                                                            <field name="TEXT">TIME IS RUNNING OUT - 5 MINUTES LEFT!</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="ruleBlock">
+                                                                    <mutation isOnGoingEvent="true"></mutation>
+                                                                    <field name="NAME">onMcomCapturingTimeout</field>
+                                                                    <field name="EVENTTYPE">Ongoing</field>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <statement name="CONDITIONS">
+                                                                      <block type="conditionBlock">
+                                                                        <value name="CONDITION">
                                                                           <block type="GetVariable">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                                                <field name="VAR" id="Rg@dG^smD}}cyqP;kbA?" variabletype="Global">isGameOngoing</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -6381,80 +6418,73 @@
                                                                         <next>
                                                                           <block type="conditionBlock">
                                                                             <value name="CONDITION">
-                                                                              <block type="Equals">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="GetVariable">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <value name="VALUE-1">
-                                                                                  <block type="Number">
-                                                                                    <field name="NUM">0</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                              </block>
-                                                                            </value>
-                                                                          </block>
-                                                                        </next>
-                                                                      </block>
-                                                                    </next>
-                                                                  </block>
-                                                                </statement>
-                                                                <statement name="ACTIONS">
-                                                                  <block type="If">
-                                                                    <mutation else="1"></mutation>
-                                                                    <value name="VALUE-0">
-                                                                      <block type="IsTrueForAny">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="GetVariable">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="variableReferenceBlock">
-                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
-                                                                              </block>
-                                                                            </value>
-                                                                          </block>
-                                                                        </value>
-                                                                        <value name="VALUE-1">
-                                                                          <block type="GetMCOMState">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="GetCapturePoint">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="CurrentArrayElement"></block>
-                                                                                </value>
-                                                                              </block>
-                                                                            </value>
-                                                                            <value name="VALUE-1">
-                                                                              <block type="MCOMStateBoolItem">
-                                                                                <field name="VALUE-0">MCOMStateBool</field>
-                                                                                <field name="VALUE-1">IsArmed</field>
-                                                                              </block>
-                                                                            </value>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
-                                                                    </value>
-                                                                    <statement name="DO">
-                                                                      <block type="If">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="LessThanEqualTo">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="GetMatchTimeElapsed"></block>
-                                                                            </value>
-                                                                            <value name="VALUE-1">
                                                                               <block type="GetVariable">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                    <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
+                                                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="conditionBlock">
+                                                                                <value name="CONDITION">
+                                                                                  <block type="Equals">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">0</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <statement name="ACTIONS">
+                                                                      <block type="If">
+                                                                        <mutation else="1"></mutation>
+                                                                        <value name="VALUE-0">
+                                                                          <block type="IsTrueForAny">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="KsQ^,EUhYKAl=3Jn7m3L" variabletype="Global">mcomWorldObject</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetMCOMState">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="GetCapturePoint">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="CurrentArrayElement"></block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="MCOMStateBoolItem">
+                                                                                    <field name="VALUE-0">MCOMStateBool</field>
+                                                                                    <field name="VALUE-1">IsArmed</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
@@ -6462,10 +6492,13 @@
                                                                           </block>
                                                                         </value>
                                                                         <statement name="DO">
-                                                                          <block type="SetRoundTimeLimit">
+                                                                          <block type="If">
                                                                             <value name="VALUE-0">
-                                                                              <block type="Add">
+                                                                              <block type="LessThanEqualTo">
                                                                                 <value name="VALUE-0">
+                                                                                  <block type="GetMatchTimeElapsed"></block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
                                                                                   <block type="GetVariable">
                                                                                     <value name="VALUE-0">
                                                                                       <block type="variableReferenceBlock">
@@ -6476,16 +6509,247 @@
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
-                                                                                <value name="VALUE-1">
-                                                                                  <block type="Number">
-                                                                                    <field name="NUM">5</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO">
+                                                                              <block type="SetRoundTimeLimit">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="Add">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">5</field>
+                                                                                      </block>
+                                                                                    </value>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
-                                                                            </value>
+                                                                            </statement>
+                                                                            <next>
+                                                                              <block type="StopChasingVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="SetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="ChaseVariableAtRate">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">0</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-2">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">-1</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="ShowEventGameModeMessage">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="Message">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="ValueInArray">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="GetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                            <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">6</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="GetVariable">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                        <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="If">
+                                                                                                <mutation else="1"></mutation>
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Equals">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="GetVariable">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="variableReferenceBlock">
+                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">0</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <statement name="DO">
+                                                                                                  <block type="TriggerAudio">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="VoiceOversItem">
+                                                                                                        <field name="VALUE-0">VoiceOvers</field>
+                                                                                                        <field name="VALUE-1">TimeRunningOut</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetTeamId">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">1</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="Wait">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">0.1</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="TriggerAudio">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="VoiceOversItem">
+                                                                                                                <field name="VALUE-0">VoiceOvers</field>
+                                                                                                                <field name="VALUE-1">CloseToVictory</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="GetTeamId">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">2</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                                <statement name="ELSE">
+                                                                                                  <block type="TriggerAudio">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="VoiceOversItem">
+                                                                                                        <field name="VALUE-0">VoiceOvers</field>
+                                                                                                        <field name="VALUE-1">TimeRunningOut</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetTeamId">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">2</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="Wait">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">0.1</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="TriggerAudio">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="VoiceOversItem">
+                                                                                                                <field name="VALUE-0">VoiceOvers</field>
+                                                                                                                <field name="VALUE-1">CloseToVictory</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="GetTeamId">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">1</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </statement>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </statement>
-                                                                        <next>
+                                                                        <statement name="ELSE">
                                                                           <block type="StopChasingVariable">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
@@ -6500,367 +6764,155 @@
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                    <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
+                                                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="GetVariable">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
-                                                                                      </block>
-                                                                                    </value>
+                                                                                  <block type="Boolean">
+                                                                                    <field name="BOOL">FALSE</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
-                                                                                  <block type="ChaseVariableAtRate">
+                                                                                  <block type="If">
+                                                                                    <mutation else="1"></mutation>
                                                                                     <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-1">
-                                                                                      <block type="Number">
-                                                                                        <field name="NUM">0</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-2">
-                                                                                      <block type="Number">
-                                                                                        <field name="NUM">-1</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <next>
-                                                                                      <block type="ShowEventGameModeMessage">
+                                                                                      <block type="Equals">
                                                                                         <value name="VALUE-0">
-                                                                                          <block type="Message">
+                                                                                          <block type="GetVariable">
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="ValueInArray">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="GetVariable">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="variableReferenceBlock">
-                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                        <field name="VAR" id="ns;Z/#MXn/,DsKh+7%d1" variabletype="Global">messages</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="Number">
-                                                                                                    <field name="NUM">6</field>
-                                                                                                  </block>
-                                                                                                </value>
+                                                                                              <block type="variableReferenceBlock">
+                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">0</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO">
+                                                                                      <block type="subroutineInstanceBlock">
+                                                                                        <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
+                                                                                        <next>
+                                                                                          <block type="TriggerAudio">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="VoiceOversItem">
+                                                                                                <field name="VALUE-0">VoiceOvers</field>
+                                                                                                <field name="VALUE-1">ObjectiveTaken_Friendly</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
-                                                                                              <block type="GetVariable">
+                                                                                              <block type="GetTeamId">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="variableReferenceBlock">
-                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id="#M.@zu.C|Hb#L5X.:b/m" variabletype="Global">mcomFuseTime</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <next>
-                                                                                          <block type="If">
-                                                                                            <mutation else="1"></mutation>
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="Equals">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="GetVariable">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="variableReferenceBlock">
-                                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <value name="VALUE-1">
                                                                                                   <block type="Number">
-                                                                                                    <field name="NUM">0</field>
+                                                                                                    <field name="NUM">1</field>
                                                                                                   </block>
                                                                                                 </value>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                            <statement name="DO">
-                                                                                              <block type="TriggerAudio">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="VoiceOversItem">
-                                                                                                    <field name="VALUE-0">VoiceOvers</field>
-                                                                                                    <field name="VALUE-1">TimeRunningOut</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="GetTeamId">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">1</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <next>
-                                                                                                  <block type="Wait">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">0.1</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                    <next>
-                                                                                                      <block type="TriggerAudio">
-                                                                                                        <value name="VALUE-0">
-                                                                                                          <block type="VoiceOversItem">
-                                                                                                            <field name="VALUE-0">VoiceOvers</field>
-                                                                                                            <field name="VALUE-1">CloseToVictory</field>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                        <value name="VALUE-1">
-                                                                                                          <block type="GetTeamId">
-                                                                                                            <value name="VALUE-0">
-                                                                                                              <block type="Number">
-                                                                                                                <field name="NUM">2</field>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                      </block>
-                                                                                                    </next>
-                                                                                                  </block>
-                                                                                                </next>
-                                                                                              </block>
-                                                                                            </statement>
-                                                                                            <statement name="ELSE">
-                                                                                              <block type="TriggerAudio">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="VoiceOversItem">
-                                                                                                    <field name="VALUE-0">VoiceOvers</field>
-                                                                                                    <field name="VALUE-1">TimeRunningOut</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="GetTeamId">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">2</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                                <next>
-                                                                                                  <block type="Wait">
-                                                                                                    <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">0.1</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                    <next>
-                                                                                                      <block type="TriggerAudio">
-                                                                                                        <value name="VALUE-0">
-                                                                                                          <block type="VoiceOversItem">
-                                                                                                            <field name="VALUE-0">VoiceOvers</field>
-                                                                                                            <field name="VALUE-1">CloseToVictory</field>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                        <value name="VALUE-1">
-                                                                                                          <block type="GetTeamId">
-                                                                                                            <value name="VALUE-0">
-                                                                                                              <block type="Number">
-                                                                                                                <field name="NUM">1</field>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                      </block>
-                                                                                                    </next>
-                                                                                                  </block>
-                                                                                                </next>
-                                                                                              </block>
-                                                                                            </statement>
-                                                                                          </block>
-                                                                                        </next>
-                                                                                      </block>
-                                                                                    </next>
-                                                                                  </block>
-                                                                                </next>
-                                                                              </block>
-                                                                            </next>
-                                                                          </block>
-                                                                        </next>
-                                                                      </block>
-                                                                    </statement>
-                                                                    <statement name="ELSE">
-                                                                      <block type="StopChasingVariable">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="variableReferenceBlock">
-                                                                            <mutation isObjectVar="false"></mutation>
-                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="cPC{o;0SAJnS3ilpNP4C" variabletype="Global">mcomCaptureCounter</field>
-                                                                          </block>
-                                                                        </value>
-                                                                        <next>
-                                                                          <block type="SetVariable">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="variableReferenceBlock">
-                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                                                              </block>
-                                                                            </value>
-                                                                            <value name="VALUE-1">
-                                                                              <block type="Boolean">
-                                                                                <field name="BOOL">FALSE</field>
-                                                                              </block>
-                                                                            </value>
-                                                                            <next>
-                                                                              <block type="If">
-                                                                                <mutation else="1"></mutation>
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="Equals">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="GetVariable">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="variableReferenceBlock">
-                                                                                            <mutation isObjectVar="false"></mutation>
-                                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="VALUE-1">
-                                                                                      <block type="Number">
-                                                                                        <field name="NUM">0</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <statement name="DO">
-                                                                                  <block type="subroutineInstanceBlock">
-                                                                                    <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
-                                                                                    <next>
-                                                                                      <block type="TriggerAudio">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="VoiceOversItem">
-                                                                                            <field name="VALUE-0">VoiceOvers</field>
-                                                                                            <field name="VALUE-1">ObjectiveTaken_Friendly</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="VALUE-1">
-                                                                                          <block type="GetTeamId">
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">1</field>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <next>
-                                                                                          <block type="Wait">
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">0.1</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="TriggerAudio">
+                                                                                              <block type="Wait">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="VoiceOversItem">
-                                                                                                    <field name="VALUE-0">VoiceOvers</field>
-                                                                                                    <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">0.1</field>
                                                                                                   </block>
                                                                                                 </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="GetTeamId">
+                                                                                                <next>
+                                                                                                  <block type="TriggerAudio">
                                                                                                     <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">2</field>
+                                                                                                      <block type="VoiceOversItem">
+                                                                                                        <field name="VALUE-0">VoiceOvers</field>
+                                                                                                        <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetTeamId">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">2</field>
+                                                                                                          </block>
+                                                                                                        </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
-                                                                                                </value>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
-                                                                                    </next>
-                                                                                  </block>
-                                                                                </statement>
-                                                                                <statement name="ELSE">
-                                                                                  <block type="subroutineInstanceBlock">
-                                                                                    <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
-                                                                                    <next>
-                                                                                      <block type="TriggerAudio">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="VoiceOversItem">
-                                                                                            <field name="VALUE-0">VoiceOvers</field>
-                                                                                            <field name="VALUE-1">ObjectiveTaken_Friendly</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="VALUE-1">
-                                                                                          <block type="GetTeamId">
+                                                                                    </statement>
+                                                                                    <statement name="ELSE">
+                                                                                      <block type="subroutineInstanceBlock">
+                                                                                        <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
+                                                                                        <next>
+                                                                                          <block type="TriggerAudio">
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">2</field>
+                                                                                              <block type="VoiceOversItem">
+                                                                                                <field name="VALUE-0">VoiceOvers</field>
+                                                                                                <field name="VALUE-1">ObjectiveTaken_Friendly</field>
                                                                                               </block>
                                                                                             </value>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <next>
-                                                                                          <block type="Wait">
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">0.1</field>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="GetTeamId">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">2</field>
+                                                                                                  </block>
+                                                                                                </value>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="TriggerAudio">
+                                                                                              <block type="Wait">
                                                                                                 <value name="VALUE-0">
-                                                                                                  <block type="VoiceOversItem">
-                                                                                                    <field name="VALUE-0">VoiceOvers</field>
-                                                                                                    <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">0.1</field>
                                                                                                   </block>
                                                                                                 </value>
-                                                                                                <value name="VALUE-1">
-                                                                                                  <block type="GetTeamId">
+                                                                                                <next>
+                                                                                                  <block type="TriggerAudio">
                                                                                                     <value name="VALUE-0">
-                                                                                                      <block type="Number">
-                                                                                                        <field name="NUM">1</field>
+                                                                                                      <block type="VoiceOversItem">
+                                                                                                        <field name="VALUE-0">VoiceOvers</field>
+                                                                                                        <field name="VALUE-1">ObjectiveLost</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="GetTeamId">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">1</field>
+                                                                                                          </block>
+                                                                                                        </value>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
-                                                                                                </value>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
-                                                                                    </next>
-                                                                                  </block>
-                                                                                </statement>
-                                                                                <next>
-                                                                                  <block type="subroutineInstanceBlock">
-                                                                                    <field name="SUBROUTINE_NAME">startPreparationTimer</field>
+                                                                                    </statement>
                                                                                     <next>
                                                                                       <block type="subroutineInstanceBlock">
-                                                                                        <field name="SUBROUTINE_NAME">updateObjectives</field>
+                                                                                        <field name="SUBROUTINE_NAME">startPreparationTimer</field>
                                                                                         <next>
                                                                                           <block type="subroutineInstanceBlock">
-                                                                                            <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+                                                                                            <field name="SUBROUTINE_NAME">updateObjectives</field>
                                                                                             <next>
                                                                                               <block type="subroutineInstanceBlock">
-                                                                                                <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                                                <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+                                                                                                <next>
+                                                                                                  <block type="subroutineInstanceBlock">
+                                                                                                    <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
@@ -6872,44 +6924,44 @@
                                                                               </block>
                                                                             </next>
                                                                           </block>
-                                                                        </next>
+                                                                        </statement>
                                                                       </block>
                                                                     </statement>
-                                                                  </block>
-                                                                </statement>
-                                                                <next>
-                                                                  <block type="ruleBlock">
-                                                                    <mutation isOnGoingEvent="false"></mutation>
-                                                                    <field name="NAME">onMcomDestroyed</field>
-                                                                    <field name="EVENTTYPE">OnMCOMDestroyed</field>
-                                                                    <statement name="ACTIONS">
-                                                                      <block type="SendErrorReport">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="Message">
+                                                                    <next>
+                                                                      <block type="ruleBlock">
+                                                                        <mutation isOnGoingEvent="false"></mutation>
+                                                                        <field name="NAME">onMcomDestroyed</field>
+                                                                        <field name="EVENTTYPE">OnMCOMDestroyed</field>
+                                                                        <statement name="ACTIONS">
+                                                                          <block type="SendErrorReport">
                                                                             <value name="VALUE-0">
-                                                                              <block type="Text">
-                                                                                <field name="TEXT">DEBUG: An Mcom was destroyed</field>
+                                                                              <block type="Message">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="Text">
+                                                                                    <field name="TEXT">DEBUG: An Mcom was destroyed</field>
+                                                                                  </block>
+                                                                                </value>
                                                                               </block>
                                                                             </value>
-                                                                          </block>
-                                                                        </value>
-                                                                        <next>
-                                                                          <block type="subroutineInstanceBlock">
-                                                                            <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
                                                                             <next>
                                                                               <block type="subroutineInstanceBlock">
-                                                                                <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+                                                                                <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
                                                                                 <next>
                                                                                   <block type="subroutineInstanceBlock">
-                                                                                    <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                                    <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+                                                                                    <next>
+                                                                                      <block type="subroutineInstanceBlock">
+                                                                                        <field name="SUBROUTINE_NAME">updateMcomIcons</field>
+                                                                                      </block>
+                                                                                    </next>
                                                                                   </block>
                                                                                 </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
-                                                                        </next>
+                                                                        </statement>
                                                                       </block>
-                                                                    </statement>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
@@ -6943,7 +6995,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="22176">
+  <block type="subroutineBlock" deletable="false" x="0" y="22465">
     <field name="SUBROUTINE_NAME">initMessages</field>
     <statement name="ACTIONS">
       <block type="SetVariableAtIndex">
@@ -7408,7 +7460,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="23513">
+  <block type="subroutineBlock" deletable="false" x="0" y="23802">
     <field name="SUBROUTINE_NAME">initObjectiveIcons</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -8176,7 +8228,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="25495">
+  <block type="subroutineBlock" deletable="false" x="0" y="25784">
     <field name="SUBROUTINE_NAME">updateObjectives</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -9854,7 +9906,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="29931">
+  <block type="subroutineBlock" deletable="false" x="0" y="30220">
     <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -11289,7 +11341,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="33507">
+  <block type="subroutineBlock" deletable="false" x="0" y="33796">
     <field name="SUBROUTINE_NAME">updateMcomIcons</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12602,7 +12654,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="36663">
+  <block type="subroutineBlock" deletable="false" x="0" y="36952">
     <field name="SUBROUTINE_NAME">teamOneObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -12898,7 +12950,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="37593">
+  <block type="subroutineBlock" deletable="false" x="0" y="37882">
     <field name="SUBROUTINE_NAME">teamTwoObjectiveWon</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -13175,7 +13227,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="38507">
+  <block type="subroutineBlock" deletable="false" x="0" y="38796">
     <field name="SUBROUTINE_NAME">adjustCaptureTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -13953,7 +14005,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="40538">
+  <block type="subroutineBlock" deletable="false" x="0" y="40827">
     <field name="SUBROUTINE_NAME">initMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14235,7 +14287,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="41208">
+  <block type="subroutineBlock" deletable="false" x="0" y="41497">
     <field name="SUBROUTINE_NAME">startMcomCapturing</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -14600,7 +14652,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="42733">
+  <block type="subroutineBlock" deletable="false" x="0" y="43022">
     <field name="SUBROUTINE_NAME">enableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -15215,7 +15267,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45066">
+  <block type="subroutineBlock" deletable="false" x="0" y="45355">
     <field name="SUBROUTINE_NAME">disableMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -15335,7 +15387,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="45629">
+  <block type="subroutineBlock" deletable="false" x="0" y="45918">
     <field name="SUBROUTINE_NAME">checkWinByMcoms</field>
     <statement name="ACTIONS">
       <block type="SendErrorReport">
@@ -16478,7 +16530,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="48984">
+  <block type="subroutineBlock" deletable="false" x="0" y="49273">
     <field name="SUBROUTINE_NAME">globalActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16499,27 +16551,43 @@
           </block>
         </statement>
         <next>
-          <block type="If">
+          <block type="SendErrorReport">
             <value name="VALUE-0">
-              <block type="LessThanEqualTo">
+              <block type="Message">
                 <value name="VALUE-0">
-                  <block type="GetMatchTimeElapsed"></block>
+                  <block type="Text">
+                    <field name="TEXT">Game Mode Time remaining: {}</field>
+                  </block>
                 </value>
                 <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">300</field>
-                  </block>
+                  <block type="GetMatchTimeElapsed"></block>
                 </value>
               </block>
             </value>
-            <statement name="DO">
-              <block type="subroutineInstanceBlock">
-                <field name="SUBROUTINE_NAME">displayRemainingTime</field>
-              </block>
-            </statement>
             <next>
-              <block type="subroutineInstanceBlock">
-                <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="LessThanEqualTo">
+                    <value name="VALUE-0">
+                      <block type="GetMatchTimeElapsed"></block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">300</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">displayRemainingTime</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">updateObjectiveIcons</field>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -16527,7 +16595,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="49528">
+  <block type="subroutineBlock" deletable="false" x="0" y="49876">
     <field name="SUBROUTINE_NAME">teamActionEverySecond</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -16618,7 +16686,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="50470">
+  <block type="subroutineBlock" deletable="false" x="0" y="50818">
     <field name="SUBROUTINE_NAME">displayStatusMessage</field>
     <statement name="ACTIONS">
       <block type="DisplayCustomNotificationMessage">
@@ -18299,7 +18367,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="56875">
+  <block type="subroutineBlock" deletable="false" x="0" y="57223">
     <field name="SUBROUTINE_NAME">displayRemainingTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -18529,7 +18597,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">TIME IS RUNNING OUT: - {}**{} minutes left!</field>
+                                    <field name="TEXT">TIME IS RUNNING OUT: - {} : 0{} minutes left!</field>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
@@ -18624,7 +18692,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">TIME IS RUNNING OUT: - *{}**{} minutes left!</field>
+                                        <field name="TEXT">TIME IS RUNNING OUT: - 0{} : 0{} minutes left!</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-1">
@@ -18762,6 +18830,41 @@
                                     </value>
                                   </block>
                                 </statement>
+                                <next>
+                                  <block type="SendErrorReport">
+                                    <value name="VALUE-0">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="Text">
+                                            <field name="TEXT">TIME IS RUNNING OUT: - {}:{} minutes left!</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="HUxoBGS|D)(D8z6t}H*^" variabletype="Global">minutesLeft</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="eEg%OXv0_%0*nt!ZiMo." variabletype="Global">secondsLeft</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
@@ -18806,6 +18909,30 @@
                     <value name="VALUE-3">
                       <block type="EventTeam"></block>
                     </value>
+                    <next>
+                      <block type="SendErrorReport">
+                        <value name="VALUE-0">
+                          <block type="Message">
+                            <value name="VALUE-0">
+                              <block type="Text">
+                                <field name="TEXT">TIME IS RUNNING OUT: {} seconds left!</field>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="eEg%OXv0_%0*nt!ZiMo." variabletype="Global">secondsLeft</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </statement>
               </block>
@@ -18815,7 +18942,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="58103">
+  <block type="subroutineBlock" deletable="false" x="0" y="58585">
     <field name="SUBROUTINE_NAME">displayPreparationCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -20580,7 +20707,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="61551">
+  <block type="subroutineBlock" deletable="false" x="0" y="62033">
     <field name="SUBROUTINE_NAME">displayCaptureObjective</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -21903,7 +22030,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="64451">
+  <block type="subroutineBlock" deletable="false" x="0" y="64933">
     <field name="SUBROUTINE_NAME">displayMcomCaptureCountdown</field>
     <statement name="ACTIONS">
       <block type="If">
@@ -22186,7 +22313,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65110">
+  <block type="subroutineBlock" deletable="false" x="0" y="65592">
     <field name="SUBROUTINE_NAME">startPreparationTimer</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -22272,7 +22399,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65553">
+  <block type="subroutineBlock" deletable="false" x="0" y="66035">
     <field name="SUBROUTINE_NAME">TeamOneScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
@@ -22345,7 +22472,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="65918">
+  <block type="subroutineBlock" deletable="false" x="0" y="66400">
     <field name="SUBROUTINE_NAME">TeamTwoScoringObjective</field>
     <statement name="ACTIONS">
       <block type="SetGamemodeScore">
