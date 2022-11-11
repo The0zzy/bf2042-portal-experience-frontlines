@@ -16702,54 +16702,43 @@
             </value>
             <next>
               <block type="If">
-                <mutation else="1"></mutation>
                 <value name="VALUE-0">
                   <block type="Equals">
                     <value name="VALUE-0">
-                      <block type="EventTeam"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="GetTeamId">
+                      <block type="CountOf">
                         <value name="VALUE-0">
-                          <block type="Number">
-                            <field name="NUM">1</field>
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="false"></mutation>
+                                <field name="OBJECTTYPE">Global</field>
+                                <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">3</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <statement name="DO">
                   <block type="If">
+                    <mutation else="1"></mutation>
                     <value name="VALUE-0">
-                      <block type="And" inline="false">
+                      <block type="Equals">
                         <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">0</field>
-                              </block>
-                            </value>
-                          </block>
+                          <block type="EventTeam"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="GetVariable">
+                          <block type="GetTeamId">
                             <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                              <block type="Number">
+                                <field name="NUM">1</field>
                               </block>
                             </value>
                           </block>
@@ -16757,33 +16746,6 @@
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="DisplayCustomNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="CustomMessagesItem">
-                            <field name="VALUE-0">CustomMessages</field>
-                            <field name="VALUE-1">MessageText3</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-2">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-3">
-                          <block type="EventTeam"></block>
-                        </value>
-                      </block>
-                    </statement>
-                    <next>
                       <block type="If">
                         <value name="VALUE-0">
                           <block type="And" inline="false">
@@ -16808,16 +16770,12 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
                                   </block>
                                 </value>
                               </block>
@@ -16830,7 +16788,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
+                                    <field name="TEXT">YOU|&gt; &lt;[MCOMs]&gt;-1-2-3-MCOMs &lt;|ENEMY</field>
                                   </block>
                                 </value>
                               </block>
@@ -16854,21 +16812,40 @@
                         <next>
                           <block type="If">
                             <value name="VALUE-0">
-                              <block type="Equals">
+                              <block type="And" inline="false">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
+                                  <block type="Equals">
                                     <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">1</field>
+                                  <block type="Not">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
@@ -16879,7 +16856,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU-MCOMs-1-&gt;[2]&lt;-3-4-5-MCOMs-ENEMY</field>
+                                        <field name="TEXT">YOU|&gt; MCOMs-&lt;[1]&gt;-2-3-MCOMs &lt;|ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -16917,7 +16894,7 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
@@ -16928,7 +16905,7 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
+                                            <field name="TEXT">YOU|&gt; MCOMs-1-&lt;[2]&gt;-3-MCOMs &lt;|ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -16952,21 +16929,40 @@
                                 <next>
                                   <block type="If">
                                     <value name="VALUE-0">
-                                      <block type="Equals">
+                                      <block type="And" inline="false">
                                         <value name="VALUE-0">
-                                          <block type="GetVariable">
+                                          <block type="Equals">
                                             <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="false"></mutation>
-                                                <field name="OBJECTTYPE">Global</field>
-                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
                                         <value name="VALUE-1">
-                                          <block type="Number">
-                                            <field name="NUM">3</field>
+                                          <block type="Not">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
@@ -16977,7 +16973,7 @@
                                           <block type="Message">
                                             <value name="VALUE-0">
                                               <block type="Text">
-                                                <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
+                                                <field name="TEXT">YOU|&gt; MCOMs-1-2-&lt;[3]&gt;-MCOMs &lt;|ENEMY</field>
                                               </block>
                                             </value>
                                           </block>
@@ -17017,22 +17013,18 @@
                                                 </value>
                                                 <value name="VALUE-1">
                                                   <block type="Number">
-                                                    <field name="NUM">4</field>
+                                                    <field name="NUM">2</field>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Not">
+                                              <block type="GetVariable">
                                                 <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                                      </block>
-                                                    </value>
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17045,7 +17037,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
+                                                    <field name="TEXT">YOU|&gt; MCOMs-1-2-3-&lt;[MCOMs]&gt; &lt;|ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17066,72 +17058,6 @@
                                             </value>
                                           </block>
                                         </statement>
-                                        <next>
-                                          <block type="If">
-                                            <value name="VALUE-0">
-                                              <block type="And" inline="false">
-                                                <value name="VALUE-0">
-                                                  <block type="Equals">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="Number">
-                                                        <field name="NUM">4</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <statement name="DO">
-                                              <block type="DisplayCustomNotificationMessage">
-                                                <value name="VALUE-0">
-                                                  <block type="Message">
-                                                    <value name="VALUE-0">
-                                                      <block type="Text">
-                                                        <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="CustomMessagesItem">
-                                                    <field name="VALUE-0">CustomMessages</field>
-                                                    <field name="VALUE-1">MessageText3</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-2">
-                                                  <block type="Number">
-                                                    <field name="NUM">2</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-3">
-                                                  <block type="EventTeam"></block>
-                                                </value>
-                                              </block>
-                                            </statement>
-                                          </block>
-                                        </next>
                                       </block>
                                     </next>
                                   </block>
@@ -17141,74 +17067,8 @@
                           </block>
                         </next>
                       </block>
-                    </next>
-                  </block>
-                </statement>
-                <statement name="ELSE">
-                  <block type="If">
-                    <value name="VALUE-0">
-                      <block type="And" inline="false">
-                        <value name="VALUE-0">
-                          <block type="Equals">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">0</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <statement name="DO">
-                      <block type="DisplayCustomNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="CustomMessagesItem">
-                            <field name="VALUE-0">CustomMessages</field>
-                            <field name="VALUE-1">MessageText3</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-2">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                        <value name="VALUE-3">
-                          <block type="EventTeam"></block>
-                        </value>
-                      </block>
                     </statement>
-                    <next>
+                    <statement name="ELSE">
                       <block type="If">
                         <value name="VALUE-0">
                           <block type="And" inline="false">
@@ -17233,16 +17093,12 @@
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="Not">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
                                   </block>
                                 </value>
                               </block>
@@ -17255,7 +17111,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
+                                    <field name="TEXT">YOU|&gt; MCOMs-1-2-3-&lt;[MCOMs]&gt; &lt;|ENEMY</field>
                                   </block>
                                 </value>
                               </block>
@@ -17279,21 +17135,40 @@
                         <next>
                           <block type="If">
                             <value name="VALUE-0">
-                              <block type="Equals">
+                              <block type="And" inline="false">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
+                                  <block type="Equals">
                                     <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
                                       </block>
                                     </value>
                                   </block>
                                 </value>
                                 <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">1</field>
+                                  <block type="Not">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
@@ -17304,7 +17179,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
+                                        <field name="TEXT">YOU|&gt; MCOMs-1-2-&lt;[3]&gt;-MCOMs &lt;|ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -17342,7 +17217,7 @@
                                     </value>
                                     <value name="VALUE-1">
                                       <block type="Number">
-                                        <field name="NUM">2</field>
+                                        <field name="NUM">1</field>
                                       </block>
                                     </value>
                                   </block>
@@ -17353,7 +17228,328 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
+                                            <field name="TEXT">YOU|&gt; MCOMs-1-&lt;[2]&gt;-3-MCOMs &lt;|ENEMY</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="CustomMessagesItem">
+                                        <field name="VALUE-0">CustomMessages</field>
+                                        <field name="VALUE-1">MessageText3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-3">
+                                      <block type="EventTeam"></block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="If">
+                                    <value name="VALUE-0">
+                                      <block type="And" inline="false">
+                                        <value name="VALUE-0">
+                                          <block type="Equals">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Not">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="DisplayCustomNotificationMessage">
+                                        <value name="VALUE-0">
+                                          <block type="Message">
+                                            <value name="VALUE-0">
+                                              <block type="Text">
+                                                <field name="TEXT">YOU|&gt; MCOMs-&lt;[1]&gt;-2-3-MCOMs &lt;|ENEMY</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="CustomMessagesItem">
+                                            <field name="VALUE-0">CustomMessages</field>
+                                            <field name="VALUE-1">MessageText3</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-3">
+                                          <block type="EventTeam"></block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="And" inline="false">
+                                            <value name="VALUE-0">
+                                              <block type="Equals">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="DisplayCustomNotificationMessage">
+                                            <value name="VALUE-0">
+                                              <block type="Message">
+                                                <value name="VALUE-0">
+                                                  <block type="Text">
+                                                    <field name="TEXT">YOU|&gt; &lt;[MCOMs]&gt;-1-2-3-MCOMs &lt;|ENEMY</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="CustomMessagesItem">
+                                                <field name="VALUE-0">CustomMessages</field>
+                                                <field name="VALUE-1">MessageText3</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-3">
+                                              <block type="EventTeam"></block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="If">
+                    <value name="VALUE-0">
+                      <block type="Equals">
+                        <value name="VALUE-0">
+                          <block type="CountOf">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="$^D-BM^MPdYAK.%SmJB1" variabletype="Global">captureChain</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="If">
+                        <mutation else="1"></mutation>
+                        <value name="VALUE-0">
+                          <block type="Equals">
+                            <value name="VALUE-0">
+                              <block type="EventTeam"></block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="GetTeamId">
+                                <value name="VALUE-0">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="And" inline="false">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="DisplayCustomNotificationMessage">
+                                <value name="VALUE-0">
+                                  <block type="Message">
+                                    <value name="VALUE-0">
+                                      <block type="Text">
+                                        <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="CustomMessagesItem">
+                                    <field name="VALUE-0">CustomMessages</field>
+                                    <field name="VALUE-1">MessageText3</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-3">
+                                  <block type="EventTeam"></block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="If">
+                                <value name="VALUE-0">
+                                  <block type="And" inline="false">
+                                    <value name="VALUE-0">
+                                      <block type="Equals">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Not">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="DisplayCustomNotificationMessage">
+                                    <value name="VALUE-0">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="Text">
+                                            <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -17391,7 +17587,7 @@
                                         </value>
                                         <value name="VALUE-1">
                                           <block type="Number">
-                                            <field name="NUM">3</field>
+                                            <field name="NUM">1</field>
                                           </block>
                                         </value>
                                       </block>
@@ -17426,40 +17622,21 @@
                                     <next>
                                       <block type="If">
                                         <value name="VALUE-0">
-                                          <block type="And" inline="false">
+                                          <block type="Equals">
                                             <value name="VALUE-0">
-                                              <block type="Equals">
+                                              <block type="GetVariable">
                                                 <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
-                                                  <block type="Number">
-                                                    <field name="NUM">4</field>
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
-                                              <block type="Not">
-                                                <value name="VALUE-0">
-                                                  <block type="GetVariable">
-                                                    <value name="VALUE-0">
-                                                      <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
                                               </block>
                                             </value>
                                           </block>
@@ -17470,7 +17647,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
+                                                    <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17494,36 +17671,21 @@
                                         <next>
                                           <block type="If">
                                             <value name="VALUE-0">
-                                              <block type="And" inline="false">
+                                              <block type="Equals">
                                                 <value name="VALUE-0">
-                                                  <block type="Equals">
-                                                    <value name="VALUE-0">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="false"></mutation>
-                                                            <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-1">
-                                                      <block type="Number">
-                                                        <field name="NUM">4</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-1">
                                                   <block type="GetVariable">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
                                                         <mutation isObjectVar="false"></mutation>
                                                         <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
                                                       </block>
                                                     </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">3</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17534,7 +17696,7 @@
                                                   <block type="Message">
                                                     <value name="VALUE-0">
                                                       <block type="Text">
-                                                        <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
+                                                        <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -17555,6 +17717,142 @@
                                                 </value>
                                               </block>
                                             </statement>
+                                            <next>
+                                              <block type="If">
+                                                <value name="VALUE-0">
+                                                  <block type="And" inline="false">
+                                                    <value name="VALUE-0">
+                                                      <block type="Equals">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Not">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="DisplayCustomNotificationMessage">
+                                                    <value name="VALUE-0">
+                                                      <block type="Message">
+                                                        <value name="VALUE-0">
+                                                          <block type="Text">
+                                                            <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="CustomMessagesItem">
+                                                        <field name="VALUE-0">CustomMessages</field>
+                                                        <field name="VALUE-1">MessageText3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-3">
+                                                      <block type="EventTeam"></block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="If">
+                                                    <value name="VALUE-0">
+                                                      <block type="And" inline="false">
+                                                        <value name="VALUE-0">
+                                                          <block type="Equals">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">4</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO">
+                                                      <block type="DisplayCustomNotificationMessage">
+                                                        <value name="VALUE-0">
+                                                          <block type="Message">
+                                                            <value name="VALUE-0">
+                                                              <block type="Text">
+                                                                <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="CustomMessagesItem">
+                                                            <field name="VALUE-0">CustomMessages</field>
+                                                            <field name="VALUE-1">MessageText3</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-3">
+                                                          <block type="EventTeam"></block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
@@ -17564,11 +17862,436 @@
                               </block>
                             </next>
                           </block>
-                        </next>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="If">
+                            <value name="VALUE-0">
+                              <block type="And" inline="false">
+                                <value name="VALUE-0">
+                                  <block type="Equals">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="false"></mutation>
+                                            <field name="OBJECTTYPE">Global</field>
+                                            <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="false"></mutation>
+                                        <field name="OBJECTTYPE">Global</field>
+                                        <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="DisplayCustomNotificationMessage">
+                                <value name="VALUE-0">
+                                  <block type="Message">
+                                    <value name="VALUE-0">
+                                      <block type="Text">
+                                        <field name="TEXT">YOU-MCOMs-1-2-3-4-5-&gt;[MCOMs]&lt;-ENEMY</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="CustomMessagesItem">
+                                    <field name="VALUE-0">CustomMessages</field>
+                                    <field name="VALUE-1">MessageText3</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-2">
+                                  <block type="Number">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <value name="VALUE-3">
+                                  <block type="EventTeam"></block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="If">
+                                <value name="VALUE-0">
+                                  <block type="And" inline="false">
+                                    <value name="VALUE-0">
+                                      <block type="Equals">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Not">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="DisplayCustomNotificationMessage">
+                                    <value name="VALUE-0">
+                                      <block type="Message">
+                                        <value name="VALUE-0">
+                                          <block type="Text">
+                                            <field name="TEXT">YOU-MCOMs-1-2-3-4-&gt;[5]&lt;-MCOMs-ENEMY</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="CustomMessagesItem">
+                                        <field name="VALUE-0">CustomMessages</field>
+                                        <field name="VALUE-1">MessageText3</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-2">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-3">
+                                      <block type="EventTeam"></block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="If">
+                                    <value name="VALUE-0">
+                                      <block type="Equals">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="false"></mutation>
+                                                <field name="OBJECTTYPE">Global</field>
+                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="DisplayCustomNotificationMessage">
+                                        <value name="VALUE-0">
+                                          <block type="Message">
+                                            <value name="VALUE-0">
+                                              <block type="Text">
+                                                <field name="TEXT">YOU-MCOMs-1-2-3-&gt;[4]&lt;-5-MCOMs-ENEMY</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="CustomMessagesItem">
+                                            <field name="VALUE-0">CustomMessages</field>
+                                            <field name="VALUE-1">MessageText3</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Number">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-3">
+                                          <block type="EventTeam"></block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="If">
+                                        <value name="VALUE-0">
+                                          <block type="Equals">
+                                            <value name="VALUE-0">
+                                              <block type="GetVariable">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="false"></mutation>
+                                                    <field name="OBJECTTYPE">Global</field>
+                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="DisplayCustomNotificationMessage">
+                                            <value name="VALUE-0">
+                                              <block type="Message">
+                                                <value name="VALUE-0">
+                                                  <block type="Text">
+                                                    <field name="TEXT">YOU-MCOMs-1-2-&gt;[3]&lt;-4-5-MCOMs-ENEMY</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="CustomMessagesItem">
+                                                <field name="VALUE-0">CustomMessages</field>
+                                                <field name="VALUE-1">MessageText3</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="Number">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-3">
+                                              <block type="EventTeam"></block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="If">
+                                            <value name="VALUE-0">
+                                              <block type="Equals">
+                                                <value name="VALUE-0">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="false"></mutation>
+                                                        <field name="OBJECTTYPE">Global</field>
+                                                        <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="DisplayCustomNotificationMessage">
+                                                <value name="VALUE-0">
+                                                  <block type="Message">
+                                                    <value name="VALUE-0">
+                                                      <block type="Text">
+                                                        <field name="TEXT">YOU-MCOMs-1-&gt;[2]&lt;-3-4-5-MCOMs-ENEMY</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="CustomMessagesItem">
+                                                    <field name="VALUE-0">CustomMessages</field>
+                                                    <field name="VALUE-1">MessageText3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-3">
+                                                  <block type="EventTeam"></block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="If">
+                                                <value name="VALUE-0">
+                                                  <block type="And" inline="false">
+                                                    <value name="VALUE-0">
+                                                      <block type="Equals">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Not">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="DisplayCustomNotificationMessage">
+                                                    <value name="VALUE-0">
+                                                      <block type="Message">
+                                                        <value name="VALUE-0">
+                                                          <block type="Text">
+                                                            <field name="TEXT">YOU-MCOMs-&gt;[1]&lt;-2-3-4-5-MCOMs-ENEMY</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="CustomMessagesItem">
+                                                        <field name="VALUE-0">CustomMessages</field>
+                                                        <field name="VALUE-1">MessageText3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Number">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-3">
+                                                      <block type="EventTeam"></block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="If">
+                                                    <value name="VALUE-0">
+                                                      <block type="And" inline="false">
+                                                        <value name="VALUE-0">
+                                                          <block type="Equals">
+                                                            <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="V[3=}:C4*?nqGZh;I[L_" variabletype="Global">captureChainIndex</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Number">
+                                                                <field name="NUM">4</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="JrhR)mp$tI(!hj)+IDpw" variabletype="Global">isMcomCapturingOngoing</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO">
+                                                      <block type="DisplayCustomNotificationMessage">
+                                                        <value name="VALUE-0">
+                                                          <block type="Message">
+                                                            <value name="VALUE-0">
+                                                              <block type="Text">
+                                                                <field name="TEXT">YOU-&gt;[MCOMs]&lt;-1-2-3-4-5-MCOMs-ENEMY</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="CustomMessagesItem">
+                                                            <field name="VALUE-0">CustomMessages</field>
+                                                            <field name="VALUE-1">MessageText3</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="Number">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-3">
+                                                          <block type="EventTeam"></block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
                       </block>
-                    </next>
+                    </statement>
                   </block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
@@ -17576,7 +18299,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="0" y="54061">
+  <block type="subroutineBlock" deletable="false" x="114" y="54119">
     <field name="SUBROUTINE_NAME">displayRemainingTime</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
