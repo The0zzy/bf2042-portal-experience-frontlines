@@ -12,6 +12,7 @@ Get in touch with us for feedback and more on the [Battlefield Portal Community]
 
 ## Experience Codes
 - **AA1J18** - Frontlines with PVP-AI (Stable)
+- **AA17F7** - Frontlines No AI (Stable)
 - **AA1P7Y** - Frontlines with PVP-AI (Development)
 
 ## Maps and Capture Point Order
