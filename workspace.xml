@@ -16822,7 +16822,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">YOU ||   &lt;[MCOMs]&gt;-1-2-3-MCOMs   || ENEMY</field>
+                                    <field name="TEXT">YOU ||   &lt;MCOMs&gt;-1-2-3-MCOMs   || ENEMY</field>
                                   </block>
                                 </value>
                               </block>
@@ -16890,7 +16890,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU ||   MCOMs-&lt;[1]&gt;-2-3-MCOMs   || ENEMY</field>
+                                        <field name="TEXT">YOU ||   MCOMs-&lt;1&gt;-2-3-MCOMs   || ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -16939,7 +16939,7 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU ||   MCOMs-1-&lt;[2]&gt;-3-MCOMs   || ENEMY</field>
+                                            <field name="TEXT">YOU ||   MCOMs-1-&lt;2&gt;-3-MCOMs   || ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -17007,7 +17007,7 @@
                                           <block type="Message">
                                             <value name="VALUE-0">
                                               <block type="Text">
-                                                <field name="TEXT">YOU ||   MCOMs-1-2-&lt;[3]&gt;-MCOMs   || ENEMY</field>
+                                                <field name="TEXT">YOU ||   MCOMs-1-2-&lt;3&gt;-MCOMs   || ENEMY</field>
                                               </block>
                                             </value>
                                           </block>
@@ -17071,7 +17071,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;[MCOMs]&gt;   || ENEMY</field>
+                                                    <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;MCOMs&gt;   || ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17145,7 +17145,7 @@
                               <block type="Message">
                                 <value name="VALUE-0">
                                   <block type="Text">
-                                    <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;[MCOMs]&gt;   || ENEMY</field>
+                                    <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;MCOMs&gt;   || ENEMY</field>
                                   </block>
                                 </value>
                               </block>
@@ -17213,7 +17213,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU ||   MCOMs-1-2-&lt;[3]&gt;-MCOMs   || ENEMY</field>
+                                        <field name="TEXT">YOU ||   MCOMs-1-2-&lt;3&gt;-MCOMs   || ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -17262,7 +17262,7 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU ||   MCOMs-1-&lt;[2]&gt;-3-MCOMs   || ENEMY</field>
+                                            <field name="TEXT">YOU ||   MCOMs-1-&lt;2&gt;-3-MCOMs   || ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -17330,7 +17330,7 @@
                                           <block type="Message">
                                             <value name="VALUE-0">
                                               <block type="Text">
-                                                <field name="TEXT">YOU ||   MCOMs-&lt;[1]&gt;-2-3-MCOMs   || ENEMY</field>
+                                                <field name="TEXT">YOU ||   MCOMs-&lt;1&gt;-2-3-MCOMs   || ENEMY</field>
                                               </block>
                                             </value>
                                           </block>
@@ -17394,7 +17394,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU ||   &lt;[MCOMs]&gt;-1-2-3-MCOMs   || ENEMY</field>
+                                                    <field name="TEXT">YOU ||   &lt;MCOMs&gt;-1-2-3-MCOMs   || ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17515,7 +17515,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU ||   &lt;[MCOMs]&gt;-1-2-3-4-5-MCOMs   || ENEMY</field>
+                                        <field name="TEXT">YOU ||   &lt;MCOMs&gt;-1-2-3-4-5-MCOMs   || ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -17583,7 +17583,7 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU ||   MCOMs-&lt;[1]&gt;-2-3-4-5-MCOMs   || ENEMY</field>
+                                            <field name="TEXT">YOU ||   MCOMs-&lt;1&gt;-2-3-4-5-MCOMs   || ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -17632,7 +17632,7 @@
                                           <block type="Message">
                                             <value name="VALUE-0">
                                               <block type="Text">
-                                                <field name="TEXT">YOU ||   MCOMs-1-&lt;[2]&gt;-3-4-5-MCOMs   || ENEMY</field>
+                                                <field name="TEXT">YOU ||   MCOMs-1-&lt;2&gt;-3-4-5-MCOMs   || ENEMY</field>
                                               </block>
                                             </value>
                                           </block>
@@ -17681,7 +17681,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU ||   MCOMs-1-2-&lt;[3]&gt;-4-5-MCOMs   || ENEMY</field>
+                                                    <field name="TEXT">YOU ||   MCOMs-1-2-&lt;3&gt;-4-5-MCOMs   || ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -17730,7 +17730,7 @@
                                                   <block type="Message">
                                                     <value name="VALUE-0">
                                                       <block type="Text">
-                                                        <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;[4]&gt;-5-MCOMs   || ENEMY</field>
+                                                        <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;4&gt;-5-MCOMs   || ENEMY</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -17798,7 +17798,7 @@
                                                       <block type="Message">
                                                         <value name="VALUE-0">
                                                           <block type="Text">
-                                                            <field name="TEXT">YOU ||   MCOMs-1-2-3-4-&lt;[5]&gt;-MCOMs   || ENEMY</field>
+                                                            <field name="TEXT">YOU ||   MCOMs-1-2-3-4-&lt;5&gt;-MCOMs   || ENEMY</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -17862,7 +17862,7 @@
                                                           <block type="Message">
                                                             <value name="VALUE-0">
                                                               <block type="Text">
-                                                                <field name="TEXT">YOU ||   MCOMs-1-2-3-4-5-&lt;[MCOMs]&gt;   || ENEMY</field>
+                                                                <field name="TEXT">YOU ||   MCOMs-1-2-3-4-5-&lt;MCOMs&gt;   || ENEMY</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -17940,7 +17940,7 @@
                                   <block type="Message">
                                     <value name="VALUE-0">
                                       <block type="Text">
-                                        <field name="TEXT">YOU ||   MCOMs-1-2-3-4-5-&lt;[MCOMs]&gt;   || ENEMY</field>
+                                        <field name="TEXT">YOU ||   MCOMs-1-2-3-4-5-&lt;MCOMs&gt;   || ENEMY</field>
                                       </block>
                                     </value>
                                   </block>
@@ -18008,7 +18008,7 @@
                                       <block type="Message">
                                         <value name="VALUE-0">
                                           <block type="Text">
-                                            <field name="TEXT">YOU ||   MCOMs-1-2-3-4-&lt;[5]&gt;-MCOMs   || ENEMY</field>
+                                            <field name="TEXT">YOU ||   MCOMs-1-2-3-4-&lt;5&gt;-MCOMs   || ENEMY</field>
                                           </block>
                                         </value>
                                       </block>
@@ -18057,7 +18057,7 @@
                                           <block type="Message">
                                             <value name="VALUE-0">
                                               <block type="Text">
-                                                <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;[4]&gt;-5-MCOMs   || ENEMY</field>
+                                                <field name="TEXT">YOU ||   MCOMs-1-2-3-&lt;4&gt;-5-MCOMs   || ENEMY</field>
                                               </block>
                                             </value>
                                           </block>
@@ -18106,7 +18106,7 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">YOU ||   MCOMs-1-2-&lt;[3]&gt;-4-5-MCOMs   || ENEMY</field>
+                                                    <field name="TEXT">YOU ||   MCOMs-1-2-&lt;3&gt;-4-5-MCOMs   || ENEMY</field>
                                                   </block>
                                                 </value>
                                               </block>
@@ -18155,7 +18155,7 @@
                                                   <block type="Message">
                                                     <value name="VALUE-0">
                                                       <block type="Text">
-                                                        <field name="TEXT">YOU ||   MCOMs-1-&lt;[2]&gt;-3-4-5-MCOMs   || ENEMY</field>
+                                                        <field name="TEXT">YOU ||   MCOMs-1-&lt;2&gt;-3-4-5-MCOMs   || ENEMY</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -18223,7 +18223,7 @@
                                                       <block type="Message">
                                                         <value name="VALUE-0">
                                                           <block type="Text">
-                                                            <field name="TEXT">YOU ||   MCOMs-&lt;[1]&gt;-2-3-4-5-MCOMs   || ENEMY</field>
+                                                            <field name="TEXT">YOU ||   MCOMs-&lt;1&gt;-2-3-4-5-MCOMs   || ENEMY</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -18287,7 +18287,7 @@
                                                           <block type="Message">
                                                             <value name="VALUE-0">
                                                               <block type="Text">
-                                                                <field name="TEXT">YOU ||   &lt;[MCOMs]&gt;-1-2-3-4-5-MCOMs   || ENEMY</field>
+                                                                <field name="TEXT">YOU ||   &lt;MCOMs&gt;-1-2-3-4-5-MCOMs   || ENEMY</field>
                                                               </block>
                                                             </value>
                                                           </block>
