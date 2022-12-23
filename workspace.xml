@@ -7199,7 +7199,7 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Text">
-                                                        <field name="TEXT">Capture [{}] to secure the frontline!</field>
+                                                        <field name="TEXT">Capture -{}- to secure the frontline!</field>
                                                       </block>
                                                     </value>
                                                     <next>
@@ -7351,7 +7351,7 @@
                                                                                     </value>
                                                                                     <value name="VALUE-2">
                                                                                       <block type="Text">
-                                                                                        <field name="TEXT">Frontline objective [{}] opens in {} seconds!</field>
+                                                                                        <field name="TEXT">Frontline objective -{}- opens in {} seconds!</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
