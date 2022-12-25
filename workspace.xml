@@ -4470,29 +4470,35 @@
             <statement name="CONDITIONS">
               <block type="conditionBlock">
                 <value name="CONDITION">
-                  <block type="CompareVehicleName">
+                  <block type="Or" inline="false">
                     <value name="VALUE-0">
-                      <block type="EventVehicle"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="VehiclesItem">
-                        <field name="VALUE-0">Heavy</field>
-                        <field name="VALUE-1">EBLC-Ram</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <next>
-                  <block type="conditionBlock">
-                    <value name="CONDITION">
-                      <block type="IsVehicleOccupied">
+                      <block type="CompareVehicleName">
                         <value name="VALUE-0">
                           <block type="EventVehicle"></block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="VehiclesItem">
+                            <field name="VALUE-0">Heavy</field>
+                            <field name="VALUE-1">EMKV90-TOR</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="CompareVehicleName">
+                        <value name="VALUE-0">
+                          <block type="EventVehicle"></block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="VehiclesItem">
+                            <field name="VALUE-0">Heavy</field>
+                            <field name="VALUE-1">EBLC-Ram</field>
+                          </block>
                         </value>
                       </block>
                     </value>
                   </block>
-                </next>
+                </value>
               </block>
             </statement>
             <statement name="ACTIONS">
