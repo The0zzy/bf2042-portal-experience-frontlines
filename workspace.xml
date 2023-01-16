@@ -13711,7 +13711,7 @@
                                             <value name="VALUE-0">
                                               <block type="WorldIconsItem">
                                                 <field name="VALUE-0">WorldIcons</field>
-                                                <field name="VALUE-1">C</field>
+                                                <field name="VALUE-1">B</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-1">
@@ -13789,7 +13789,7 @@
                                                     </value>
                                                     <value name="VALUE-1">
                                                       <block type="Boolean">
-                                                        <field name="BOOL">TRUE</field>
+                                                        <field name="BOOL">FALSE</field>
                                                       </block>
                                                     </value>
                                                     <next>
@@ -13815,7 +13815,7 @@
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Boolean">
-                                                                <field name="BOOL">FALSE</field>
+                                                                <field name="BOOL">TRUE</field>
                                                               </block>
                                                             </value>
                                                           </block>
