@@ -117,87 +117,6 @@
                                   }
                                 }
                               }
-                            },
-                            "next": {
-                              "block": {
-                                "type": "conditionBlock",
-                                "id": "V6c8RN72t7%G3mZN4_{)",
-                                "inputs": {
-                                  "CONDITION": {
-                                    "block": {
-                                      "type": "Or",
-                                      "id": "X1S+wiJ9pAQ3E+iI#*Nf",
-                                      "inline": false,
-                                      "inputs": {
-                                        "VALUE-0": {
-                                          "block": {
-                                            "type": "IsFaction",
-                                            "id": "]JX+V+Y|v+*Vi9lqv#Uc",
-                                            "inputs": {
-                                              "VALUE-0": {
-                                                "block": {
-                                                  "type": "GetTeamId",
-                                                  "id": "#@rrM1654hR1Xz[1:O;!",
-                                                  "inputs": {
-                                                    "VALUE-0": {
-                                                      "block": {
-                                                        "type": "EventPlayer",
-                                                        "id": "/Svb#KP.Hn.1fkb++O^j"
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              },
-                                              "VALUE-1": {
-                                                "block": {
-                                                  "type": "FactionsItem",
-                                                  "id": "ZjoG43`to{v@A0k3`6Y_",
-                                                  "fields": {
-                                                    "VALUE-0": "Factions",
-                                                    "VALUE-1": "Kingston_RU"
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "VALUE-1": {
-                                          "block": {
-                                            "type": "IsFaction",
-                                            "id": "KWGQVIL.Hp3KUTeH~#.)",
-                                            "inputs": {
-                                              "VALUE-0": {
-                                                "block": {
-                                                  "type": "GetTeamId",
-                                                  "id": "k^W{*H`rhrihfE8Q/+Bs",
-                                                  "inputs": {
-                                                    "VALUE-0": {
-                                                      "block": {
-                                                        "type": "EventPlayer",
-                                                        "id": "|Q3%B`*:%C{DQ#6l2]y`"
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              },
-                                              "VALUE-1": {
-                                                "block": {
-                                                  "type": "FactionsItem",
-                                                  "id": "0/6]h}%1D@eA8Tcrczp0",
-                                                  "fields": {
-                                                    "VALUE-0": "Factions",
-                                                    "VALUE-1": "Kingston_US"
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
                             }
                           }
                         }
@@ -4508,7 +4427,7 @@
         "type": "subroutineBlock",
         "id": "~-e-Z:d|TdQ?;m+.Hv*f",
         "x": 0,
-        "y": 13306,
+        "y": 13119,
         "extraState": {
           "subroutineName": "frontlinesInit",
           "parameters": []
@@ -6271,11 +6190,11 @@
                                                                                                                                                                                                                                 "type": "subroutineInstanceBlock",
                                                                                                                                                                                                                                 "id": "pU@Y%||d|e9eqb-.L]Fj",
                                                                                                                                                                                                                                 "extraState": {
-                                                                                                                                                                                                                                  "subroutineName": "fl_initFlashpoint",
+                                                                                                                                                                                                                                  "subroutineName": "fl_initMapFlashpoint",
                                                                                                                                                                                                                                   "parameters": []
                                                                                                                                                                                                                                 },
                                                                                                                                                                                                                                 "fields": {
-                                                                                                                                                                                                                                  "SUBROUTINE_NAME": "fl_initFlashpoint"
+                                                                                                                                                                                                                                  "SUBROUTINE_NAME": "fl_initMapFlashpoint"
                                                                                                                                                                                                                                 }
                                                                                                                                                                                                                               }
                                                                                                                                                                                                                             }
@@ -7146,7 +7065,7 @@
         "type": "subroutineBlock",
         "id": "]?~4-fIKzJ7nFe~}pu]1",
         "x": 0,
-        "y": 19578,
+        "y": 19391,
         "extraState": {
           "subroutineName": "frontlinesInitMapOrbital",
           "parameters": []
@@ -7978,7 +7897,7 @@
         "type": "subroutineBlock",
         "id": "*([A]uK],vq-m]nlStTu",
         "x": 0,
-        "y": 20627,
+        "y": 20440,
         "extraState": {
           "subroutineName": "frontlinesInitMapCaspian",
           "parameters": []
@@ -8842,7 +8761,7 @@
         "type": "subroutineBlock",
         "id": "}S+6Wg*G7%h~66SNXBR.",
         "x": 0,
-        "y": 21727,
+        "y": 21540,
         "extraState": {
           "subroutineName": "frontlinesInitMapSpearhead",
           "parameters": []
@@ -9850,7 +9769,7 @@
         "type": "subroutineBlock",
         "id": "#fX~o{J~d}DCGXH/C}uV",
         "x": 0,
-        "y": 22961,
+        "y": 22774,
         "extraState": {
           "subroutineName": "frontlinesInitMapArica",
           "parameters": []
@@ -10682,7 +10601,7 @@
         "type": "subroutineBlock",
         "id": ",6ax|Q?{J7IkSdoIZ!W^",
         "x": 0,
-        "y": 24010,
+        "y": 23823,
         "extraState": {
           "subroutineName": "frontlinesInitMapDiscarded",
           "parameters": []
@@ -11370,7 +11289,7 @@
         "type": "subroutineBlock",
         "id": "bc)((hYV.Sso^-$!)3{H",
         "x": 0,
-        "y": 24925,
+        "y": 24738,
         "extraState": {
           "subroutineName": "frontlinesInitMapStranded",
           "parameters": []
@@ -12919,7 +12838,7 @@
         "type": "subroutineBlock",
         "id": "HmFUE%E?$McL=,)z3QE.",
         "x": 0,
-        "y": 26802,
+        "y": 26615,
         "extraState": {
           "subroutineName": "frontlinesInitMapExposure",
           "parameters": []
@@ -13751,7 +13670,7 @@
         "type": "subroutineBlock",
         "id": "9p~-f_{lVVeXd!{b6gb#",
         "x": 0,
-        "y": 27851,
+        "y": 27664,
         "extraState": {
           "subroutineName": "frontlinesInitMapManifest",
           "parameters": []
@@ -14583,7 +14502,7 @@
         "type": "subroutineBlock",
         "id": "xo23tD:Xqzb(a55ndAE*",
         "x": 0,
-        "y": 28900,
+        "y": 28713,
         "extraState": {
           "subroutineName": "frontlinesInitMapRenewal",
           "parameters": []
@@ -15415,7 +15334,7 @@
         "type": "subroutineBlock",
         "id": "xf]Eo_Dt:0$Lm1cM?X?z",
         "x": 0,
-        "y": 60151,
+        "y": 59964,
         "extraState": {
           "subroutineName": "initMessages",
           "parameters": []
@@ -16783,7 +16702,7 @@
         "type": "subroutineBlock",
         "id": "4IJCB09,[ChagfbhMVvo",
         "x": 0,
-        "y": 29949,
+        "y": 29762,
         "extraState": {
           "subroutineName": "initObjectiveIcons",
           "parameters": []
@@ -18235,7 +18154,7 @@
         "type": "subroutineBlock",
         "id": "+*pr-MsBi0VVq2c3UbP4",
         "x": 0,
-        "y": 31923,
+        "y": 31736,
         "extraState": {
           "subroutineName": "updateObjectives",
           "parameters": []
@@ -21990,7 +21909,7 @@
         "type": "subroutineBlock",
         "id": "*rjbyVHC%?Gp$K%8|n@B",
         "x": 0,
-        "y": 37988,
+        "y": 37801,
         "extraState": {
           "subroutineName": "updateObjectiveIcons",
           "parameters": []
@@ -25824,7 +25743,7 @@
         "type": "subroutineBlock",
         "id": "i|=[J8qEWjWeNJb:^4UM",
         "x": 0,
-        "y": 42785,
+        "y": 42598,
         "extraState": {
           "subroutineName": "updateMcomIcons",
           "parameters": []
@@ -28494,7 +28413,7 @@
         "type": "subroutineBlock",
         "id": "-_FY4g!NxQZsoiP855xl",
         "x": 0,
-        "y": 45941,
+        "y": 45754,
         "extraState": {
           "subroutineName": "teamOneObjectiveWon",
           "parameters": []
@@ -29087,7 +29006,7 @@
         "type": "subroutineBlock",
         "id": "Tb-%X8|XmyWk5,Y0w?{~",
         "x": 0,
-        "y": 46871,
+        "y": 46684,
         "extraState": {
           "subroutineName": "teamTwoObjectiveWon",
           "parameters": []
@@ -29641,7 +29560,7 @@
         "type": "subroutineBlock",
         "id": "y*C_}D#Ec1/D?t.^C}HB",
         "x": 0,
-        "y": 47785,
+        "y": 47598,
         "extraState": {
           "subroutineName": "adjustCaptureTime",
           "parameters": []
@@ -30577,7 +30496,7 @@
         "type": "subroutineBlock",
         "id": "Ahxo+ZAEUb0c?EsWBD%_",
         "x": 0,
-        "y": 49420,
+        "y": 49233,
         "extraState": {
           "subroutineName": "initMcoms",
           "parameters": []
@@ -31163,7 +31082,7 @@
         "type": "subroutineBlock",
         "id": "T1vR}tu*bUGkC~Pe]-Fa",
         "x": 0,
-        "y": 50090,
+        "y": 49903,
         "extraState": {
           "subroutineName": "startMcomCapturing",
           "parameters": []
@@ -31915,7 +31834,7 @@
         "type": "subroutineBlock",
         "id": "R=3uB,Z.kv%-TuCahoaJ",
         "x": 0,
-        "y": 51615,
+        "y": 51428,
         "extraState": {
           "subroutineName": "enableMcoms",
           "parameters": []
@@ -33178,7 +33097,7 @@
         "type": "subroutineBlock",
         "id": "1AqlG+7lw4)Eow=tg%EZ",
         "x": 0,
-        "y": 53948,
+        "y": 53761,
         "extraState": {
           "subroutineName": "disableMcoms",
           "parameters": []
@@ -33430,7 +33349,7 @@
         "type": "subroutineBlock",
         "id": "a@Ed-x+#rGb`[kvd[TMt",
         "x": 0,
-        "y": 54511,
+        "y": 54324,
         "extraState": {
           "subroutineName": "checkWinByMcoms",
           "parameters": []
@@ -35732,7 +35651,7 @@
         "type": "subroutineBlock",
         "id": "FsVP!{|..W?s!(B!@g$#",
         "x": 0,
-        "y": 58026,
+        "y": 57839,
         "extraState": {
           "subroutineName": "globalActionEverySecond",
           "parameters": []
@@ -35876,7 +35795,7 @@
         "type": "subroutineBlock",
         "id": "ME;+r_w^R:9+fvb}a=hp",
         "x": 0,
-        "y": 62049,
+        "y": 61862,
         "extraState": {
           "subroutineName": "displayFrontlineStatus",
           "parameters": []
@@ -39827,7 +39746,7 @@
         "type": "subroutineBlock",
         "id": "d_;3(4CpA1.c1.fYmL;n",
         "x": 0,
-        "y": 67014,
+        "y": 66827,
         "extraState": {
           "subroutineName": "displayRemainingTime",
           "parameters": []
@@ -40832,7 +40751,7 @@
         "type": "subroutineBlock",
         "id": "=M-pLBnheS2l%8t-TcKi",
         "x": 0,
-        "y": 68242,
+        "y": 68055,
         "extraState": {
           "subroutineName": "displayObjectiveMessage",
           "parameters": []
@@ -42045,7 +41964,7 @@
         "type": "subroutineBlock",
         "id": "t3BPg3=0X$26:G;W4-~i",
         "x": 0,
-        "y": 72735,
+        "y": 72548,
         "extraState": {
           "subroutineName": "startPreparationTimer",
           "parameters": []
@@ -42227,7 +42146,7 @@
         "type": "subroutineBlock",
         "id": "+[d2^4=LQ70b7pSLdneq",
         "x": 0,
-        "y": 73178,
+        "y": 72991,
         "extraState": {
           "subroutineName": "TeamOneScoringObjective",
           "parameters": []
@@ -42376,7 +42295,7 @@
         "type": "subroutineBlock",
         "id": "4z;8!uGK#0tE-/P.22Sv",
         "x": 0,
-        "y": 73543,
+        "y": 73356,
         "extraState": {
           "subroutineName": "TeamTwoScoringObjective",
           "parameters": []
@@ -42525,7 +42444,7 @@
         "type": "subroutineBlock",
         "id": "kfi{jcxe-]dC)[QS|7k+",
         "x": 0,
-        "y": 58672,
+        "y": 58485,
         "extraState": {
           "subroutineName": "displayPredefinedMessage",
           "parameters": [
@@ -42756,7 +42675,7 @@
         "type": "subroutineBlock",
         "id": "Z#-X)!b/e[#49cvsF5`^",
         "x": 0,
-        "y": 59165,
+        "y": 58978,
         "extraState": {
           "subroutineName": "displayPredefinedMessageP1",
           "parameters": [
@@ -43009,7 +42928,7 @@
         "type": "subroutineBlock",
         "id": "2RumL]13@[aD=x_YZ!qB",
         "x": 0,
-        "y": 59658,
+        "y": 59471,
         "extraState": {
           "subroutineName": "displayPredefinedMessageP2",
           "parameters": [
@@ -43284,7 +43203,7 @@
         "type": "subroutineBlock",
         "id": "wZq?@S7_;5V(Rsp8qb-n",
         "x": 0,
-        "y": 69730,
+        "y": 69543,
         "extraState": {
           "subroutineName": "setCPLabel",
           "parameters": []
@@ -45477,7 +45396,7 @@
         "type": "subroutineBlock",
         "id": "N8c)LLO;L-J[dl8KSlO/",
         "x": 0,
-        "y": 12377,
+        "y": 12190,
         "extraState": {
           "subroutineName": "comn_initSoldiers",
           "parameters": []
@@ -46080,7 +45999,7 @@
         "type": "subroutineBlock",
         "id": ",@Z^D31k%4R/bzGtj[2z",
         "x": 0,
-        "y": 10065,
+        "y": 9878,
         "extraState": {
           "subroutineName": "fl_onCapturePointCaptured",
           "parameters": []
@@ -46850,13 +46769,13 @@
         "type": "subroutineBlock",
         "id": "A1oF@=Po[:zQtC?;hgl(",
         "x": 0,
-        "y": 18540,
+        "y": 18353,
         "extraState": {
-          "subroutineName": "fl_initFlashpoint",
+          "subroutineName": "fl_initMapFlashpoint",
           "parameters": []
         },
         "fields": {
-          "SUBROUTINE_NAME": "fl_initFlashpoint"
+          "SUBROUTINE_NAME": "fl_initMapFlashpoint"
         },
         "inputs": {
           "ACTIONS": {
@@ -47707,7 +47626,7 @@
         "type": "subroutineBlock",
         "id": "srNY^sa-e23gvw*_@asp",
         "x": 0,
-        "y": 37505,
+        "y": 37318,
         "extraState": {
           "subroutineName": "fl_setOutpost",
           "parameters": [
