@@ -47159,24 +47159,33 @@
                                     },
                                     "VALUE-2": {
                                       "block": {
-                                        "type": "GetCapturePointPosition",
-                                        "id": "GWmixAg[r5W(:HI$|n=D",
+                                        "type": "CreateVector",
+                                        "id": "l^f+z`{1W#(:|XGh9;Z,",
                                         "inputs": {
                                           "VALUE-0": {
                                             "block": {
-                                              "type": "GetCapturePoint",
-                                              "id": "i/|F1z?,R24@hi[|WwXq",
-                                              "inputs": {
-                                                "VALUE-0": {
-                                                  "block": {
-                                                    "type": "CapturePointsItem",
-                                                    "id": "W,.+*6fFEd^qj5sV!W^W",
-                                                    "fields": {
-                                                      "VALUE-0": "CapturePoints",
-                                                      "VALUE-1": "A1"
-                                                    }
-                                                  }
-                                                }
+                                              "type": "Number",
+                                              "id": "Q[gZa6rO{d]lRj7.^1e[",
+                                              "fields": {
+                                                "NUM": -154.4
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "D!r|SJwOV!cP,ECzD/;9",
+                                              "fields": {
+                                                "NUM": 213
+                                              }
+                                            }
+                                          },
+                                          "VALUE-2": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "`dhr[#]3|^WUQ5K5YqD2",
+                                              "fields": {
+                                                "NUM": -57.5
                                               }
                                             }
                                           }
@@ -47215,67 +47224,33 @@
                                         },
                                         "VALUE-2": {
                                           "block": {
-                                            "type": "Add",
-                                            "id": ";2H[7rbBu:qO@/ir@);I",
+                                            "type": "CreateVector",
+                                            "id": "S^*`bMpB][4~}@mz,a!t",
                                             "inputs": {
                                               "VALUE-0": {
                                                 "block": {
-                                                  "type": "GetCapturePointPosition",
-                                                  "id": "la_z$cDXzi0?bHdansmJ",
-                                                  "inputs": {
-                                                    "VALUE-0": {
-                                                      "block": {
-                                                        "type": "GetCapturePoint",
-                                                        "id": ")D#!w_$.NV!eQsc/kT=A",
-                                                        "inputs": {
-                                                          "VALUE-0": {
-                                                            "block": {
-                                                              "type": "CapturePointsItem",
-                                                              "id": "qM0[L~-#OB1XL%IU@9X0",
-                                                              "fields": {
-                                                                "VALUE-0": "CapturePoints",
-                                                                "VALUE-1": "A1"
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
+                                                  "type": "Number",
+                                                  "id": ":3:PAOGx_X4:@2{$I@fL",
+                                                  "fields": {
+                                                    "NUM": -208
                                                   }
                                                 }
                                               },
                                               "VALUE-1": {
                                                 "block": {
-                                                  "type": "CreateVector",
-                                                  "id": "n(`TmQ(B5{8I/E~N,ie1",
-                                                  "inputs": {
-                                                    "VALUE-0": {
-                                                      "block": {
-                                                        "type": "Number",
-                                                        "id": "yGU^~I@_[6Z@KrNxy`f/",
-                                                        "fields": {
-                                                          "NUM": 0
-                                                        }
-                                                      }
-                                                    },
-                                                    "VALUE-1": {
-                                                      "block": {
-                                                        "type": "Number",
-                                                        "id": "Cr+?dInwl/I!XRM_iijp",
-                                                        "fields": {
-                                                          "NUM": 1
-                                                        }
-                                                      }
-                                                    },
-                                                    "VALUE-2": {
-                                                      "block": {
-                                                        "type": "Number",
-                                                        "id": "%xDC5eu}B-uKFpc$yz?K",
-                                                        "fields": {
-                                                          "NUM": 0
-                                                        }
-                                                      }
-                                                    }
+                                                  "type": "Number",
+                                                  "id": "ECA`Do2Q8QlvF7,8~~v/",
+                                                  "fields": {
+                                                    "NUM": 212.5
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-2": {
+                                                "block": {
+                                                  "type": "Number",
+                                                  "id": "Mtmp.yI,jo|xRr|Co82r",
+                                                  "fields": {
+                                                    "NUM": -88.7
                                                   }
                                                 }
                                               }
@@ -47314,24 +47289,33 @@
                                             },
                                             "VALUE-2": {
                                               "block": {
-                                                "type": "GetCapturePointPosition",
-                                                "id": "#r3wJo]f[m3gz|$mor*d",
+                                                "type": "CreateVector",
+                                                "id": "MV9Hc:-/CTvbqT)@0ni$",
                                                 "inputs": {
                                                   "VALUE-0": {
                                                     "block": {
-                                                      "type": "GetCapturePoint",
-                                                      "id": "k;8p}~]n5qb5F54*z8R~",
-                                                      "inputs": {
-                                                        "VALUE-0": {
-                                                          "block": {
-                                                            "type": "CapturePointsItem",
-                                                            "id": "cM}8ZHC(+}R+R^@o8~xt",
-                                                            "fields": {
-                                                              "VALUE-0": "CapturePoints",
-                                                              "VALUE-1": "G1"
-                                                            }
-                                                          }
-                                                        }
+                                                      "type": "Number",
+                                                      "id": "ez,RD--nD@G6%y#J)=A#",
+                                                      "fields": {
+                                                        "NUM": 588.9
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "Number",
+                                                      "id": "TLICsB!;xVBAT}tK%wU]",
+                                                      "fields": {
+                                                        "NUM": 227.9
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-2": {
+                                                    "block": {
+                                                      "type": "Number",
+                                                      "id": "3?|Sp:Jj9D)[EbNG%2zd",
+                                                      "fields": {
+                                                        "NUM": 63.1
                                                       }
                                                     }
                                                   }
@@ -47370,67 +47354,33 @@
                                                 },
                                                 "VALUE-2": {
                                                   "block": {
-                                                    "type": "Add",
-                                                    "id": "Ia0%=a-v2D_2MKLF-Wre",
+                                                    "type": "CreateVector",
+                                                    "id": "?92QDT;zo]Y7LS[s!bQy",
                                                     "inputs": {
                                                       "VALUE-0": {
                                                         "block": {
-                                                          "type": "GetCapturePointPosition",
-                                                          "id": "iXzdWNG[Ky/J4=CS7f:/",
-                                                          "inputs": {
-                                                            "VALUE-0": {
-                                                              "block": {
-                                                                "type": "GetCapturePoint",
-                                                                "id": ",HK-;sF!/r8`M?v|](ve",
-                                                                "inputs": {
-                                                                  "VALUE-0": {
-                                                                    "block": {
-                                                                      "type": "CapturePointsItem",
-                                                                      "id": "dSVzJm%SXzC*5!k9/.:p",
-                                                                      "fields": {
-                                                                        "VALUE-0": "CapturePoints",
-                                                                        "VALUE-1": "G1"
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
+                                                          "type": "Number",
+                                                          "id": "#7P~sb^+==}g{Us=Tx%s",
+                                                          "fields": {
+                                                            "NUM": 639.4
                                                           }
                                                         }
                                                       },
                                                       "VALUE-1": {
                                                         "block": {
-                                                          "type": "CreateVector",
-                                                          "id": "`hgCa+Q@p_vgNn6;FdE,",
-                                                          "inputs": {
-                                                            "VALUE-0": {
-                                                              "block": {
-                                                                "type": "Number",
-                                                                "id": "|D_e;naK2#8A/TaSP]pA",
-                                                                "fields": {
-                                                                  "NUM": 0
-                                                                }
-                                                              }
-                                                            },
-                                                            "VALUE-1": {
-                                                              "block": {
-                                                                "type": "Number",
-                                                                "id": "f,`RKu5ybDN9x%X`TsGo",
-                                                                "fields": {
-                                                                  "NUM": 1
-                                                                }
-                                                              }
-                                                            },
-                                                            "VALUE-2": {
-                                                              "block": {
-                                                                "type": "Number",
-                                                                "id": "l;;Nc./L(*a1:B@jYf=8",
-                                                                "fields": {
-                                                                  "NUM": 0
-                                                                }
-                                                              }
-                                                            }
+                                                          "type": "Number",
+                                                          "id": "98L,sRD+@/9,kO6k-n;]",
+                                                          "fields": {
+                                                            "NUM": 226.7
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-2": {
+                                                        "block": {
+                                                          "type": "Number",
+                                                          "id": "At,UzU}?Yj07`02tBD0^",
+                                                          "fields": {
+                                                            "NUM": 78.4
                                                           }
                                                         }
                                                       }
