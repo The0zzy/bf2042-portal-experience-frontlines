@@ -42532,14 +42532,9 @@
       "type": "Player"
     },
     {
-      "name": "playersOnPoint",
+      "name": "fl_playersOnPoint",
       "id": "Kv(FdB%R0I^|A3[)4Zs-",
       "type": "CapturePoint"
-    },
-    {
-      "name": "tmpMessageIndex",
-      "id": "Oa1:cl6%J1]f[#C#rhFH",
-      "type": "TeamId"
     },
     {
       "name": "comn_opposingTeam",
@@ -42547,52 +42542,52 @@
       "type": "TeamId"
     },
     {
-      "name": "captureChain",
+      "name": "fl_captureChain",
       "id": "$^D-BM^MPdYAK.%SmJB1",
       "type": "Global"
     },
     {
-      "name": "captureChainIndex",
+      "name": "fl_captureChainIndex",
       "id": "V[3=}:C4*?nqGZh;I[L_",
       "type": "Global"
     },
     {
-      "name": "isGameOngoing",
+      "name": "fl_isGameOngoing",
       "id": "Rg@dG^smD}}cyqP;kbA?",
       "type": "Global"
     },
     {
-      "name": "preparationTimeout",
+      "name": "fl_preparationTimeout",
       "id": "8bX8WXOU3J-1nPd^Z467",
       "type": "Global"
     },
     {
-      "name": "preparationCounter",
+      "name": "fl_preparationCounter",
       "id": "^2#0woMGZ^%,!;R5Ym/?",
       "type": "Global"
     },
     {
-      "name": "iterator",
+      "name": "comn_loopIndex",
       "id": "FOx%b#aj*u]|4Sw*1;X%",
       "type": "Global"
     },
     {
-      "name": "mcomFuseTime",
+      "name": "fl_mcomFuseTime",
       "id": "#M.@zu.C|Hb#L5X.:b/m",
       "type": "Global"
     },
     {
-      "name": "mcomDistance",
+      "name": "fl_mcomDistance",
       "id": "3UIz_~%u%02MNB3TYz:G",
       "type": "Global"
     },
     {
-      "name": "mcomLocation",
+      "name": "fl_mcomLocation",
       "id": "oW5?[`9*!*41w5F.zNp]",
       "type": "Global"
     },
     {
-      "name": "mcomOwner",
+      "name": "fl_mcomOwner",
       "id": "?+0u8_ES+hAQi4|r473?",
       "type": "Global"
     },
@@ -42602,112 +42597,107 @@
       "type": "Global"
     },
     {
-      "name": "mcomCaptureTime",
+      "name": "fl_mcomCaptureTime",
       "id": "2Xy%V:;j((DJ@7i/EL^}",
       "type": "Global"
     },
     {
-      "name": "mcomCaptureCounter",
+      "name": "fl_mcomCaptureCounter",
       "id": "cPC{o;0SAJnS3ilpNP4C",
       "type": "Global"
     },
     {
-      "name": "isMcomCapturingOngoing",
+      "name": "fl_isMcomCapturingOngoing",
       "id": "JrhR)mp$tI(!hj)+IDpw",
       "type": "Global"
     },
     {
-      "name": "mcomWorldObject",
+      "name": "fl_mcomWorldObject",
       "id": "KsQ^,EUhYKAl=3Jn7m3L",
       "type": "Global"
     },
     {
-      "name": "mcomRadians",
+      "name": "fl_mcomRadians",
       "id": "tUCDL,(Z)0,j;74LmhRw",
       "type": "Global"
     },
     {
-      "name": "captureTime",
+      "name": "fl_captureTime",
       "id": "8;g%fLJM7](}=7(]g{i2",
       "type": "Global"
     },
     {
-      "name": "neutralizationTime",
+      "name": "fl_neutralizationTime",
       "id": "[Xq1:(srkIs:;SkweVy3",
       "type": "Global"
     },
     {
-      "name": "messages",
+      "name": "comn_messages",
       "id": "ns;Z/#MXn/,DsKh+7%d1",
       "type": "Global"
     },
     {
-      "name": "switchTeamTime",
+      "name": "comn_switchTeamTime",
       "id": ")nl=-)}qWj/+)`mdr6f.",
       "type": "Global"
     },
     {
-      "name": "captureMultiplier",
+      "name": "fl_captureMultiplier",
       "id": "U#VuXS`scX?fWdll@;Rn",
       "type": "Global"
     },
     {
-      "name": "isFirstObjectiveToBeCaptured",
+      "name": "fl_isFirstObjectiveToBeCaptured",
       "id": "iCxGf8QdB0wd:As-!#qq",
       "type": "Global"
     },
     {
-      "name": "captureIconOffset",
+      "name": "fl_captureIconOffset",
       "id": "=zVjT$*eCx{LFU`h=8Sn",
       "type": "Global"
     },
     {
-      "name": "mcomIconOffset",
+      "name": "fl_mcomIconOffset",
       "id": "#;2.u%|cI@~(uR8[{hgP",
       "type": "Global"
     },
     {
-      "name": "mcomWorldIcon",
+      "name": "fl_mcomWorldIcon",
       "id": "tW2-]JMwQN^/ebOjm1Ad",
       "type": "Global"
     },
     {
-      "name": "isPreparationOngoing",
+      "name": "fl_isPreparationOngoing",
       "id": "#U_Kd3hu94x^xXD=ni~!",
       "type": "Global"
     },
     {
-      "name": "minutesLeft",
+      "name": "comn_minutesLeft",
       "id": "HUxoBGS|D)(D8z6t}H*^",
       "type": "Global"
     },
     {
-      "name": "secondsLeft",
+      "name": "comn_secondsLeft",
       "id": "eEg%OXv0_%0*nt!ZiMo.",
       "type": "Global"
     },
     {
-      "name": "mcomIteratorLimits",
+      "name": "fl_mcomIteratorLimits",
       "id": "2.%Dx;lhn[4o:CX`#b{^",
       "type": "Global"
     },
     {
-      "name": "mcomName",
+      "name": "fl_mcomName",
       "id": "eWFI3$6$]zMq=cm-hBW(",
       "type": "Global"
     },
     {
-      "name": "isCaptureChainIncludingHQ",
+      "name": "fl_isCaptureChainIncludingHQ",
       "id": "W+N+c+HEl:}:!Yu[g;R;",
       "type": "Global"
     },
     {
-      "name": "tmpCPLabel",
-      "id": "CRbY5HK*V)UB!9r])E5P",
-      "type": "Global"
-    },
-    {
-      "name": "playersOnPoint",
+      "name": "fl_playersOnPoint",
       "id": "!]9,ELuHZ(9q`HTVcPkn",
       "type": "Global"
     },
@@ -42729,11 +42719,6 @@
     {
       "name": "fl_newNeutralizationTime",
       "id": "21De^T1vdQ)2gW#Nc}Q^",
-      "type": "Global"
-    },
-    {
-      "name": "isOvertime",
-      "id": "Uza%rd6v~Zp%D^[$;GRA",
       "type": "Global"
     }
   ]
